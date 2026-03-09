@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Menú Namik</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Turn.js desde CDN -->
+  <script src="turn.min.js"></script>
+</head>
+<body>
+  <div id="flipbook">
+    
+    <!-- Página 1: Portada -->
+    <div class="page" id="portada">
+    <img src="imagenes/4x3 portada72dpi.jpg.jpeg" class="full">
+
+    <!-- Área sobre "Español" con marco visible -->
+    <a href="javascript:void(0)" 
+        class="link " 
+        style="top:1220px; left:820px; width:130px; height:40px;" 
+        onclick="$('#flipbook').turn('page',2)">
+    </a>
+    </div>
+
+    <!-- Página 2: Directorio -->
+    <div class="page" id="directorio">
+      <img src="imagenes/4x3  directorio72dpi.jpg.jpeg" class="full">
+
+      <!-- Áreas invisibles sobre cada categoría -->
+      <a href="#" class="link " style="top:350px; left:630px; width:180px; height:60px;" onclick="$('#flipbook').turn('page',3)"></a> <!-- Crudos -->
+      <a href="#" class="link " style="top:450px; left:630px; width:220px; height:60px;" onclick="$('#flipbook').turn('page',4)"></a> <!-- Entradas -->
+      <a href="#" class="link " style="top:550px; left:630px; width:150px; height:60px;" onclick="$('#flipbook').turn('page',5)"></a> <!-- Tacos -->
+      <a href="#" class="link " style="top:650px; left:630px; width:150px; height:60px;" onclick="$('#flipbook').turn('page',6)"></a> <!-- Pastas -->
+      <a href="#" class="link " style="top:750px; left:630px; width:180px; height:60px;" onclick="$('#flipbook').turn('page',7)"></a> <!-- Caldos -->
+      <a href="#" class="link " style="top:850px; left:630px; width:300px; height:60px;" onclick="$('#flipbook').turn('page',8)"></a> <!-- Nuestra pesca -->
+      <a href="#" class="link " style="top:950px; left:630px; width:150px; height:60px;" onclick="$('#flipbook').turn('page',9)"></a> <!-- Carnes -->
+      <a href="#" class="link " style="top:1050px; left:630px; width:150px; height:60px;" onclick="$('#flipbook').turn('page',10)"></a> <!-- Postres -->
+      <a href="#" class="link " style="top:1150px; left:630px; width:220px; height:60px;" onclick="$('#flipbook').turn('page',11)"></a> <!-- Bebidas -->
+
+      <!-- Flechas -->
+      <a href="#" class="arrow prev " onclick="$('#flipbook').turn('page',1)"></a>
+      <!-- <a href="#" class="arrow next debug" onclick="$('#flipbook').turn('page',3)"></a> -->
+    </div>
+
+    <!-- Páginas de cada categoría -->
+    <div class="page" id="crudos">
+      <img src="imagenes/4x3 crudos 72dpi.jpg.jpeg" class="full">
+      <a href="#" class="arrow prev " onclick="$('#flipbook').turn('page',2)"></a>
+      <a href="#" class="arrow next " onclick="$('#flipbook').turn('page',4)"></a>
+    </div>
+
+    <div class="page" id="entradas">
+      <img src="imagenes/entradas.jpg" class="full">
+      <a href="#" class="arrow prev" onclick="$('#flipbook').turn('page',3)"></a>
+      <a href="#" class="arrow next" onclick="$('#flipbook').turn('page',5)"></a>
+    </div>
+
+    <div class="page" id="tacos">
+      <img src="imagenes/tacos.jpg" class="full">
+      <a href="#" class="arrow prev" onclick="$('#flipbook').turn('page',4)"></a>
+      <a href="#" class="arrow next" onclick="$('#flipbook').turn('page',6)"></a>
+    </div>
+
+    <div class="page" id="pastas">
+      <img src="imagenes/pastas.jpg" class="full">
+      <a href="#" class="arrow prev" onclick="$('#flipbook').turn('page',5)"></a>
+      <a href="#" class="arrow next" onclick="$('#flipbook').turn('page',7)"></a>
+    </div>
+
+    <div class="page" id="caldos">
+      <img src="imagenes/caldos.jpg" class="full">
+      <a href="#" class="arrow prev" onclick="$('#flipbook').turn('page',6)"></a>
+      <a href="#" class="arrow next" onclick="$('#flipbook').turn('page',8)"></a>
+    </div>
+
+    <div class="page" id="pesca">
+      <img src="imagenes/pesca.jpg" class="full">
+      <a href="#" class="arrow prev" onclick="$('#flipbook').turn('page',7)"></a>
+      <a href="#" class="arrow next" onclick="$('#flipbook').turn('page',9)"></a>
+    </div>
+
+    <div class="page" id="carnes">
+      <img src="imagenes/carnes.jpg" class="full">
+      <a href="#" class="arrow prev" onclick="$('#flipbook').turn('page',8)"></a>
+      <a href="#" class="arrow next" onclick="$('#flipbook').turn('page',10)"></a>
+    </div>
+
+    <div class="page" id="postres">
+      <img src="imagenes/postres.jpg" class="full">
+      <a href="#" class="arrow prev" onclick="$('#flipbook').turn('page',9)"></a>
+      <a href="#" class="arrow next" onclick="$('#flipbook').turn('page',11)"></a>
+    </div>
+
+    <div class="page" id="bebidas">
+      <img src="imagenes/bebidas.jpg" class="full">
+      <a href="#" class="arrow prev" onclick="$('#flipbook').turn('page',10)"></a>
+    </div>
+
+  </div>
+
+  <script>
+    $("#flipbook").turn({
+        width: 1080,   // ancho real de tus imágenes
+        height: 1438,  // alto real de tus imágenes
+        autoCenter: true,
+        display: 'single',
+        gradients: true,
+        acceleration: true
+    });
+
+  </script>
+</body>
+</html>
