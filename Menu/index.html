@@ -120,9 +120,11 @@
 
   <script>
     $("#flipbook").turn({
-        width: 1080,   // ancho real de tus imágenes
-        height: 1438,  // alto real de tus imágenes
-        autoCenter: true,
+        //width: 1080,   // ancho real de tus imágenes
+        //height: 1438,  // alto real de tus imágenes
+      width: window.innerWidth * 0.9,   // 90% del ancho de pantalla
+      height: (window.innerWidth * 0.9) * (1438/1080), // mantiene proporción  
+      autoCenter: true,
         display: 'single',
         gradients: true,
         acceleration: true
@@ -131,4 +133,5 @@
   </script>
 </body>
 </html>
+
 
