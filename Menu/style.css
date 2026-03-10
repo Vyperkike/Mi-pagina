@@ -16,6 +16,7 @@ body {
 /* Cada página */
 .page {
   position: relative;
+  aspect-ratio: 1080 / 1438;
 }
 
 /* Imágenes de cada página */
@@ -63,4 +64,5 @@ body {
 .debug {
   border: 2px solid red;   /* marco rojo */
   background: rgba(255,0,0,0.2); /* semitransparente para ubicarlo */
+
 }
