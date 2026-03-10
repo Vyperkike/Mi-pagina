@@ -1,0 +1,29 @@
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Este dominio hereda el paquete “PHP”.
+# php -- END cPanel-generated handler, do not edit
+# Bloquear autodiscover spam
+<Location "/autodiscover">
+    Order Deny,Allow
+    Deny from all
+</Location>
+
+# Bloquear IPs específicas maliciosas
+Order Allow,Deny
+Allow from all
+Deny from 189.240.218.102
+Deny from 201.151.161.114
+
+# Bloquear bots falsos de Outlook
+SetEnvIfNoCase User-Agent "Microsoft Office" bad_bot
+SetEnvIfNoCase User-Agent "Microsoft Outlook" bad_bot
+
+# Bloquear bots agresivos
+SetEnvIfNoCase User-Agent "Pro Sitemaps" bad_bot
+SetEnvIfNoCase User-Agent "PetalBot" bad_bot
+SetEnvIfNoCase User-Agent "DataForSeoBot" bad_bot
+SetEnvIfNoCase User-Agent "AwarioBot" bad_bot
+
+Order Allow,Deny
+Allow from all
+Deny from env=bad_bot

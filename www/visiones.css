@@ -1,0 +1,271 @@
+     .visionesTitles{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        font-size:49px;
+        color:white;
+        position:relative;
+      }
+      
+      .visionesSubtitles{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-size:18px;
+        line-height:22spx;
+        color:black;
+      }
+      
+      .visionesTexto{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size:17px;
+        line-height:25px;
+        color:white;
+        position:relative;
+        text-align: justify;
+      }
+      
+      .visionesContenedorWrapper{
+        display:flex;
+        width:100%;
+        background-color:rgba(0, 0, 0, 0.2);
+        position:relative;
+        flex-direction:column;
+      }
+      
+      .visionesContenedor{
+        display:flex;
+        width:100%;
+        margin-top:163px;
+       /* background-color:green;*/
+        padding:165px 0 72.3px 0;
+        position:relative;
+        flex-direction:column;
+        gap:65px;
+        align-items: center;
+        justify-content: center;
+      }
+
+
+      .visionesPleca{
+        display:flex;
+        position:absolute;
+        width:100%;
+        height:341px;
+        top:0;
+        z-index:10;
+        justify-content:right;
+        align-items:flex-end;
+        background-image:url("./imgs/vision/HEXAGONOS.png");
+        background-size:cover;
+        background-position:center;
+        background-repeat:no-repeat;
+        justify-content: center;
+        align-items: center;
+      }
+      
+     .visionesPlecaBrillo{
+      display:flex;
+      height:100%;
+      width:100%;
+      /*background-color:green;*/
+      background-image:url("./imgs/vision/HEXAGONOS.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position:relative;
+      /* mask-image: linear-gradient(to right, transparent 0%, white 30%, white 70%, transparent 100%);
+      mask-repeat: no-repeat;
+      mask-size: 800px 100%; */
+
+
+      filter: brightness(1.2); /* 1.0 es normal, >1 más brillante */
+     
+      /* Máscara con bordes difuminados */
+      mask-image: linear-gradient(to right, transparent 0%, white 30%, white 70%, transparent 100%);
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, white 30%, white 70%, transparent 100%)
+      mask-repeat: no-repeat;
+      -webkit-mask-repeat: no-repeat;
+      mask-size: 500px 100%;
+      -webkit-mask-size: 500px 100%;
+      animation: moverClip 2s linear infinite;
+    }
+    
+    .visionesBrillo{
+      animation: visionesMoverClip 1.5s linear infinite;
+    }
+    
+    @keyframes visionesMoverClip {    
+      0% {
+        mask-position: -800px 0;
+      }
+      100% {
+        mask-position: calc(100% + 800px) 0;
+      }   
+    }
+      
+      .visionesCircle{
+        display:flex;
+        position:absolute;
+        height:276px;
+        width:276px;
+        flex-shrink: 0;
+        /*background-color:yellow;*/
+        margin-right:160px;
+        z-index:1;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .visionesCircle img{
+        object-fit:cover;
+        object-position:center;
+        width:100%;
+      }
+      
+      .visionApartados{
+        display:flex;
+        position:relative;
+        width:100%;
+        flex-direction:column;
+        gap:36px;
+        /*background-color:pink;*/
+        position:relative;
+        z-index:30;
+        justify-content: center;
+      }
+      
+      .visionAbajo{
+        padding-left:78px;
+      }
+      
+      
+      .visionValores{
+        display:flex;
+        flex-wrap:wrap;
+        row-gap: 15px;
+        column-gap: 10px;
+        /*background-color:green;*/
+      }
+      
+      .visionValor{
+        background-color: #FFE50E ;
+        padding:10px 28px;
+        border-radius:8px;
+        position:relative;
+      }
+      
+      .visionTrailerDeco{
+        position:absolute;
+        display:flex;
+        width:316px;
+        height:247.6px;
+        /*background-color:grey;*/
+        top:0px;
+        /* right:0px; */
+        left: 0px;
+        z-index:200;
+      }
+      
+      .visionTrailerDeco img{
+        /* object-fit:cover;
+        object-position:center;
+        width:100%; */
+
+        width: auto; height: auto; max-width: 100%; max-height: 100%;
+      }
+      
+      .spacio{
+        height:1200px;
+      }
+
+      .visionesMax{
+        max-width:910px;
+      }
+
+
+      .maxSegundo{
+        padding-right: 100px;
+      }
+
+      
+      @media(max-width:1000px){
+        .visionesContenedor{
+          padding-top:220px;
+          padding-left: 40px;
+          padding-right: 40px;
+          align-items: center;
+        }
+        
+         .visionAbajo{
+            padding-left: 0px;
+         }
+
+         .visionesCircle{
+           /*background-color: pink;*/
+           justify-content: center;
+           margin-right: 5%;
+         }
+
+         .visionTrailerDeco{
+          /*background-color: green;*/
+            top:0px;
+            right:-40px;
+         }
+
+          .maxSegundo{
+            padding-right: 320px;
+          }
+      }
+
+      @media(max-width:600px){
+
+          .maxSegundo{
+            padding-right: 0px;
+          }
+
+        .visionesContenedor{
+          gap:40px;
+          /*background-color: blue;*/
+          padding-bottom: 0;
+          padding-top: 200px;
+        }
+
+        .visionesTitles{
+          font-size: 38px;
+        }
+
+        .visionesSubtitles{
+          font-size: 15px;
+        }
+
+        .visionValor{
+          padding: 10px 13px;
+        }
+
+        .visionTrailerDeco{
+          display: none;
+        }
+
+        .visionesTexto{
+          font-size: 15px;
+          line-height: 21px;
+        }
+
+        .visionApartados{
+          gap: 20px;
+        }
+
+        .visionesCircle{
+          height:230px;
+          width: 230px;
+          top: 80px;
+        }
+       
+      }
+      

@@ -1,0 +1,210 @@
+.infraTitles{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        font-size:49px;
+        line-height:53px;
+        position: relative;
+      }
+
+      .infraSubtitles{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-size:17px;
+        line-height:26px;
+        
+      }
+      
+      .infraTexto{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size:17px;
+        line-height:24px;
+        
+        text-align:justify;
+      }
+      
+      .infra{
+        display:flex;
+        flex-direction:column;
+        position:relative;
+        width:100%;
+        background-color:#FFCB00;
+      }
+      
+      .infraPleca{
+        display:flex;
+        position:absolute;
+        top:-244px;
+        width:100%;
+        height:245px;
+        /*background-color:blue;*/
+        background-image:url("./imgs/infra/infraPleca.png");
+        background-position:center;
+        background-size:cover;
+        background-repeat:no-repeat;
+      }
+      
+      .infraMain{
+        display:flex;
+        padding:40.4px 113px 65px 113px;
+        gap:72px;
+        width:100%;
+        /*background-color:#FFCB00;*/
+      }
+      
+      .infraPrimer{
+        display:flex;
+        flex-direction:column;
+        gap:55px;
+        width:100%;
+        /*background-color:green;*/
+      }
+      
+      .infraSecond{
+        display:flex;
+        width:100%;
+        flex-direction:column;
+        /*background-color:brown;*/
+        gap:43px;
+      }
+      
+      .infraCaja{
+        display:flex;
+        width:100%;
+        /*background-color:grey;*/
+        gap:25px;
+      }
+      
+      .infraBola{
+        display:flex;
+        width:34px;
+        height:34px;
+        background-color:#000000;
+        border-radius:60px;
+        flex-shrink:0;
+      }
+      
+      .infraPadding{
+        padding-top:7px;
+      }
+      
+      .infraNumeralia{
+        display:flex;
+        width:100%;
+        /*background-color:red;*/
+        justify-content:center;
+        position: relative;
+        overflow: visible;
+      }
+      
+      .infraImgNumeralia{
+        display:flex;
+        width:828px;
+        height:126px;
+        /*background-color:pink;*/
+        background-image:url("./imgs/infra/infraNumeralias.png");
+        background-position:top;
+        background-size:cover;
+        background-repeat:no-repeat;
+        position: relative;
+      }
+      
+      .infraTrailers{
+        display:flex;
+        width:100%;
+        height:760px;
+        /*background-color:grey;*/
+        background-image:url("./imgs/infra/infraTrailers.webp");
+        background-position:top;
+        background-size:cover;
+        background-repeat:no-repeat;
+        position: relative;
+
+      }
+      
+      .space{
+        height:500px;
+      }
+
+      .infraEspecial{
+        display: flex;
+        position: relative;
+      }
+
+
+    @media(max-width:1000px){
+
+      .infra{
+        /*border: 4px solid greenyellow;*/
+        gap: 0;
+      }
+
+      .infraMain{
+        flex-direction: column;
+        padding: 0 40px;
+        /*background-color: palegreen;*/
+        padding-bottom: 50px;
+        gap: 35px;
+      }
+
+      .infraPadding{
+        padding: 0;
+      }
+
+      .infraPrimer{
+        gap: 40px;
+      }
+
+      .infraSecond{
+        gap: 40px;
+      }
+
+    }
+
+
+    @media(max-width:600px){
+
+
+      .infraImgNumeralia{
+        /*border: 4px solid red;*/
+        background-image: url("./imgs/infra/infraNumeralias_cel.svg");
+        width:75%;
+        height:auto;
+        aspect-ratio: 296/360;
+      }
+
+      .infraTitles{
+        font-size: 36px;
+      }
+
+      .infraTexto{
+        font-size: 15px;
+        line-height: 21px;
+      }
+
+      .infraBola{
+        width: 20px;
+        height: 20px;
+      }
+
+      .infraCaja{
+        gap: 20px ;
+      }
+
+      .infraSecond{
+        gap: 20px;
+      }
+
+      .infraTrailers{
+        width:100%;
+        height:auto;
+        aspect-ratio: 500/760;
+      }
+
+    }

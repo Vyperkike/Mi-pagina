@@ -1,0 +1,223 @@
+ .enviosTitles{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        font-size:45px;
+        line-height:49px;
+        color:white;
+        z-index: 1;
+        position:relative
+      }
+
+      .enviosSubtitles{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-size:17px;
+        line-height:26px;
+        color:white;
+        position: relative;
+      }
+      
+      .enviosTexto{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size:16px;
+        line-height:23px;
+        color:white;
+        text-align:justify;
+        z-index: 1;
+        position: relative;
+      }
+      
+      .envios{
+        display:flex;
+        flex-direction:column;
+        position:relative;
+        padding:551px 173px 0 144px;
+        /*background-color:black;*/
+      }
+      
+      .enviosHeader{
+        display:flex;
+        position:absolute;
+        top:0px;
+        left:0;
+        /*border:4px solid orange;*/
+        width:100%;
+        height:880px;
+        z-index: 0;
+      }
+
+      .enviosHeaderFondo{
+        display:flex;
+        width:100%;
+        height:100%;
+        position:absolute;
+        top:0;
+        left:0;
+        background-image:url("./imgs/envios/envios.webp");
+        background-position:center;
+        background-size:cover;
+        background-repeat:no-repeat;
+      }
+
+      
+      
+      .space{
+        height:500px;
+      }
+      
+      .enviosPleca{
+        display:flex;
+        position:absolute;
+        top:-133px;
+        left:0;
+        width:100%;
+        height:253px;
+        /*background-color:pink;*/
+        background-image:url("./imgs/envios/enviosPleca.svg");
+        background-position:center;
+        background-size:cover;
+        background-repeat:no-repeat;
+        z-index: 4;
+      }
+      
+      .enviosCircle{
+        display:flex;
+        position:absolute;
+        bottom:0;
+        right:162px;
+        height:317px;
+        width:317px;
+        background-image:url("");
+        background-position:center;
+        background-size:cover;
+        background-repeat:no-repeat;
+        /*background-color:grey;*/
+      }
+      
+      .enviosContenido{
+        display:flex;
+        flex-direction:column;
+        /*background-color:purple;*/
+        gap:63px;
+        width:100%;
+      }
+      
+      .enviosPrimer{
+        display:flex;
+        /*background-color:brown;*/
+        flex-direction:column;
+        gap:61px;
+        width:100%;
+      }
+      
+      .primerPadding{
+        padding-left:72px;
+      }
+      
+      .enviosSegundo{
+        display:flex;
+        gap:70px;
+        width:100%;
+        /*background-color:green;*/
+      }
+      
+      .enviosColumna{
+        display:flex;
+        flex-direction:column;
+        gap:41px;
+        width:100%;
+       /*background-color:orange;*/
+       
+        justify-content:center;
+      }
+      
+
+      .enviosTop{
+          padding-top: 0;
+      }
+
+      @media(max-width:1000px){
+
+        .envios{
+          /*border: 4px solid orange;*/
+          padding: 400px 40px 0 40px;
+        }
+
+        .enviosHeader{
+          /*border: 4px solid yellow;*/
+          height: 600px;
+        }
+
+        .enviosHeaderFondo{
+         /*border: 5px solid pink;*/
+        }
+
+        .enviosContenido{
+          /*background-color: brown;*/
+        }
+
+        .enviosPrimer{
+            /*border: 3px solid white;*/
+        }
+
+        .enviosSegundo{
+          /*background-color: pink;*/
+        }
+
+      }
+
+      @media(max-width:600px){
+
+        .enviosSegundo{
+          flex-direction: column;
+          gap:30px;
+        }
+
+        .enviosTop{
+          padding-top: 20px;
+        }
+
+        .enviosContenido{
+          gap:30px;
+        }
+
+        .enviosPrimer{
+          gap:30px;
+        }
+
+        .enviosContenido .primerPadding{
+          padding-left: 0;
+        }
+
+        .enviosTexto{
+          font-size: 15px;
+          line-height: 21px;
+        }
+
+        .enviosTitles{
+          font-size: 38px;
+          line-height: 38px;
+        }
+
+        .enviosColumna{
+          gap: 20px;
+          /*background-color: purple;*/
+        }
+
+        .enviosHeaderFondo{
+          gap: 0px;
+        }
+
+        .enviosTop{
+          padding-top: 0;
+        }
+
+
+      }

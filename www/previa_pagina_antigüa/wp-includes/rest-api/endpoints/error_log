@@ -1,0 +1,12 @@
+[28-Nov-2022 23:23:10 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Controller' not found in /home2/trabalmx/public_html/wp-includes/rest-api/endpoints/class-wp-rest-settings-controller.php:17
+Stack trace:
+#0 {main}
+  thrown in /home2/trabalmx/public_html/wp-includes/rest-api/endpoints/class-wp-rest-settings-controller.php on line 17
+[28-Nov-2022 23:25:32 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Controller' not found in /home2/trabalmx/public_html/wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:17
+Stack trace:
+#0 {main}
+  thrown in /home2/trabalmx/public_html/wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php on line 17
+[05-Jul-2025 03:35:23 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Posts_Controller' not found in /home2/trabalmx/public_html/wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php:17
+Stack trace:
+#0 {main}
+  thrown in /home2/trabalmx/public_html/wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php on line 17

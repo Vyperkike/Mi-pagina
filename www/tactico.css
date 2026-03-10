@@ -1,0 +1,180 @@
+     .tacticoTitles{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        font-size:49px;
+        line-height:53px;
+        color:white;
+        position: relative;
+      }
+
+      .tacticoSubtitles{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-size:17px;
+        line-height:26px;
+        color:white;
+      }
+      
+      .tacticoTexto{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size:17px;
+        line-height:24px;
+        color:white;
+        text-align:justify;
+      }
+      
+      .tactico{
+        display:flex;
+        width:100%;
+        background-color:black;
+        flex-direction:column;
+      }
+      
+      .tacticoContenido{
+        display:flex;
+        width:100%;
+        flex-direction:column;
+        padding:0 128px 0 128px;
+        gap:58.6px;
+        /*background-color:purple;*/
+        /*border:1px solid lightblue;*/
+        z-index:2;
+      }
+      
+      .tacticoTextitos{
+        display:flex;
+        width:100%;
+        gap:41px;
+        width:100%;
+        /*background-color:brown;*/
+        position:relative;
+      }
+      
+      .tacticoColumna{
+        display:flex;
+        flex-direction:column;
+        gap:18.3px;
+        /*background-color:pink;*/
+        width:100%;
+        position:relative;
+      }
+      
+      .tacticoCaja{
+        display:flex;
+        gap:21px;
+        /*background-color:green;*/
+        position:relative;
+      }
+      
+      .tacticoBola{
+        display:flex;
+        width:16px;
+        margin-top:3px;
+        height:16px;
+        background-color:yellow;
+        flex-shrink:0;
+        border-radius: 50px;
+      }
+      
+      .tacticoEspacio{
+        display:flex;
+        width:100%;
+        position:relative;
+        height:768.5px;
+        /*border:1px solid white;*/
+      }
+      
+      .tacticoImagen{
+        display:flex;
+        width:100%;
+        height:890px;
+        background-image:url("./imgs/tactico/tactico.png");
+        background-position:center;
+        background-size:cover;
+        background-repeat:no-repeat;
+        /*background-color:grey;*/
+        position:absolute;
+        bottom:0;
+        z-index:1;
+      }
+
+      @media(max-width:1000px){
+
+
+        .tactico{
+          /*border: 4px solid orange;*/
+        }
+
+        .tacticoContenido{
+          /*border:4px solid green;*/
+          padding: 50px 40px;
+        }
+
+        .tacticoTexto{
+          text-align: left;
+        }
+
+        .tacticoEspacio{
+          /*border: 5px solid yellow;*/
+          height: auto;
+          width: 100%;
+          aspect-ratio: 1000/768;
+          max-height: 600px;
+          min-height: 500px;
+        }
+
+        .tacticoImagen{
+          height: auto;
+          width: 100%;
+          aspect-ratio: 1000/930;
+          min-height: 800px;
+        }
+
+        .tacticoTitles{
+          max-width: 600px;
+          /*background-color: palegreen;*/
+        }
+
+
+      }
+
+      @media(max-width:600px){
+
+        .tacticoContenido{
+          gap: 32px;
+        }
+
+          .tacticoTextitos{
+            flex-direction: column;
+            gap: 18px;
+          }
+
+          .tacticoColumna{
+            gap:18px;
+          }
+
+          .tacticoTitles{
+            font-size: 38px;
+            line-height: 38px;
+          }
+
+          .tacticoTexto{
+            font-size: 15px;
+            line-height: 21px;
+          }
+
+          .tacticoImagen{
+            min-height: 700px;
+            aspect-ratio: 1000/330;
+            background-position: -400px 0px;
+          }
+
+
+      }

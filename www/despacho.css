@@ -1,0 +1,142 @@
+.desTitles{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        font-size:49px;
+        line-height:53px;
+        color:white;
+        position: relative;
+      }
+
+      .desSubtitles{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-size:17px;
+        line-height:26px;
+        color:white;
+        position: relative;
+      }
+      
+      .desTexto{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size:17px;
+        line-height:26px;
+        color:white;
+        text-align:justify;
+        padding-left:115.5px;
+        position: relative;
+      }
+      
+      
+      .des{
+        display:flex;
+        width:100%;
+        position:relative;
+        flex-direction:column;
+        background-color:black;
+        padding:234px 166px 0 133px;
+        gap:81px;
+      }
+      
+      .desPleca{
+        display:flex;
+        /*border:5px solid yellow;*/
+        position:absolute;
+        top:-160px;
+        left:0;
+        width:100%;
+        height:321px;
+        background-image:url("./imgs/despacho/despachoPleca.svg");
+        background-position:center;
+        background-repeat:no-repeat;
+        background-size:cover;
+      }
+      
+      
+      .desPrimer{
+        display:flex;
+        width:100%;
+        max-width:832.5px;
+        gap:51.6px;
+        /*background-color:blue;*/
+        align-items:center;
+        position: relative;
+      }
+      
+      .desIcon{
+        display:flex;
+        width:119px;
+        height:120px;
+        /*background-color:pink;*/
+        flex-shrink:0;
+        background-image:url("./imgs/despacho/despachoIcon.png");
+        background-position:center;
+        background-repeat:no-repeat;
+        background-size:cover;
+        position: relative;
+      }
+      
+      .desResto{
+        display:flex;
+        width:100%;
+        flex-direction:column;
+        gap: 45px; 
+        /*background-color:green;*/
+      }
+
+
+      @media(max-width:1000px){
+
+          .des{
+            padding: 180px 40px 0 40px;
+            /*border: 5px solid orange;*/
+          }
+
+      }
+
+      @media(max-width:600px) {
+        
+          .desPrimer{
+            flex-direction: column;
+            text-align: center;
+            gap:25px;
+            z-index: 20;
+          }
+
+          .desSubtitles{
+            font-size: 15px;
+            line-height: 21px;
+          }
+
+          .des{
+            padding-top: 138px;
+            gap:40px;
+          }
+
+          .desResto{
+            /*background-color: pink;*/
+            gap:25px;
+          }
+
+          .desTexto{
+            font-size: 15px;
+            line-height: 21px;
+            padding: 0;
+          }
+
+          .desTitles{
+            font-size: 37px;
+            line-height: 39px;
+            text-align: center;
+          }
+
+
+
+
+      }

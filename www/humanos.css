@@ -1,0 +1,145 @@
+  
+     .humanosTitles{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        font-size:49px;
+        line-height:53px;
+        position: relative;
+      }
+
+      .humanosSubtitles{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-size:17px;
+        line-height:24px;
+        text-align:justify;
+        position: relative;
+      }
+      
+      .humanosTexto{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size:17px;
+        line-height:24px;
+        text-align:justify;
+        position: relative;
+      }
+      
+
+      .humanos{
+        display:flex;
+        width:100%;
+        background-color:white;
+        padding:0 156px 0 156px;
+        gap:44px;
+        position:relative;
+        flex-direction:column;
+      }
+      
+      .humanosPleca{
+        display:flex;
+        width:100%;
+        height:309px;
+        position:absolute;
+        top:-309px;
+        left:0;
+        /*background-color:red;*/
+        background-image:url("./imgs/humanos/humanosPleca.png");
+        background-position:center;
+        background-size:cover;
+        background-repeat:no-repeat;
+      }
+      
+      .humanosSpaceImagen{
+        display:flex;
+        position:absolute;
+        width:370px;
+        height:370px;
+        flex-shrink:0;
+        /*background-color:grey;*/
+        background-image:url("./imgs/humanos/humanosCircleb.png");
+        background-position:center;
+        background-size:cover;
+        background-repeat:no-repeat;
+        bottom:-200px;
+        right:0px;
+      }
+      
+      
+      .humanosPadding{
+        padding-right:335px;
+      }
+      
+      .space{
+        height:800px;
+      }
+
+
+      @media(max-width:1000px){
+
+        .humanos{
+          /*border: 4px solid orange;*/
+          padding: 0 40px;
+        }
+
+        .humanosTexto{
+          /*border: 5px solid pink;*/
+        }
+
+        .humanosPadding{
+          padding: 0;
+        }
+
+        .humanosSpaceImagen{
+          width:300px;
+          height:300px;
+          top: 120px;
+          right: 40px;
+        }
+
+        .humanosTitles{
+          max-width: 300px;
+        }
+
+      }
+
+      @media(max-width:600px){
+
+          .humanosTitles{
+            font-size: 38px;
+            line-height: 38px;
+            padding-top: 150px;
+            text-align: center;
+            padding-bottom: 0;
+          }
+
+          .humanosSpaceImagen{
+            top:140px;
+            left: 50%;
+            transform: translate(-50%);
+          }
+
+          .humanos{
+            gap:30px;
+          }
+
+          .humanosTexto{
+            font-size: 15px;
+            line-height: 21px;
+            /*background-color: green;*/
+          }
+
+          .humanosSubtitles{
+            font-size: 15px;
+            line-height: 21px;
+          }
+
+
+
+      }

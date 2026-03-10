@@ -1,0 +1,1859 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <meta property="og:title" content="Beeconecting">
+    <meta property="og:description" content="Empresa especializada en la administración logística">
+  <meta property="og:image" content="https://trabal.e-dav.net//vista_previa.png">
+  <meta property="og:url" content="https://trabal.e-dav.net/">
+  <meta property="og:type" content="website">
+  <title>Beeconecting</title>
+  <link rel="icon" href="favicon.svg" type="image/x-icon">
+
+
+<link rel="stylesheet" href="granMenu.css">
+
+
+    <link rel="stylesheet" href="somos.css">
+    <link rel="stylesheet" href="visiones.css">
+    <link rel="stylesheet" href="cober.css">
+    <link rel="stylesheet" href="clientes.css">
+    <link rel="stylesheet" href="beneficios.css">
+    <link rel="stylesheet" href="terrestre.css">
+    <link rel="stylesheet" href="enfoque.css">
+    <link rel="stylesheet" href="sistemas.css">
+    <link rel="stylesheet" href="aereo.css">
+    <link rel="stylesheet" href="mar.css">
+    <link rel="stylesheet" href="espacial.css">
+    <link rel="stylesheet" href="perecederos.css">
+    <link rel="stylesheet" href="aduanas.css">
+    <link rel="stylesheet" href="despacho.css">
+    <link rel="stylesheet" href="equipo.css">
+    <link rel="stylesheet" href="montana.css">
+    <link rel="stylesheet" href="envios.css">
+    <link rel="stylesheet" href="cadena.css">
+    <link rel="stylesheet" href="tactico.css">
+    <link rel="stylesheet" href="humanos.css">
+    <link rel="stylesheet" href="capa.css">
+    <link rel="stylesheet" href="preven.css">
+    <link rel="stylesheet" href="predi.css">
+    <link rel="stylesheet" href="mante.css">
+    <link rel="stylesheet" href="monitoreo.css">
+    <link rel="stylesheet" href="infra.css">
+    <link rel="stylesheet" href="instalaciones.css">
+    <link rel="stylesheet" href="sosten.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="contacto.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+          box-sizing: border-box;
+          padding: 0;
+          margin: 0;
+      }
+       body {
+        margin: 0; /* Elimina el margen por defecto del body */
+        padding: 0; /* Elimina el padding por defecto del body */
+        background-color:black;
+        /* Aquí agregas la imagen */
+        background-image: url("./imgs/fondonegro.jpeg");
+        /* background-position: center; */
+        background-repeat: repeat;
+
+        /* Opciones para ajustar el tamaño */
+        background-size: 100% auto;/* La imagen se ajusta completa, puede dejar espacios */
+        /*background-size: 100% auto;   ajusta al ancho de la pantalla */
+        /* background-size: auto 100%;  ajusta a la altura de la pantalla */
+      }
+      html, body {
+  overflow-x: hidden;
+  overflow-y: auto; /* o scroll si quieres forzar la barra */
+}
+
+
+
+
+      .introTexto{
+         font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+        font-size:18px;
+        color:white;
+      }
+
+
+      .introContenedor{
+        display:flex;
+        position:relative;
+        width:100%;
+        /*background-color:blue;*/
+        flex-direction:column;
+      }
+
+      .introArriba{
+        display:flex;
+        position:relative;
+        height:249px;
+        width:100%;
+        padding:100px 143px 0 143px;
+        /*background-color:pink;*/
+        justify-content:center;
+        align-items:center;
+      }
+
+      .introMenu{
+        position:absolute;
+        height:154.723px;
+        width:118px;
+        display:flex;
+        justify-content:center;
+        padding-bottom:45px;
+        align-items:center;
+        /*background-color:green;*/
+        top:72px;
+        right:143px;
+        gap:17px;
+        transition:opacity 0.5s ease;
+      }
+
+      .introMenuOpacidad{
+        opacity:0;
+      }
+
+      .introLogo{
+        display:flex;
+        position:relative;
+        flex-shrink: 0;
+        height:154.723px;
+        width:400px;
+        top:0;
+        /*background-color:purple;*/
+        background-image:url("./imgs/logo.png");
+        background-size:contain;
+        background-repeat:no-repeat;
+        background-position:center;
+        z-index:900;
+        transition: transform 1s ease, top 1s ease;
+      }
+
+      .introBig{
+        transform: scale(1.7);
+        top:150%;
+        opacity:1;
+        transition:opacity 2s ease;
+      }
+
+      .introOpaco{
+        opacity:0;
+      }
+
+      .introFoto{
+        display:flex;
+        position:relative;
+        height:1212px;
+        width:100%;
+        /*background-color:red;*/
+        /* background-image:url("./imgs/fondonegro.jpeg");
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position:center ;
+        top:0;
+        transition:top 1s ease, opacity 1s ease; */
+      }
+
+      .fotoBajo{
+        top:100px;
+        opacity:0;
+      }
+
+      .introPleca{
+        display:flex;
+        position:absolute;
+        width:100%;
+        height:567px;
+        top:100px;
+        z-index:1000;
+        transition: transform 0.8s ease, opacity 0.8s ease;
+        background-image:url("./imgs/HEXAGONOS.png");
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position:center;
+        clip-path: polygon(0 0, 0% 0%, 0% 100%, 0 100%);
+        
+
+        
+      }
+
+
+
+    .clipas{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      transition:clip-path 0.7s ease;
+    }
+
+
+
+    .introPlecaInterna {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 567px;
+      background-image: url("./imgs/HEXAGONOS.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+     filter: brightness(1.2); /* 1.0 es normal, >1 más brillante */
+     
+      /* Máscara con bordes difuminados */
+      mask-image: linear-gradient(to right, transparent 0%, white 30%, white 70%, transparent 100%);
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, white 30%, white 70%, transparent 100%)
+      mask-repeat: no-repeat;
+      -webkit-mask-repeat: no-repeat;
+      mask-size: 500px 100%;
+      -webkit-mask-size: 500px 100%;
+      animation: moverClip 2s linear infinite;
+    }
+
+    @keyframes moverClip {
+      0% {
+        mask-position: -500px 0;
+        -webkit-mask-position: -500px 0;
+      }
+      100% {
+        mask-position: calc(100% + 500px) 0;
+        -webkit-mask-position: calc(100% + 500px) 0;
+      }
+    }
+
+
+      .introPlecaBig{
+        opacity:0;
+        transform: scale(1.2);
+      }
+
+
+      .introHamburguesa{
+        display:flex;
+        background-image:url("./imgs/hamburguesa.svg");
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position:center;
+        width:32.2px;
+        height:20.5px;
+        /*background-color:black;*/
+      }
+
+      @media(max-width:600px){
+
+        .introLogo{
+          height:calc(154.723px * 0.75);
+          width:calc(400px * 0.75);
+        }
+
+        .introBig{
+            top:100%;
+            transform: scale(1.2);
+        }
+
+        .introFoto{
+            height:auto;
+            width: 100%;
+            aspect-ratio: 1940/1810;
+            margin-top: 120px;
+            background-position: top;
+            /*border: 4px solid orange;*/
+        }
+
+      }
+
+
+    </style>
+</head>
+
+<body>
+
+
+
+
+
+<div class="inicioNavbar" style="z-index: 90000000000000" id="inicioNavbar">
+
+    <div class="segmentoPrecios preciosGrande">
+
+    <!-- <div class="dolar trabalTexto">
+      <p class="dolarCabeza trabalTitles">
+        Precio del Dólar
+      </p>
+
+      <div class="dolarPrecio">
+        <div class="dolarAccion">
+          <p class="cabezaAccion cabezaCompra">Compra</p>
+          <p class="digitoAccion digitoCompra" id="compra"> $18 </p>
+        </div>
+        <div class="dolarPrecio">
+          <div class="dolarAccion">
+            <p class="cabezaAccion cabezaVenta">Venta</p>
+            <p class="digitoAccion digitoVenta" id="venta"> $18 </p>
+          </div>
+        </div>
+      </div>
+      </div> -->
+
+    <!-- <a class="botonGas trabalTitles" href="https://www.cre.gob.mx/ConsultaPrecios/GasolinasyDiesel/GasolinasyDiesel.html" target="blank"> Consultar precio del Diesel</a>
+
+    <a class="botonGas trabalTitles" href="https://weather.com/es-MX/tiempo/hoy/l/cf532c4cd3b6024ace8f1d987b2074016312730d64182f2bf2a581aba6d7b4a7" target="blank"> Consultar clima</a>
+
+    <a class="botonGas trabalTitles" href="https://trabal.odoo.com/freight/consulta" target="blank"> Consultar viaje</a> -->
+
+    </div>
+
+      <div class="segmentoMenu">
+        <p class="trabalMenuTexto">Menú</p>
+        <button class="menuBox" id="botoncito"> </button>
+     </div>
+
+    </div>
+
+
+
+  <div class="menuDesplegable ocultarMenu" id="menuDesplegable" style="z-index: 30000000">
+
+   <div class="menuSeccionesGrande listaSecciones" style="z-index: 300000000">
+      <div class="menuColumna">
+        <a  href="#nosotrosA"> Nosotros </a>
+        <a  href="#beneficiosA"> Beneficios </a>
+        <a  href="#terrestreA"> Transporte terrestre </a>
+        <a  href="#aereoA"> Transporte aéreo </a>
+        <a  href="#martitimoA"> Transporte marítimo </a>
+        <a  href="#aeroespacialA"> Transporte aereoespacial </a>
+        <a href="#aduanasA"> Aduanas </a>
+        <a href="#equipoA"> Equipo </a>
+      </div>
+      <div class="menuColumna">
+        <a href="#enviosA"> Envíos </a>
+        <a href="#gestion4PLA"> Gestión 4PL </a>
+        <a href="#recursosA"> Recursos Humanos </a>
+        <a href="#mantenimientoA"> Mantenimiento </a>
+        <a href="#monitoreoA"> Monitoreo </a>
+        <a href="#infraestructuraA"> Infraestructura </a>
+        <a href="#instalacionesA"> Instalaciones </a>
+        <a href="#sostenibilidadA"> Sostenibilidad </a>
+      </div>
+   </div>
+
+    <div class="menuSeccionesChico" style="z-index: 300000000">
+      <div class="segmentoPrecios">
+
+    <!-- <div class="dolar trabalTexto">
+      <p class="dolarCabeza trabalTitles">
+        Precio del Dólar
+      </p>
+
+      <div class="dolarPrecio">
+        <div class="dolarAccion">
+          <p class="cabezaAccion cabezaCompra">Compra</p>
+          <p class="digitoAccion digitoCompra" id="compra2"> $18 </p>
+        </div>
+        <div class="dolarPrecio">
+          <div class="dolarAccion">
+            <p class="cabezaAccion cabezaVenta">Venta</p>
+            <p class="digitoAccion digitoVenta" id="venta2"> $18 </p>
+          </div>
+        </div>
+      </div>
+      </div> -->
+
+ <!-- <a class="botonGas trabalTitles" href="https://www.cre.gob.mx/ConsultaPrecios/GasolinasyDiesel/GasolinasyDiesel.html" target="blank"> Consultar el precio del Diesel</a>
+
+ <a class="botonGas trabalTitles" href="https://weather.com/es-MX/tiempo/hoy/l/cf532c4cd3b6024ace8f1d987b2074016312730d64182f2bf2a581aba6d7b4a7" target="blank"> Consultar clima</a>
+
+ <a class="botonGas trabalTitles" href="https://trabal.odoo.com/freight/consulta" target="blank"> Consulta tu viaje </a> -->
+
+
+    </div>
+      <div class="menuColumna listaSecciones">
+        <p class="seccionesTitular"> SECCIONES </p>
+        <a class="border2" href="#nosotrosA"> Nosotros </a>
+        <a class="border2" href="#beneficiosA"> Beneficios </a>
+        <a class="border2" href="#terrestreA"> Transporte terrestre </a>
+        <a class="border2" href="#aereoA"> Transporte aéreo </a>
+        <a class="border2" href="#martitimoA"> Transporte marítimo </a>
+        <a class="border2" href="#aeroespacialA"> Transporte aereoespacial </a>
+        <a class="border2" href="#aduanasA"> Aduanas </a>
+        <a class="border2" href="#equipoA"> Equipo </a>
+        <a class="border2" href="#enviosA"> Envíos </a>
+        <a class="border2" href="#gestion4PLA"> Gestión 4PL </a>
+        <a class="border2" href="#recursosA"> Recursos Humanos </a>
+        <a class="border2" href="#mantenimientoA"> Mantenimiento </a>
+        <a class="border2" href="#monitoreoA"> Monitoreo </a>
+        <a class="border2" href="#infraestructuraA"> Infraestructura </a>
+        <a class="border2" href="#instalacionesA"> Instalaciones </a>
+        <a class="border2" href="#sostenibilidadA"> Sostenibilidad </a>
+      </div>
+
+    </div>
+
+
+
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="contactoBotones" style="z-index: 30000;">
+    <div class="contactoBoton1">
+        <a class="contactoImg whats"  href="" target="_blank">  </a>
+        <!---<div class="contactoTira contactoTexto" href="https://wa.me/528008212759"> <p>Contactar</p> </div>---->
+    </div>
+
+    <div class="contactoBoton2">
+        <a class="contactoImg trabajo" href="" target="_blank">  </a>
+        <!---<div class="contactoTira contactoTexto"> <p>Bolsa de Trabajo</p> </div>---->
+    </div>
+
+
+  </div>
+
+
+    <div class="introContenedor">
+      <div class="introPleca introPlecaBig" id="pleca">
+        <div class="introPlecaInterna"></div>
+      </div>
+      <div class="introArriba">
+          <!--<div class="introMenu introMenuOpacidad" id="menu">
+            <p class="introTexto">Menú</p>
+            <div class="introHamburguesa"></div>
+          </div>--->
+          <div class="introLogo introBig introOpaco" id="logo"></div>
+      </div>
+          <div class="introFoto fotoBajo" id="foto">
+<div class="somosContenedor" id="nosotrosA">
+
+
+     <div class="somosExplicaciones">
+       <div class="somosTitlesBB" id="titleBB">
+         ¿Quiénes somos?
+       </div>
+       <div class="somosTextitos">
+          <!-- se adaptó el texto para coincidir con la descripción completa proporcionada por el cliente -->
+          <p class="somosSubtitles" id="somosSubtitles">
+            En Beeconnecting somos una empresa especializada en administración logística, orientada a ofrecer soluciones integrales con altos estándares de calidad, eficiencia y confiabilidad. 
+          </p>
+
+          <p class="somosTexto" id="somosText1">
+            Nos distinguimos por nuestra experiencia, conocimiento del mercado y capacidad para diseñar estrategias personalizadas que responden a las necesidades específicas de cada cliente. Gestionamos de manera integral la cadena de suministro, asumiendo la planificación, coordinación e implementación de sistemas eficientes para el traslado de mercancías desde su origen hasta el destino final.
+          </p>
+          <p class="somosTexto" id="somosText2">
+            Nuestro compromiso con la excelencia operativa nos permite generar confianza, establecer relaciones sólidas a nivel nacional y ofrecer soluciones competitivas que superan consistentemente las expectativas del mercado.
+          </p>
+          <!-- nota: se conservaron dos párrafos para mantener animaciones y estructura existentes -->
+       </div>
+     </div>
+   </div>
+          </div>
+    </div>
+
+   
+
+
+
+
+
+
+
+
+  <div class="visionesContenedorWrapper">
+
+    <div class="visionesPleca">
+      <div class="visionesPlecaBrillo visionesBrillo"> </div>
+      <div class="visionesCircle" id="visCircle">
+        <img src="./imgs/vision/circle.svg">
+      </div>
+    </div>
+
+
+
+    <div class="visionesContenedor">
+      <div class="visionApartados visionesMax">
+        <p class="visionesTitles" id="visMis">Misión</p>
+        <p class="visionAbajo visionesTexto" id="visMisText">
+          Somos una empresa líder en soluciones logísticas, distinguiéndonos por anticipar y atender de manera estratégica las necesidades de nuestros clientes, ofreciendo servicios respaldados por los más altos estándares de calidad. Impulsamos la excelencia operativa en cada etapa de nuestros procesos para asegurar transportes seguros, eficientes y confiables. Nuestro propósito es construir alianzas sólidas y sostenibles, fundamentadas en la confianza, el profesionalismo y una cultura de mejora continua.
+        </p>
+      </div>
+
+      <div class="visionApartados" style="align-items: center">
+        <div class="visionTrailerDeco" id="visTrailerDeco">
+          <img src="./imgs/vision/trailers.png">
+        </div>
+        <div class="visionApartados visionesMax">
+           <p class="visionesTitles visionesMa" id="visVis"> Visión </p>
+           <p class="visionAbajo visionesTexto maxSegundo" id="visVisText">
+             Ser la empresa líder en transporte y logística, reconocida por la calidad de nuestros servicios, la generación constante de valor y nuestro firme compromiso con la rentabilidad, la innovación y la sostenibilidad, impulsando soluciones eficientes que fortalezcan el crecimiento de nuestros clientes y el desarrollo responsable del entorno.
+           </p>
+        </div>
+      </div>
+
+      <div class="visionApartados visionesMax">
+        <p class="visionesTitles" id="visVal">Valores</p>
+        <div class="visionAbajo visionValores visionesSubtitles" id="visValores">
+            <p class="visionValor" id="val1"> Honestidad</p>
+            <p class="visionValor" id="val2"> Lealtad</p>
+            <p class="visionValor" id="val3"> Respeto</p>
+            <p class="visionValor" id="val4"> Trabajo en equipo</p>
+            <p class="visionValor" id="val5"> Atención Inmediata</p>
+            <p class="visionValor" id="val6"> Seguridad</p>
+            <p class="visionValor" id="val7"> Razonamiento y lógica de transporte</p>
+            <p class="visionValor" id="val8"> Vanguardia</p>
+            <p class="visionValor" id="val9"> Proactividad</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="cober">
+
+    <div class="coberPleca">
+      <div class="coberPlecaBrillo coberBrillo">
+      </div>
+    </div>
+
+    <div class="coberMapa">
+      <div class="coberMapaBase" id="coberMapaBase"></div>
+      <div class="coberMapaPlaces" id="coberMapaPlaces"></div>
+    </div>
+    <div class="coberExplicacion">
+      <p class="coberTitles" id="coberTitles">
+        Cobertura
+      </p>
+      <p class="coberTexto" id="coberTexto">
+        En Beeconnecting, ofrecemos soluciones logísticas personalizadas que integran procesos eficientes en cada etapa de la operación, incluyendo flete, acarreo, arrastre y descarga en toda la República, garantizando coordinación precisa, tiempos óptimos y un servicio confiable orientado a las necesidades específicas de cada cliente.
+      </p>
+    </div>
+  </div>
+
+
+
+
+  <div class="clientes">
+    <div class="clientesCircle" id="clientesCircle">
+      <img src="./imgs/clientes/clientesCircle.svg">
+    </div>
+    <div class="clientesPleca">
+      <div class="clientesPlecaBrillo clientesBrillo"> </div>
+    </div>
+    <div class="clientesTop clientesTexto" id="clientesPrimerTexto">
+      Atendemos clientes de diversos sectores industriales a nivel nacional, estableciendo relaciones estratégicas basadas en el entendimiento profundo de sus objetivos y retos operativos. Nuestro enfoque está orientado a garantizar soluciones de transporte seguras, confiables y alineadas a sus necesidades específicas. Nos posicionamos como un socio logístico de confianza, comprometido con impulsar su crecimiento mediante una planeación operativa eficiente, experiencia especializada y una ejecución orientada a resultados.
+    </div>
+    <div class="clientesBottom">
+      <p class="clientesTitles" id="clientesValor">Nuestro <span style="color: #FCC400;">Valor</span> Agregado</p>
+      <p class="clientesTextBottom clientesTexto" id="clientesValorTexto">
+        Somos un equipo de profesionales enfocados en construir relaciones de confianza, integrando la calidad en cada fase del proceso, desde la planeación hasta la facturación. Ofrecemos soluciones logísticas que optimizan la cadena de suministro a nivel nacional, respaldadas por un servicio al cliente ágil, personalizado y basado en comunicación proactiva, transparencia y flexibilidad.
+      </p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="beneficios" id="beneficiosA">
+    <div class="beneficiosPleca">
+      <div class="beneficiosPlecaBrillo beneficiosBrillo">
+      </div>
+    </div>
+    <div class="beneficiosTitular beneficiosTitles">
+         <p id="beneTitles">Beneficios al asociarse con</p> <div class="beneficiosLogo" id="beneLogo"></div>
+    </div>
+
+    <div class="beneficiosExplicacion">
+      <div class="beneficiosApartado">
+        <div class="beneficiosSubtema">
+          <p class="beneficiosSubtitlesWrapper beneficiosSubtitles" id="ser1">Servicio Personalizado</p>
+          <p class="beneficiosTexto" id="ser1Text">Nos dedicamos a identificar y responder a las necesidades específicas de cada cliente.</p>
+        </div>
+        <div class="beneficiosSubtema">
+          <p class="beneficiosSubtitlesWrapper beneficiosSubtitles" id="ser2">Servicios integrales y complementarios</p>
+          <p class="beneficiosTexto" id="ser2Text">Proporcionamos desde la reacción de solicitud hasta la verificación del cumplimiento del operador.</p>
+        </div>
+        <div class="beneficiosSubtema">
+          <p class="beneficiosSubtitlesWrapper beneficiosSubtitles" id="ser3">Tecnología de vanguardia</p>
+          <p class="beneficiosTexto" id="ser3Text">Utilizamos tecnología actual, lo que facilita la generación de informes comprensibles y útiles, brindando una visión precisa de las operaciones y el rendimiento.</p>
+        </div>
+        <div class="beneficiosSubtema">
+          <p class="beneficiosSubtitlesWrapper beneficiosSubtitles" id="ser4">Equipo de soporte dedicado</p>
+          <p class="beneficiosTexto" id="ser4Text">Disponible para nuestros clientes en cualquier momento, proporcionando una comunicación proactiva y una rápida reacción ante cualquier solicitud.</p>
+        </div>
+      </div>
+
+      <div class="beneficiosApartado">
+        
+        <div class="beneficiosSubtema">
+          <p class="beneficiosSubtitlesWrapper beneficiosSubtitles" id="ser6">Informes detallados e información empresarial</p>
+          <p class="beneficiosTexto" id="ser6Text">La tecnología de vanguardia que utilizamos facilita la generación de informes comprensibles y útiles, brindando una visión clara de las operaciones y del rendimiento.</p>
+        </div>
+        <div class="beneficiosSubtema">
+          <p class="beneficiosSubtitlesWrapper beneficiosSubtitles" id="ser7">Transparencia en el pago</p>
+          <p class="beneficiosTexto" id="ser7Text">De tarifas establecidas al 100%</p>
+        </div>
+         <div class="beneficiosSubtema">
+          <p class="beneficiosSubtitlesWrapper beneficiosSubtitles" id="ser8">Integración e intercambio de datos</p>
+          <p class="beneficiosTexto" id="ser8Text">Nos aseguramos de mantener a nuestros clientes informados en todo momento, permitiéndonos generar confianza y seguridad en nuestra relación con ellos.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <div class="terrestre" id="terrestreA">
+    <div class="terrestrePleca">
+      <div class="terrestrePlecaBrillo terrestreBrillo"></div>
+    </div>
+    <div class="terrestreTop">
+
+      <div class="terrestreTitles" id="terrestreTitle">
+
+        <p> Transportación <br> <span style="color: #FCC400;"> Terrestre </span> </p>
+
+      </div>
+
+      <div class="terrestreTextoTop terrestreTexto" id="terrestreTexto">
+         <p>Nuestros servicios de transporte internacional nos permiten conectar estratégicamente el continente americano, desde Canadá hasta Panamá, ofreciendo soluciones logísticas integrales y coordinadas. </p>
+
+         <p>Nos posicionamos como un socio clave en la optimización de la cadena de suministro, actuando como consolidador y desconsolidador de carga, con servicios especializados de almacenaje para diversos tipos de mercancía. Garantizamos un flujo eficiente de productos, asegurando control, seguridad y disponibilidad en cada etapa del proceso.</p>
+      </div>
+
+      <div class="terrestreTextoBottom" id="terrestreContenido" >
+        <div class="terrestreSubtitles"> Nuestra cartera de servicios especializada permite ofrecerte</div>
+        <div class="terrestreGrandesServicios">
+
+          <div class="terrestreApartado">
+            <div class="terrestreServicio">
+              <div class="terrestreBolita"></div>
+              <p class="terrestreTexto"> Servicios de carga completa (FTL) para garantizar un transporte directo y eficiente, reduciendo costos. </p>
+            </div>
+            <div class="terrestreServicio">
+              <div class="terrestreBolita"></div>
+              <p class="terrestreTexto"> Nuestros servicios de última milla que le garantiza una entrega segura y puntual. </p>
+            </div>
+            <div class="terrestreServicio">
+              <div class="terrestreBolita"></div>
+              <p class="terrestreTexto"> Equipo especializado para el manejo de mercancías peligrosas y transporte en plataformas. </p>
+            </div>
+
+          </div>
+
+
+
+          <div class="terrestreApartado">
+            <div class="terrestreServicio">
+              <div class="terrestreBolita"></div>
+              <p class="terrestreTexto"> Transporte refrigerado con monitoreo de temperatura y reportes detallados. </p>
+            </div>
+            <div class="terrestreServicio">
+              <div class="terrestreBolita"></div>
+              <p class="terrestreTexto"> Servicio Drop & Hook y carga en vivo permiten una mayor flexibilidad y rapidez en el manejo de sus envíos.</p>
+            </div>
+            <div class="terrestreServicio">
+              <div class="terrestreBolita"></div>
+              <p class="terrestreTexto"> Soluciones intermodales y trabajamos con los principales operadores ferroviarios para ofrecer tarifas competitivas y tiempos de tránsito óptimos. </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="terrestreBottomImagen" id="transTrailer">
+      <img src="./imgs/transporte/transporteTrailers.png">
+    </div>
+    <div class="terrestreSpace"></div>
+  </div>
+
+
+
+
+
+
+
+  <div class="enfoque" style="z-index: 2;">
+    <div class="enfoquePleca">
+      <div class="enfoqueTrailer" id="enfoqueTrailer"></div>
+    </div>
+
+    <div class="enfoqueContenido">
+      <p class="enfoqueTitles" id="enfoqueTitle"> Enfoque <br> <span>Estratégico</span> </p>
+
+      <div class="enfoqueTextos enfoqueTexto">
+        <p id="enfoqueText1">Trabajamos de la mano con empresas de distintos sectores, aprovechando tecnología de punta para impulsar su crecimiento y optimizar resultados. Nuestro enfoque en soluciones personalizadas nos permite ofrecer alternativas flexibles que generan confianza y eficiencia en toda la cadena de suministro.</p>
+
+        <p class="enfoqueSubtitles" id="enfoqueSubtitle">Nos consolidamos como un socio estratégico, capaz de responder ágilmente a las demandas cambiantes del mercado y respaldar con certeza los compromisos de nuestros clientes.  </p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="sistyestra">
+  <div class="sistemas">
+
+    <div class="sistemasInformacion">
+      <p class="sistemasTitles" id="sistTitle1">
+          Sistemas de <span style="color:#FFCB00">Información</span> y soluciones de visibilidad y rastreo
+      </p>
+
+      <div class="sistemasPuntos">
+        <div class="sistemasPuntuales" id="sistPunto1">
+          <div class="sistemasBola"></div>
+          <p class="sistemasTexto">Visibilidad punto a punto de sus embarques</p>
+        </div>
+        <div class="sistemasPuntuales" id="sistPunto2">
+          <div class="sistemasBola"></div>
+          <p class="sistemasTexto">Acceso en línea a reportes y estatus</p>
+        </div>
+        <div class="sistemasPuntuales" id="sistPunto3">
+          <div class="sistemasBola"></div>
+          <p class="sistemasTexto">Interfaces con carriers / clientes</p>
+        </div>
+      </div>
+
+      <p class="sistemasTitles extraPad" id="sistTitle2">
+        Calidad y Seguridad
+      </p>
+
+      <p class="sistemasTexto" id="sistTextCalidad">
+        Ofrecemos un completo valor añadido que se adapta a requisitos de seguridad específicos, garantizando protección conforme a estándares y regulaciones globales.
+      </p>
+
+    </div>
+
+    <div class="sistemasImagenes">
+      <div class="sistemasFotoGrande" id="sistFotoGrande"></div>
+      <div class="sistemasFotoChica" id="sistFotoChica"></div>
+    </div>
+
+  </div>
+
+  <div class="sistemasEstrategia">
+
+    <p class="sistemasTitles" id="sistTitleEstrategia"> Nuestra <br> estrategia <br> incluye</p>
+
+    <div class="dobleCol">
+    <div class="sistemasPuntos">
+      <div class="sistemasPuntuales" id="sistPunto5">
+        <div class="sistemasBola"></div>
+        <p class="sistemasTexto">Evaluación de riesgos </p>
+      </div>
+      <div class="sistemasPuntuales" id="sistPunto6">
+        <div class="sistemasBola"></div>
+        <p class="sistemasTexto">Empleados y conductores</p>
+      </div>
+    </div>
+
+    <div class="sistemasPuntos">
+      <div class="sistemasPuntuales" id="sistPunto7">
+        <div class="sistemasBola"></div>
+        <p class="sistemasTexto">Mapa nacional de riesgos</p>
+      </div>
+      <div class="sistemasPuntuales" id="sistPunto8">
+        <div class="sistemasBola"></div>
+        <p class="sistemasTexto">Certificación de nuestros carriers</p>
+      </div>
+    </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+  <div class="aereo" id="aereoA">
+    <!-- <div class="aereoPleca">
+      <div class="aereoAvion" id="avion"></div>
+    </div> -->
+    <div class="aereoText1">
+      <p class="aereoTitles" id="title1"> Transporte <br> Aéreo </p>
+      <div class="aereoTextito">
+        <p class="aereoTexto" id="text1"> Beeconnecting proporciona transporte aéreo confiable que impulsa el cumplimiento de sus objetivos comerciales.  </p>
+        <p class="aereoTexto" id="text2"> Gracias a nuestros sistemas integrados y al uso de tecnología avanzada basada en datos, diseñamos soluciones estratégicas que enfrentan desafíos logísticos y ofrecen una ventaja competitiva eficiente, segura y precisa.</p>
+      </div>
+      <div class="aereoPleca">
+        <div class="aereoAvion" id="avion"></div>
+      </div>
+    </div>
+
+    <div class="aereoText2">
+      <p class="aereoTitles" id="title2"> Servicios </p>
+      <div class="aereoTextito">
+        <div class="aereoTexto">
+
+        <div class="aereoPuntos direccion" id="puntos">
+
+          <div class="col aereoPuntos">
+            <div class="aereoPuntuales" id="punto1">
+              <div class="aereoBola"></div>
+              <p class="aereoText"> Soluciones para envíos urgentes críticos </p>
+            </div>
+
+             <div class="aereoPuntuales" id="punto2">
+              <div class="aereoBola"></div>
+              <p class="aereoText"> Productos Marítimo-aéreo </p>
+            </div>
+
+             <div class="aereoPuntuales" id="punto3">
+              <div class="aereoBola"></div>
+              <p class="aereoText"> Vuelos chárter </p>
+            </div>
+          </div>
+
+          <div class="col aereoPuntos">
+
+             <div class="aereoPuntuales" id="punto4">
+              <div class="aereoBola"></div>
+              <p class="aereoText"> Productos con tiempo definido </p>
+            </div>
+
+
+             <div class="aereoPuntuales" id="punto5">
+              <div class="aereoBola"></div>
+              <p class="aereoText">   Seguros de mercancías (NACOR)</p>
+            </div>
+
+
+            <div class="aereoPuntuales" id="punto6">
+              <div class="aereoBola"></div>
+              <p class="aereoText">   Trámites aduaneros</p>
+            </div>
+
+          </div>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+    <div class="mar" id="martitimoA">
+
+    <div class="marPleca">
+      <div class="marCircle"></div>
+    </div>
+
+    <div class="marContenido">
+      <div class="marTitles marEspecial">
+        <p> Transporte <span style="color:#FFCB00" text-align:right> Marítimo </span>
+        </p>
+      </div>
+      <p class="marTexto">
+        Impulsamos soluciones de transporte marítimo versátiles que combinan tecnología avanzada, una plataforma inteligente y la experiencia de especialistas en logística global. Esto le permite identificar y seleccionar rutas óptimas para sus envíos, priorizando: rapidez, confiabilidad, eficiencia y asegurando alternativas estratégicas que maximizan el desempeño de su cadena de suministro.
+      </p>
+
+      <p class="marTitles">
+        Almacenamiento y Distribución
+      </p>
+      <p class="marTexto">
+        Nos consolidamos como referente en logística, distinguiéndonos por anticipar y atender de manera estratégica las necesidades de nuestros clientes. Nos comprometemos a mantener los más altos estándares de la industria, garantizando transportes seguros, eficientes y confiables, los cuales construyan relaciones sólidas basadas en beneficio mutuo y confianza.
+      </p>
+
+      <div class="marServicios">
+        <div class="marSerColumna">
+          <div class="marTitles extraPadAbajo">
+            Servicios
+          </div>
+
+          <div class="marPuntual">
+            <div class="marBola"></div>
+            <p class="marSubtitles">
+              Solución de transporte: contenedores carga parcial
+            </p>
+          </div>
+
+           <div class="marPuntual">
+            <div class="marBola"></div>
+            <p class="marSubtitles">
+              Logística de proyectos
+            </p>
+          </div>
+
+          <div class="marPuntual">
+            <div class="marBola"></div>
+            <p class="marSubtitles">
+              Mercancías refrigeradas – Reefer
+            </p>
+          </div>
+
+          <div class="marPuntual">
+            <div class="marBola"></div>
+            <p class="marSubtitles">
+              Trámites aduaneros
+            </p>
+          </div>
+
+        </div>
+
+
+       <div class="marSerColumna extraPad">
+          <div class="marPuntual">
+            <div class="marBola"></div>
+            <p class="marSubtitles">
+               Transporte de mercancías peligrosas (IMO)
+            </p>
+          </div>
+
+         <div class="marPuntual">
+            <div class="marBola"></div>
+            <p class="marSubtitles">
+               Transporte de carga a granel
+            </p>
+          </div>
+
+         <div class="marPuntual">
+            <div class="marBola"></div>
+            <p class="marSubtitles">
+               Transporte Roll-On/Roll-Off (Ro-Ro)
+            </p>
+          </div>
+
+         <div class="marPuntual">
+            <div class="marBola"></div>
+            <p class="marSubtitles">
+               Servicios de consolidación de carga
+            </p>
+          </div>
+
+          <div class="marPuntual">
+            <div class="marBola"></div>
+            <p class="marSubtitles">
+              Alquiler de contenedores especializados
+            </p>
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+  </div>
+
+  </div>
+
+
+
+
+
+  <div class="espacial" id="aeroespacialA">
+    <div class="espacialPleca">
+    </div>
+    <div class="espacialContenido">
+      <p class="espacialTitles" id="espacialTitles">
+        Transporte Aeroespacial
+      </p>
+      <div class="espacialExplicacion">
+        <p class="espacialTexto" id="espacialTexto1">En Beeconnecting combinamos tecnología de punta y conocimientos certificados en logística aeroespacial para optimizar su cadena de suministro y minimizar tiempos de inactividad.  </p>
+
+        <p class="espacialTexto" id="espacialTexto2">Brindamos soluciones integrales para fabricantes, arrendadoras, aerolíneas, proveedores de catering y compañías de mantenimiento, reparación y reacondicionamiento, asegurando eficiencia, precisión y confiabilidad en cada operación.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="pere">
+    <div class="perePleca">
+      <div class="pereAvion" id="pereAvion"></div>
+      <div class="pereCircle" id="pereCircle"></div>
+    </div>
+
+    <div class="pereContenido" id="pereContenido">
+
+      <div class="pereParrafo">
+          <p class="pereTexto" id="pereTexto">
+       Garantizar frescura y calidad en cada envío es el núcleo de nuestra logística especializada en perecederos. Los consumidores exigen productos con sabor, textura y nutrientes óptimos durante todo el año, y nuestro reto es mantener esas características a lo largo de toda la cadena de suministro, incluso en trayectos prolongados. 
+        </p>
+        <p class="pereSubtitles" id="pereSubtitles">
+            Gracias a nuestro manejo especializado, transporte refrigerado y entrega puntual, Beeconnecting asegura eficiencia, excelencia y tranquilidad en la logística de productos frescos.
+        </p>
+      </div>
+
+       <div class="pereImagen"> </div>
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <div class="adu" id="aduanasA">
+    <div class="aduPleca">
+      <div class="aduPlecaBrillo aduBrillo"></div>s
+    </div>
+    <div class="aduContenido">
+      <div class="aduEspacioFoto">
+        <div class="aduFoto" id="aduFoto"> </div>
+      </div>
+
+    <div class="aduParrafo">
+      <p class="aduTitles" id="aduTitles"> Aduanas </p>
+      <p class="aduTexto" id="aduTexto" style="z-index: 4;">Con el aumento de barreras comerciales y requisitos aduaneros, la gestión de la cadena de suministro se vuelve más compleja, es aquí donde nuestros profesionales hacen valer su especialidad y con ello ponemos a su servicio la experiencia y asesoría necesarias en trámites aduaneros, con personal, licencias y permisos para el despacho de aduanas de sus envíos en plazos acordados. </p>
+    </div>
+
+
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+  <div class="des">
+    <div class="desPleca" style="z-index: 1;">    </div>
+
+    <div class="desPrimer">
+      <div class="desIcon" id="desIcon"></div>
+      <div class="desSubtitles" id="desSubtitles">
+        Nuestra red global de especialistas garantiza cumplimiento en sus operaciones y da soluciones al flujo de sus mercancías.
+      </div>
+    </div>
+
+    <div class="desResto">
+      <div class="desTitles">
+        Despacho aduanero operativo
+      </div>
+      <div class="desTexto">
+       Frente a la creciente complejidad de la cadena de suministro por barreras comerciales y regulaciones aduaneras, Beeconnecting ofrece experiencia y asesoría especializada para garantizar despachos ágiles y seguros. Nuestro equipo de profesionales, respaldado por licencias y permisos adecuados, gestiona los trámites aduaneros de sus envíos cumpliendo los plazos acordados, asegurando eficiencia, cumplimiento normativo y tranquilidad en cada operación.
+      </div>
+    </div>
+
+
+
+    <div class="desResto">
+      <div class="desTitles">
+        Gestión comercial
+      </div>
+      <div class="desTexto">
+Maximizamos eficiencia y minimizamos riesgos en operaciones transfronterizas, ofreciendo información estratégica sobre acuerdos de libre comercio, aranceles internacionales y posibles reembolsos. A través de nuestras auditorías aduaneras y sistemas de control, identificamos oportunidades de ahorro ocultas, optimizando costos y fortaleciendo la rentabilidad de cada transacción.
+      </div>
+    </div>
+
+
+
+    <div class="desResto">
+      <div class="desTitles">
+        Conformidad aduanera
+      </div>
+      <div class="desTexto">
+        Garantizamos el cumplimiento de normativas complejas mediante un enfoque proactivo y especializado. Analizamos su cadena de suministro, realizamos auditorías post-importación y diseñamos procesos preventivos que minimizan riesgos de recargos y sanciones, asegurando eficiencia y cumplimiento en cada operación.
+      </div>
+    </div>
+
+  </div>
+
+
+
+<!-- -----Aqui me quede con la informacion del archivo que me enviaron -->
+
+
+
+  <div class="equipo" id="equipoA">
+    <div class="equipoPleca">
+
+    </div>
+    <div class="equipoNuestro">
+      <div class="equipoTrailers" id="equipoTrailers"></div>
+      <p class="equipoTitles" id="equipoTitles">
+        Nuestro <br> Equipo
+      </p>
+    </div>
+
+    <div class="equipoMuchoTexto">
+      <p class="equipoTexto equipoPadTop alice" id="mucho" >
+        Satisfechos con el desarrollo eficaz de nuestra empresa y apoyados por el gran equipo de trabajo con el que contamos hemos extendido nuestra lista de productos para ofrecer a los clientes activos y cautivar a nuevos.
+      </p>
+
+
+      <div class="equipoTipos">
+
+        <div class="equipoColumna" style="z-index: 20;">
+
+
+             <p class="equipoSubtitles" >
+                Tipos de <br> aliados
+             </p>
+
+
+            <div class="equipoColumnaPuntos" style="z-index: 9;">
+
+            <div class="equipoCaja">
+              <div class="equipoBola"></div>
+              <p class="equipoTexto"> Cajas secas 18, 40, 48 y 53 pies </p>
+            </div>
+
+             <div class="equipoCaja">
+              <div class="equipoBola"></div>
+              <p class="equipoTexto"> Pipas: </p>
+            </div>
+
+            <div class="equipoCaja cajaEspecial">
+              <div class="equipoBola"></div>
+              <p class="equipoTexto"> Acero inoxidable, </p>
+            </div>
+
+            <div class="equipoCaja cajaEspecial">
+              <div class="equipoBola"></div>
+              <p class="equipoTexto"> Acero al carbón antiderrapante, </p>
+            </div>
+
+            <div class="equipoCaja cajaEspecial">
+              <div class="equipoBola"></div>
+              <p class="equipoTexto"> Acero para ácidos de 40 y 53 pies, antirrayante y antiadherente </p>
+            </div>
+
+            <div class="equipoCaja">
+              <div class="equipoBola"></div>
+              <p class="equipoTexto"> Tolvas: </p>
+            </div>
+
+            <div class="equipoCaja cajaEspecial">
+              <div class="equipoBola"></div>
+              <p class="equipoTexto"> Volteos, </p>
+            </div>
+
+
+             <div class="equipoCaja cajaEspecial">
+              <div class="equipoBola"></div>
+              <p class="equipoTexto"> Presurizados (cementera), </p>
+            </div>
+
+            <div class="equipoCaja cajaEspecial">
+              <div class="equipoBola"></div>
+              <p class="equipoTexto"> Chichones de gravedad </p>
+            </div>
+
+               <div class="equipoCaja">
+              <div class="equipoBola"></div>
+              <p class="equipoTexto"> Planas de 40 y 53 pies </p>
+            </div>
+
+
+               <div class="equipoCaja">
+              <div class="equipoBola"></div>
+              <p class="equipoTexto"> Low boy </p>
+            </div>
+
+
+               <div class="equipoCaja">
+              <div class="equipoBola"></div>
+              <p class="equipoTexto"> Porta contenedores </p>
+            </div>
+
+
+            <div class="equipoCaja">
+              <div class="equipoBola"></div>
+              <p class="equipoTexto"> Madrinas, Nodrizas o Autotransportadoras </p>
+            </div>
+
+
+          </div>
+
+
+
+
+
+        </div>
+
+
+        <div class="equipoColumna">
+             <p class="equipoSubtitles">
+                Tipos de <br> transporte
+             </p>
+
+          <div class="equipoColumnaPuntos">
+
+
+              <div class="equipoCaja">
+              <div class="equipoBola"></div>
+              <p class="equipoTexto"> Tractor full </p>
+            </div>
+
+            <div class="equipoCaja">
+              <div class="equipoBola"></div>
+              <p class="equipoTexto"> Tractor Sencillo </p>
+            </div>
+
+           <div class="equipoCaja">
+              <div class="equipoBola"></div>
+              <p class="equipoTexto"> Torton </p>
+            </div>
+
+            <div class="equipoCaja">
+              <div class="equipoBola"></div>
+              <p class="equipoTexto"> Rabón </p>
+            </div>
+
+            <div class="equipoCaja">
+              <div class="equipoBola"></div>
+              <p class="equipoTexto"> Camionetas 1.5, 3.5 toneladas </p>
+            </div>
+
+           <div class="equipoCaja">
+              <div class="equipoBola"></div>
+              <p class="equipoTexto"> Coches de última milla </p>
+            </div>
+
+            <div class="equipoCaja">
+              <div class="equipoBola"></div>
+              <p class="equipoTexto"> Volteos </p>
+            </div>
+
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+
+
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+  <div class="montana" >
+
+      <div class="montanaFondo">
+        <div class="montanaParaFondo" id="montanaFondo"></div>
+        <div class="montanaPleca" style="z-index: 2;">
+          <div class="montanaCircle" id="montanaCircle"> </div>
+        </div>
+      </div>
+
+  </div>
+
+
+
+
+
+
+  <div class="envios" style="" id="enviosA">
+    <div class="enviosHeader">
+      <div class="enviosHeaderFondo" id="enviosHeaderFondo"></div>
+      <div class="enviosPleca"></div>
+      <div class="enviosCircle"></div>
+    </div>
+
+    <div class="enviosContenido">
+      <div class="enviosPrimer">
+        <p class="enviosTitles">
+          Seguimiento y <br> manejo de envíos
+        </p>
+        <p class="enviosTexto primerPadding">
+          En Beeconneting desarrollamos una solución tecnológica que le brinda control integral sobre sus envíos. Nuestra plataforma le permite gestionar la logística de acuerdo con sus prioridades operativas, optimizando tiempos y recursos para que pueda enfocarse en la estrategia y el crecimiento de su negocio.
+Además, contará con visibilidad en tiempo real del estado de cada envío mediante sus propios números de seguimiento, lo que le permitirá ofrecer a sus clientes información precisa y estimaciones confiables de entrega. Con esta solución, simplificamos y fortalecemos su operación logística de manera eficiente y estratégica.
+        </p>
+      </div>
+
+
+      <div class="enviosSegundo">
+         <div class="enviosColumna">
+          <p class="enviosTitles">
+            Seguro de Carga
+           </p>
+           <p class="enviosTexto">
+             Comprometidos con el crecimiento sostenible de su empresa, hemos invertido tiempo, talento y recursos en el diseño de soluciones que protegen estratégicamente su inversión. Como su socio asegurador, le brindamos asesoramiento especializado y esquemas con rendimientos altamente competitivos.
+Desarrollamos soluciones sectoriales y operativas a la medida de sus necesidades, cerrando brechas de cobertura mediante una estrategia sólida y efectiva de salida al mercado, asegurando así una protección integral alineada con sus objetivos de negocio.
+           </p>
+        </div>
+        <div class="enviosColumna enviosPadding2">
+          <p class="enviosTitles enviosTop">
+            Integración de datos
+          </p>
+          <p class="enviosTexto">
+             Impulsamos la optimización de su negocio a través de una integración estratégica y segura de datos. Nuestros especialistas diseñan e implementan soluciones que transforman la información generada por su operación en valor accionable para la toma de decisiones.
+Apoyados en tecnología de vanguardia, habilitamos una comunicación directa, confiable y eficiente entre sistemas, garantizando flujos de datos seguros y continuos. Esto se traduce en una gestión más integrada, ágil y unificada de su cadena de suministro, fortaleciendo el desempeño operativo y la competitividad de su empresa.
+           </p>
+        </div>
+      </div>
+
+
+      <div class="enviosSegundo">
+        <div class="enviosColumna">
+        <p class="enviosTitles">
+          Soluciones de Optimización de Procesos
+        </p>
+        </div>
+        <div class="enviosColumna">
+        <p class="enviosTexto">
+          Aceleramos la transformación de su operación mediante un portafolio estratégico de soluciones digitales diseñadas para potenciar su negocio. Nuestro equipo de expertos analiza sus desafíos y objetivos específicos para identificar e implementar las herramientas de cadena de suministro que mejor se alineen con sus necesidades.
+A través de un enfoque consultivo y personalizado, presentamos soluciones innovadoras que fortalecen la eficiencia operativa, optimizan procesos y generan ventajas competitivas sostenibles.
+        </p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+  <div class="cadena" id="gestion4PLA">
+
+    <div class="cadenaPleca">
+      <div class="cadenaTrailer" id="cadenaTrailer"></div>
+    </div>
+
+    <div class="cadenaPrimer">
+      <p class="cadenaTitles"> Gestión 4 PL de la <br> Cadena de Suministro </p>
+    </div>
+
+    <div class="cadenaSegundo">
+        <p class="cadenaTexto cadenaText1"> En un entorno marcado por el incremento de barreras comerciales y mayores exigencias regulatorias, la gestión de la cadena de suministro demanda un enfoque experto y altamente especializado.
+Ponemos a su disposición un equipo de profesionales con amplia experiencia en materia aduanera, respaldado por las licencias, permisos y acreditaciones necesarias para operar con rigor y cumplimiento normativo. A través de una asesoría estratégica y una ejecución precisa, garantizamos el despacho oportuno de sus envíos dentro de los plazos acordados, minimizando riesgos y asegurando la continuidad de su operación.
+ </p>
+        <div class="cadenaDiagrama" id="cadenaDiagrama"> </div>
+    </div>
+
+
+    <div class="cadenaTercero">
+      <p class="cadenaTitles"> Diseño y Consultoría </p>
+      <p class="cadenaTexto">
+        Impulsamos la generación de valor en su cadena de suministro a través de un diagnóstico estratégico y objetivo. En Beeconneting, realizamos un análisis integral que identifica oportunidades concretas de optimización, eficiencia y mejora continua.
+Con un enfoque imparcial y orientado a resultados, evaluamos cada componente de su operación para proponer acciones que fortalezcan su desempeño y competitividad. Independientemente de la industria en la que participe, nuestro equipo está preparado para acompañarlo con asesoría especializada y soluciones alineadas a sus objetivos de negocio.
+      </p>
+    </div>
+
+
+  </div>
+
+
+
+
+
+  <div class="tactico">
+    <div class="tacticoContenido">
+
+      <p class="tacticoTitles" id="tacticoTitles">
+        Servicios estratégicos y Tácticos
+      </p>
+
+      <div class="tacticoTextitos">
+
+           <div class="tacticoColumna">
+
+             <div class="tacticoCaja">
+              <div class="tacticoBola"></div>
+              <p class="tacticoTexto">
+                Alineación de las planificaciones de ventas y operaciones.
+              </p>
+            </div>
+
+            <div class="tacticoCaja">
+              <div class="tacticoBola"></div>
+              <p class="tacticoTexto">
+                Gestión de transportes e inventarios.
+              </p>
+            </div>
+
+            <div class="tacticoCaja">
+              <div class="tacticoBola"></div>
+              <p class="tacticoTexto">
+                Subcontratación y reingeniería de procesos.
+              </p>
+            </div>
+
+            <div class="tacticoCaja">
+              <div class="tacticoBola"></div>
+              <p class="tacticoTexto">
+                Fusiones en tránsito, gestión de pedidos de venta.
+              </p>
+            </div>
+
+
+          </div>
+
+
+        <div class="tacticoColumna">
+            <div class="tacticoCaja">
+              <div class="tacticoBola"></div>
+              <p class="tacticoTexto">
+                Optimización de la planificación del transporte.
+              </p>
+            </div>
+
+          <div class="tacticoCaja">
+              <div class="tacticoBola"></div>
+              <p class="tacticoTexto">
+                Procesos eficaces de consolidación y «cross-docking».
+              </p>
+            </div>
+
+         </div>
+
+
+      </div>
+
+
+    </div>
+
+
+    <div class="tacticoEspacio">
+      <div class="tacticoImagen" id="tacticoImagen"></div>
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+  <div class="humanos" style="z-index: 2;" id="recursosA">
+    <div class="humanosPleca">
+      <div class="humanosSpaceImagen" id="humanosImagen"></div>
+    </div>
+
+    <p class="humanosTitles humanosPadding" id="humanosTitles">
+      Recursos Humanos
+    </p>
+    <p class="humanosTexto humanosPadding" id="humanosTexto">En Beeconnecting, la gestión estratégica del talento es un pilar fundamental para el cumplimiento de nuestros objetivos corporativos. El área de Recursos Humanos impulsa el desarrollo organizacional alineando capacidades, desempeño y cultura con la visión de crecimiento de la compañía. </p>
+
+      <p class="humanosSubtitles" id="humanosSubtitles">A través de políticas orientadas al reconocimiento, la motivación y el fortalecimiento profesional, promovemos un entorno de alto desempeño donde cada colaborador se siente valorado y comprometido con la excelencia. Nuestro enfoque prioriza la atracción, desarrollo y retención de talento, asegurando que cada integrante alcance su máximo potencial y contribuya de manera sostenible a los resultados del negocio. </p>
+
+
+  </div>
+
+
+
+
+   <div class="capa">
+    <div class="capaPleca"> </div>
+    <p class="capaTitles" id="capaTitles">
+      Capacitación
+    </p>
+
+    <div class="capaTextual">
+      <p class="capaTexto" id="capaTexto1">La seguridad en la industria del transporte de carga exige una gestión estratégica y preventiva orientada a minimizar riesgos, evitar accidentes y reducir pérdidas operativas. En este contexto, la capacitación continua del personal se posiciona como un eje prioritario para garantizar estándares elevados de desempeño y cumplimiento.</p>
+
+        <p class="capaTexto" id="capaTexto2">Implementamos programas integrales de formación en seguridad vial, conducción defensiva, mantenimiento preventivo, manejo seguro de carga y uso adecuado de equipos de protección personal, fortaleciendo las competencias necesarias para enfrentar desafíos como la fatiga y el estrés propios de la operación.
+Este enfoque no solo optimiza resultados y disminuye incidentes, sino que también consolida una cultura organizacional basada en la seguridad, el respeto al medio ambiente y la responsabilidad social. Complementamos estas acciones con procesos estratégicos de reclutamiento y evaluación constante del clima laboral, promoviendo un entorno seguro, inclusivo y alineado con los valores corporativos.
+</p>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <div class="preven">
+    <div class="prevenPleca">
+      <div class="prevenImagen" id="prevenImagen"></div>
+    </div>
+
+    <p class="prevenTitles" id="prevenTitles">
+      Mantenimiento <br> Preventivo
+    </p>
+    <p class="prevenTexto prevenPadding" id="prevenTexto">
+      En Beeconneting, la gestión del talento constituye un eje estratégico para el logro sostenible de nuestros objetivos corporativos. A través del área de Recursos Humanos, impulsamos una cultura organizacional orientada al alto desempeño, alineando las capacidades del equipo con la visión y prioridades del negocio.
+Nuestro enfoque integra desarrollo profesional, reconocimiento y bienestar, fortaleciendo el compromiso y la motivación de cada colaborador. Fomentamos un entorno donde el talento es valorado como un activo clave, promoviendo que cada integrante alcance su máximo potencial y contribuya de manera directa al crecimiento y consolidación de la organización.
+
+    </p>
+
+  </div>
+
+
+
+
+
+
+
+  <div class="predi">
+    <div class="prediPleca">
+    </div>
+
+    <div class="prediContenido">
+
+      <p class="prediTitles" id="prediTitles">Mantenimiento Predictivo<p>
+      <div class="prediTextual" id="prediTextual">
+        <p class="prediTexto"> Impulsamos una gestión proactiva y estratégica de nuestra flota mediante el uso avanzado de analítica de datos e inteligencia artificial. A través de parámetros específicos definidos para cada unidad, anticipamos requerimientos de servicio y optimizamos los ciclos de mantenimiento. <p>
+        <p class="prediTexto"> Nuestra herramienta basada en I.A. permite prever intervenciones antes de que se conviertan en incidencias, reduciendo la depreciación de los activos y maximizando la eficiencia operativa. Este enfoque preventivo fortalece la disponibilidad de la flota, optimiza costos y garantiza continuidad en el servicio. </p>
+      </div>
+    </div>
+
+    <div class="prediEspacio">
+      <div class="prediImagen" id="prediImagen"></div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+  <div class="mante" id="mantenimientoA">
+
+    <div class="mantePleca"></div>
+
+    <div class="mantePrimer">
+      <p class="manteTitles" id="manteTitles">
+        Planificamos tus rutinas de mantenimiento
+      </p>
+      <p class="manteTexto" id="manteTexto1">Nuestra estrategia de planificación se materializa de manera efectiva mediante la definición y programación de rutinas estratégicas. Este enfoque estructurado garantiza que cada acción esté alineada con los objetivos organizacionales, optimizando recursos y fortaleciendo la ejecución operativa, la cual se basa en: 
+</p>
+    </div>
+
+    <div class="manteSegundo">
+      <p class="manteSubtitles">
+        Sistema
+      </p>
+      <p class="manteTexto especialA">Los sistemas eléctricos, de frenado, de suspensión, entre otros, son verificados y ajustados en periodos dedicados a su mantenimiento.
+</p>
+
+       <p class="manteSubtitles">
+        Vehículo
+      </p>
+      <p class="manteTexto especialA">Cada vehículo de la flota es sometido a un chequeo general realizado de acuerdo con la necesidad de la unidad o con el cronograma.
+</p>
+
+       <p class="manteSubtitles">
+         Viaje
+      </p>
+      <p class="manteTexto especialA">El mantenimiento es realizado siempre que un vehículo regresa de un viaje englobando la inspección de los lubricantes y del combustible.
+</p>
+    
+
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+<div class="moni" id="monitoreoA">
+    <div class="moniFondo" id="moniFondo"></div>
+    <div class="moniPleca">
+    </div>
+
+    <div class="moniContenido" style="z-index: 6;">
+      <p class="moniTitles" id="moniTitles"> Monitoreo</p>
+      <p class="moniSubtitles" id="moniSubtitles">En nuestro modelo de gestión de flotas, combinamos experiencia operativa con tecnología avanzada para garantizar rendimiento óptimo y seguridad integral. Si bien la supervisión visual sigue siendo esencial, ciertos riesgos y necesidades solo pueden anticiparse mediante herramientas especializadas, como los sistemas de rastreo satelital. </p>
+
+       <p class="moniTexto" id="moniTexto"> Este enfoque integral nos permite detectar oportunidades de mejora, prevenir incidencias y optimizar la eficiencia de cada unidad de la flota, asegurando operaciones confiables y sostenibles. </p>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="infra" id="infraestructuraA">
+    <div class="infraPleca"></div>
+
+    <div class="infraMain">
+      <div class="infraPrimer">
+        <p class="infraTitles" id="infraTitles"> Infraestructura </p>
+        <p class="infraTexto infraEspecial">
+          Garantizamos soluciones logísticas de transporte terrestre diseñadas para optimizar el traslado de insumos, materias primas y productos terminados, asegurando eficiencia y confiabilidad en cada operación. Nuestro enfoque se centra en una planificación estratégica de la demanda, lo que nos permite asignar la flota y los recursos más adecuados para cubrir sus necesidades específicas.
+
+Contamos con un portafolio de unidades suficientes para cumplir con cualquier programa de carga, respaldado por un pull de operadores capacitados y certificados.
+        </p>
+      </div>
+
+      <div class="infraSecond">
+        <div class="infraCaja">
+          <div class="infraBola"></div>
+          <p class="infraTexto infraPadding infraEspecial">
+             Nuestro personal domina tanto transporte de carga convencional como modalidad full, con sólida experiencia en normas de seguridad, regulaciones de tránsito y técnicas de conducción eficiente.
+          </p>
+        </div>
+
+        <div class="infraCaja">
+          <div class="infraBola"></div>
+          <p class="infraTexto infraPadding infraEspecial">
+          Garantizando operaciones seguras y alineadas con los estándares de la industria.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="infraNumeralia">
+      <div class="infraImgNumeralia" id="infraNumeralia"></div>
+    </div>
+
+
+    <div class="infraTrailers" id="infraTrailers">
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+  <div class="insta" id="instalacionesA">
+    <div class="instaPleca">
+      <div class="instaLugar" id="instaLugar"> </div>
+    </div>
+    <div class="instaPrimer" id="instaPrimer">
+       <p class="instaTitles"> Instalaciones </p>
+      <p class="instaTexto"> Nuestras instalaciones están diseñadas para optimizar el almacenamiento, fraccionamiento y consolidación de cargas, garantizando un manejo seguro y eficiente de sus productos. Más que un centro de almacenamiento, funcionan como un núcleo de coordinación operativa que facilita el intercambio intermodal y asegura una distribución precisa hacia los destinos finales. </p>
+    </div>
+
+    <div class="instaSecond" id="instaSecond">
+      <p class="instaTexto ancho one">
+        Contamos con procesos integrales para la recepción de mercancías, seguimiento en tiempo real de ubicación y estado de los productos, y coordinación efectiva de cada movimiento logístico. 
+      </p>
+      <p class="instaSubtitles ancho">
+        Todo esto se desarrolla en un entorno seguro y organizado, donde la eficiencia operativa y la fluidez en el flujo de productos son prioridades estratégicas.
+      </p>
+    </div>
+
+
+    <div class="instaSucu">
+      <div class="instaImagen" id="instaImagen"></div>
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <div class="sosten" style="z-index: 3;" id="sostenibilidadA">
+      <div class="sostenBlackMatter"> </div>
+    <div class="sostenFondo" id="sostenFondo"></div>
+
+    <div class="sostenPleca"></div>
+
+    <p class="sostenTitles" id="sostenTitles">
+      Sostenibilidad
+    </p>
+    <p class="sostenTexto" id="sostenTexto">
+      En Beeconnecting, estamos comprometidos con un modelo de transporte responsable y alineado con los objetivos del Acuerdo de París, asumiendo un rol activo en la descarbonización de la cadena de suministro. Nuestra estrategia hacia un futuro sin emisiones se sustenta en cuatro pilares fundamentales: visibilidad, prevención, reducción y compensación de CO₂.
+      <br>
+      <br>
+      Este compromiso se traduce en acciones concretas que minimizan nuestro impacto ambiental: implementamos herramientas avanzadas de análisis de datos, desarrollamos programas de formación para fortalecer la conciencia ecológica de nuestros equipos y promovemos la transición hacia medios de transporte más sostenibles. Además, optimizamos rutas logísticas, incorporamos biocombustibles y energías renovables, y fomentamos prácticas operativas que impulsan la eficiencia energética.
+      <br>
+      <br>
+      Con estas iniciativas, Beeconnecting no solo reduce su huella ambiental, sino que establece un estándar de sostenibilidad en cada fase de la operación logística, avanzando de manera consistente hacia un futuro más limpio y responsable.
+    </p>
+
+    <div class="sostenCaja" id="sostenCaja">
+      <div class="sostenBola"></div>
+      <p class="sostenSubtitles">Estamos dedicados a contribuir a un futuro más sostenible a través de acciones concretas en cada fase de la cadena de suministro.</p>
+    </div>
+
+  </div>
+
+
+
+  <div class="footer" style="z-index: 10;" id="footer">
+    <div class="footerPleca">
+      <div class="footerLogo"> </div>
+    </div>
+
+    <div class="footerRedes">
+      <a class="footerRed red1" href=""> </a>
+      <a class="footerRed red2" href=""> </a>
+      <a class="footerRed red3" href=""> </a>
+      <a class="footerRed red4" href=""> </a>
+      <a class="footerRed red5" href=""> </a>
+    </div>
+
+    <div class="footerPaddingCorreo footerTexto"> <a href=""> </a></div>
+    <p class="footerTexto footerLetraMayor" style="color:#e3b203"> Informes </p>
+
+    <div class="footerInformes">
+      <div class="footerDatos">
+        <a class="footerTexto" href="" target="_blank"> +</a>
+        <a class="footerTexto" href="" target="_blank"> </a>
+        <div class="footerSeparador"> </div>
+        <a class="footerTexto" href=""></a>
+      </div>
+      <div class="footerBandera"></div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <script src="granMenu.js"></script>
+
+  <script src="somos.js"></script>
+  <script src="visiones.js"></script>
+  <script src="cober.js"></script>
+  <script src="clientes.js"></script>
+  <script src="beneficios.js"></script>
+  <script src="terrestre.js"></script>
+  <script src="enfoque.js"></script>
+  <script src="sistemas.js"></script>
+  <script src="aereo.js"></script>
+  <script src="mar.js"></script>
+  <script src="espacial.js"></script>
+  <script src="pere.js"></script>
+  <script src="aduanas.js"></script>
+  <script src="despacho.js"></script>
+  <script src="equipo.js"></script>
+  <script src="montana.js"></script>
+  <script src="envios.js"></script>
+  <script src="cadena.js"></script>
+  <script src="tactico.js"></script>
+  <script src="humanos.js"></script>
+  <script src="capa.js"></script>
+  <script src="preven.js"></script>
+  <script src="predi.js"></script>
+  <script src="mante.js"></script>
+  <script src="moni.js"></script>
+  <script src="infra.js"></script>
+  <script src="insta.js"></script>
+  <script src="sosten.js"></script>
+  <script src="footer.js"></script>
+  <script src="contacto.js"></script>
+
+    <script>
+
+    window.addEventListener('load', () => {
+
+    const intro = document.getElementById('logo');
+    const menu = document.getElementById('menu');
+    const pleca = document.getElementById('pleca');
+    const foto = document.getElementById('foto');
+    const navs = document.getElementById('inicioNavbar');
+
+   setTimeout(() => {
+      intro.classList.remove('introOpaco');
+    }, 0);
+
+    setTimeout(() => {
+      intro.classList.remove('introBig');
+    }, 2000);
+
+    setTimeout(() => {
+      menu.classList.remove('introMenuOpacidad');
+    }, 2400);
+
+
+    setTimeout(() => {
+      pleca.classList.remove('introPlecaBig');
+    }, 2600);
+
+    setTimeout(() => {
+      pleca.classList.add('clipas');
+    }, 2600);
+
+
+    setTimeout(() => {
+      foto.classList.remove('fotoBajo');
+    }, 2900);
+
+
+setTimeout(() => {
+    navs.classList.add('muestra'); // agrega clase para hacerla visible
+  }, 3000); // 3000 ms = 3 segundos
+
+  });
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+User-agent: *
+Allow: /
+
+# Crawlers lentos - reduce carga
+Crawl-delay: 10
+
+# Bloquear bots problemáticos
+User-agent: AhrefsBot
+Crawl-delay: 30
+
+User-agent: SemrushBot
+Crawl-delay: 30
+
+User-agent: MJ12bot
+Crawl-delay: 30
+
+User-agent: DotBot
+Crawl-delay: 30
+
+# Permitir crawlers principales sin restricción
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Si tienes archivos que no necesitan indexarse
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.pdf$
+
+Sitemap: http://trabal.mx/sitemap.xml

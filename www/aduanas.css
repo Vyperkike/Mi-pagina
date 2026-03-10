@@ -1,0 +1,191 @@
+ .aduTitles{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        font-size:49px;
+        line-height:53px;
+        color:black;
+        position: relative;
+      }
+
+      .aduSubtitles{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-size:17px;
+        line-height:26px;
+        color:black;
+      }
+      
+      .aduTexto{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size:17px;
+        line-height:26px;
+        color:white;
+        text-align:justify;
+        color:black;
+        position:relative;
+      }
+      
+      .adu{
+        display:flex;
+        flex-direction:column;
+        width:100%;
+        padding-top:150px;
+        background-color:white;
+        position:relative;
+      }
+      
+      .aduPleca{
+        display:flex;
+        position:absolute;
+        top:-140px;
+        width:100%;
+        height:291px;
+        /*border:9px solid orange;*/
+        background-image:url("./imgs/aduanas/aduanasPleca.svg");
+        background-position:center;
+        background-size:cover;
+        background-repeat:no-repeat;
+      }
+
+    .aduPlecaBrillo{
+      display:flex;
+      height:100%;
+      width:100%;
+      /*background-color:green;*/
+      background-image:url("./imgs/aduanas/aduanasBrillo.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position:relative;
+      mask-image: linear-gradient(to right, transparent 0%, white 30%, white 70%, transparent 100%);
+      mask-repeat: no-repeat;
+      mask-size: 800px 100%;
+    }
+    
+    .aduBrillo{
+      animation: moverClip 2s linear infinite;
+    }
+    
+    @keyframes moverClip {    
+      0% {
+        mask-position: -800px 0;
+      }
+      100% {
+        mask-position: calc(100% + 800px) 0;
+      }   
+    }
+      
+      .aduContenido{
+        display:flex;
+        /*background-color:lightblue;*/
+        width:100%;
+        justify-content: space-between;
+        padding:0px 274px 0px 149px;
+        position:relative;
+        gap:50px;
+      }
+      
+      .aduEspacioFoto{
+        display:flex;
+        width:428px;
+        position:relative;
+        /*background-color:green;*/
+      }
+      
+      .aduFoto{
+        display:flex;
+        /*background-color:brown;*/
+        position:relative;
+        width:428px;
+        height:428px;
+        top:-210px;
+        background-image:url("./imgs/aduanas/aduanas.png");
+        background-position:center;
+        background-size:cover;
+        background-repeat:no-repeat;
+        opacity: 0.8;
+      }
+      
+      .aduParrafo{
+        display:flex;
+        flex-direction:column;
+        width:100%;
+        max-width:550px;
+        gap:60px;
+        padding-top: 57px;
+        /*background-color:grey;*/
+        position:relative;
+      }
+      
+    
+      .espacio{
+        display:flex;
+        height:320px;
+      }
+
+      @media(max-width:1000px){
+
+        .adu{
+          /*background-color: aqua;*/
+        }
+
+        .aduContenido{
+          /*background-color: beige;*/
+          padding: 0 40px 0 40px;
+        }
+
+        .aduEspacioFoto{
+          /*background-color: brown;*/
+          width: 300px;
+          top: 0;
+        }
+
+        .aduFoto{
+          width: 300px;
+          height:300px;
+          /*background-color: aqua;*/
+          bottom: 130px;
+          top: auto;
+        }
+
+        .aduParrafo{
+          /*background-color: palevioletred;*/
+          padding-top: 0;
+          gap: 20px;
+        }
+        
+      }
+
+      @media(max-width:600px){
+            .aduContenido{
+               flex-direction: column;
+               padding-bottom: 50px;
+            }
+
+            .aduEspacioFoto{
+                 height: 200px;
+            }
+
+            .aduFoto{
+              /*border: 5px solid orange;*/
+              bottom: 90px;
+            }
+
+            .aduTitles{
+              font-size: 38px;
+              line-height: 40px;
+            }
+
+            .aduTexto{
+              font-size: 15px;
+              line-height: 21px;
+            }
+
+      }

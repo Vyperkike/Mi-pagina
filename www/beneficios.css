@@ -1,0 +1,193 @@
+.beneficiosTitles{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        font-size:44px;
+        line-height:48px;
+        text-align:center;
+        position:relative;
+        white-space: normal; /* permite saltos de línea */
+      }
+      
+      .beneficiosSubtitles{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-size:21px;
+        line-height:26px;
+        position:relative;
+        z-index: 3;
+      }
+      
+      .beneficiosTexto{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size:17px;
+        line-height:21px;
+        z-index: 5;
+      }
+      
+      .beneficios{
+        display:flex;
+        flex-direction:column;
+        background-color:white;
+        width:100%;
+        position:relative;
+      }
+      
+      .beneficiosPleca{
+        display:flex;
+        height:250.5px;
+        width:100%;
+        /*background-color:pink;*/
+        background-image:url("./imgs/beneficios/beneficiosPleca.svg");
+        background-position:center;
+        background-size:cover;
+        background-repeat:no-repeat;
+      }
+      
+     .beneficiosPlecaBrillo{
+      display:flex;
+      height:100%;
+      width:100%;
+      background-color:green;
+      background-image:url("./imgs/beneficios/beneficiosPlecaShiny.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      mask-image: linear-gradient(to right, transparent 0%, white 30%, white 70%, transparent 100%);
+      mask-repeat: no-repeat;
+      mask-size: 800px 100%;
+    }
+    
+    .beneficiosBrillo{
+      animation: beneficiosMoverClip 2s linear infinite;
+    }
+    
+    @keyframes beneficiosMoverClip {    
+      0% {
+        mask-position: -800px 0;
+      }
+      100% {
+        mask-position: calc(100% + 800px) 0;
+      }   
+    }
+      
+      .beneficiosTitular{
+        display:flex;
+        justify-content:center;
+        gap:30px;
+        align-items:center;
+        position:relative;
+      }
+      
+      .beneficiosLogo{
+        display:flex;
+        width:278px;
+        height:105px;
+        background-image:url("./imgs/beneficios/beneficiosLogo.png");
+        background-repeat:no-repeat;
+        /* background-position:center; */
+        background-size:contain;
+        /* background-size:cover; */
+        /*background-color:black;*/
+        padding:0 ;
+        position:relative;
+      }
+      
+      .beneficiosExplicacion{
+        display:flex;
+        padding:77px 128px 10px 128px;
+        /*background-color:lightblue;*/
+        gap:98px;
+        width:100%;
+      }
+      
+      .beneficiosApartado{
+        display:flex;
+        width:100%;
+        flex-direction:column;
+        flex-direction:column;
+        gap:52px;
+        /*background-color:beige;*/
+      }
+      
+      .beneficiosSubtema{
+        display:flex;
+        flex-direction:column;
+        gap:24.2px;
+        position:relative;
+      }
+      
+      .beneficiosSubtitlesWrapper{
+        display:flex;
+        width:fit-content;
+        padding:10px 18px;
+        background-color:#FEE209;
+        border-radius:8px;
+        position:relative;
+      }
+      
+      .spacio{
+        height:1200px;
+      }
+      
+      .beneficiosTitular p{
+        position:relative;
+      }
+
+      @media(max-width:1000px){
+
+        .beneficiosExplicacion{
+           /*background-color: green;*/ 
+           padding-left:40px;
+           padding-right: 40px;
+           gap:50px;
+        }
+
+        .beneficiosTitular{
+          flex-direction: column;
+          gap:10px;
+        }
+
+      }
+
+      @media(max-width:600px){
+          .beneficiosExplicacion{
+            flex-direction: column;
+            gap:0;
+            gap:40px;
+            padding: 60px 40px 0 40px;
+          }
+
+          .beneficiosTitles{
+            font-size: 40px;
+            line-height: 42px;
+          }
+
+          .beneficiosTexto{
+            font-size: 15px;
+            line-height: 19px;
+          }
+
+          .beneficiosSubtitles{
+            font-size: 17px;
+            line-height: 20px;
+          }
+
+          .beneficiosSubtitlesWrapper{
+            padding: 10px 13px;
+          }
+
+          .beneficiosApartado{
+            gap:40px;
+          }
+
+          .beneficiosSubtema{
+            gap:19px;
+          }
+      }

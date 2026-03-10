@@ -1,0 +1,227 @@
+ .somosSubtitles{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-size:21px;
+        line-height:26px;
+        text-align: justify;
+        position:relative;
+      }
+      
+      .somosTexto{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size:19px;
+        line-height:24px;
+        text-align: justify;
+        position:relative;
+        color: white;
+      }
+      
+      .somosTitlesBB{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        font-size:75px;
+        max-width:315px;
+        padding-top:110px;
+        position: relative;
+        color: white;
+      }
+      
+      .somosContenedor{
+        display:flex;
+        width:100%;
+        position:relative;
+        flex-direction:column;
+        padding-top:113px;
+         margin-top: 80px; /* lo empuja hacia abajo */
+        /* z-index: 19000; */
+        /*background-color:blue;*/
+      }
+      
+      
+      .somosExplicaciones{
+        display:flex;
+        position:relative;
+        flex-direction:column;
+        padding:0 248px 0px 248px;
+        gap:74px;
+        background-color:black;
+        line-height:65px;
+      }
+      
+      .somosTextitos{
+        display:flex;
+        flex-direction:column;
+        gap:35px;
+        padding-left:105px;
+        color: white;
+        /*background-color:purple;*/
+      }
+      
+      
+      
+    .plecaSomos{
+       display:flex;
+       position:absolute;
+       top:0;
+       height:329px;
+       width:100%;
+       /*background-color:grey;*/
+      opacity:1;
+       z-index:9000;
+       background-image:url("./imgs/HEXAGONOS.png");
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: cover;
+    }
+    
+    .plecaBrilloSomos{
+      display:flex;
+      height:329px;
+      width:100%;
+      /*background-color:green;*/
+      background-image:url("./imgs/HEXAGONOS.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position:relative;
+      mask-image: linear-gradient(to right, transparent 0%, white 30%, white 70%, transparent 100%);
+      mask-repeat: no-repeat;
+      mask-size: 800px 100%;
+      /*-webkit-mask-image: linear-gradient(to right, transparent 0%, white 30%, white 70%, transparent 100%)
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-size: 800px 100%;*/
+    }
+    
+    .brillo{
+      animation: moverClipB 2s linear infinite;
+    }
+    
+    @keyframes moverClipB {
+      
+      0% {
+        mask-position: -800px 0;
+        /*-webkit-mask-position: -800px 0;*/
+      }
+      100% {
+        mask-position: calc(100% + 800px) 0;
+        /*-webkit-mask-position: calc(100% + 800px) 0;*/
+      }
+      
+    }
+    
+    .circulo{
+      display:flex;
+      bottom:0;
+      right:126px;
+      position:absolute;
+      height:320px;
+      width:323.1001px;
+      /*background-color:lightblue;*/
+      background-image:url("./imgs/trailercircular.png");
+      background-position: center;
+      background-size: cover;
+      border-radius:0 700px 700px 0;
+      overflow:hidden;
+    }
+    
+    
+    .trailer{
+      display:flex;
+      position:relative;
+      height:298px;
+      width:256.6267px;
+    }
+    
+    .moverTrailer{
+      animation: moverTrailer 3.5s linear infinite;
+      /*background-color:purple;*/
+      background-image:url("");
+      background-position: center;
+      background-size: cover;
+    }
+    
+      @keyframes moverTrailer {
+  0% {
+    left: 305px;
+    opacity: 0;
+  }
+
+  20% {
+    left:0;
+    opacity: 1;
+  }
+
+  100% {
+    left:0; /* se mantiene quieto aquí */
+  }
+    }
+
+          
+      @media(max-width:1200px){
+          .somosExplicaciones{
+            padding-left:40px;
+            padding-right: 40px;
+          }
+
+          .somosTextitos{
+            padding-left: 0;
+          }
+
+      }
+
+            @media(max-width:860px){
+
+.somosTitlesBB{
+  padding-top: 160px;
+}
+
+          .circulo{
+             top:-70px;
+             right: 20px;
+          }
+
+            }
+
+                
+      @media(max-width:600px){
+
+
+          .somosTitlesBB{
+            font-size: 40px;
+            line-height: 40px;
+            padding-top:210px;
+            max-width:815px;
+            /*background-color: green;*/
+          }
+
+          .somosTexto, .somosSubtitles{
+            font-size: 16px;
+            line-height: 20px;
+          }
+
+          .circulo{
+            right:10px;
+            top: 0;
+          }
+
+          .somosExplicaciones{
+            padding-left:30px;
+            padding-right: 30px;
+            gap:40px;
+          }
+
+          .circulo{
+            right: 20px;
+          }
+
+          .somosTextitos{
+            gap:30px;
+          }
+      }

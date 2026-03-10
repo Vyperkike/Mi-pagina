@@ -1,0 +1,203 @@
+ .aereoTitles{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        font-size:49px;
+        line-height:53px;
+        z-index: 10;
+      }
+
+      .aereoSubtitles{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-size:17px;
+        z-index: 10;
+      }
+      
+      .aereoTexto{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size:17px;
+        line-height:23px;
+        position:relative;
+        z-index: 10;
+      }
+      
+      .aereo{
+        display:flex;
+        background-color:white;
+        padding:273px 136px 0 136px;
+        gap:99px;
+        position:relative;
+      }
+      
+      .aereoPleca{
+        display:flex;
+        /*border:1px solid black;*/
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:370px;
+        background-image:url("./imgs/aereo/aereoPleca.svg");
+        background-position:center;
+        background-size:cover;
+        background-repeat: no-repeat;
+      }
+      
+      .aereoAvion{
+        display:flex;
+        position:absolute;
+        width:460px;
+        height:368px;
+        bottom:-380px;
+        /* left: 500px; */
+        right:0;
+        /*background-color:black;*/
+        background-image:url("./imgs/aereo/aereoAvionb.png");
+        background-position:center;
+        background-size:contain;
+        background-repeat: no-repeat;
+      }
+      
+      .aereoText1{
+        display:flex;
+        width:55%;
+        flex-direction:column;
+        gap:62px;
+        /*background-color:lightblue;*/
+      }
+      
+      .aereoTextito{
+        display:flex;
+        flex-direction:column;
+        gap:21px;
+        /*background-color:pink;*/
+      }
+      
+      .aereoText2{
+        display:flex;
+        width:45%;
+        flex-direction:column;
+        padding-top:181px;
+        gap:62px;
+        /*background-color:orange;*/
+      }
+      
+      .aereoPuntos{
+        display:flex;
+        width:fit-content;
+        flex-direction:column;
+        gap:21px;
+        /*background-color:red;*/
+      }
+      
+      .aereoPuntuales{
+        display:flex;
+        gap:22.6px;
+        width:fit-content;
+        /*background-color:green;*/
+        position:relative;
+      }
+      
+      .aereoBola{
+        display:flex;
+        background-color:#FEE209;
+        border-radius:50px;
+        width:25px;
+        height:25px;
+        flex-shrink:0;
+      }
+      
+      .space{
+        height:1200px;
+      }
+
+      .direccion{
+        flex-direction: column;
+      }
+
+      @media(max-width:1000px){
+        
+        .aereoPleca{
+          /*border: 4px solid green;*/
+        }
+        .aereo{
+          /*border: 4px solid purple;*/
+          flex-direction: column;
+          padding:260px 40px 0 40px;
+          gap: 50px;
+        }
+
+        .aereoText1{
+          width: 100%;
+          padding-top: 10px;
+          padding-bottom: 0;
+          /*background-color: green;*/
+          gap:25px;
+        }
+
+        .aereoText2{
+          /*background-color: aqua;*/
+          width: 100%;
+          padding: 0;
+          gap: 25px;
+        }
+
+        .aereoAvion{
+          top:80px;
+          right:20px;
+          /*background-color: pink;*/
+        }
+
+        .direccion{
+          flex-direction: row;
+        }
+        
+      }
+
+      @media(max-width:600px){
+         .aereoAvion{
+            left: 50%;
+            transform: translateX(-50%);
+            width:calc(460px * 0.77);
+            height:calc(138px * 0.77);
+          }
+
+          .aereo{
+            gap:30px;
+            /*background-color: aqua;*/
+          }
+
+          .aereoText1, .aereoText2{
+            gap:20px;
+          }
+
+          .aereoTitles{
+            font-size: 38px;
+            line-height: 40px;
+          }
+
+          .aereoTexto{
+            font-size: 15px;
+            line-height: 21px;
+          }
+
+          .aereoPuntos{
+            gap:10px;
+            /*background-color: pink;*/
+          }
+          
+          .direccion{
+            flex-direction: column;
+          }
+          
+
+
+
+      }
