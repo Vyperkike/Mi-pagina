@@ -154,39 +154,87 @@
   }
 }
 
-/* ============ TABLET - 601px a 1024px ============ */
-@media(min-width: 601px) and (max-width: 1024px) {
+/* ============ TABLET - 601px a 900px (Samsung Galaxy Tab A9) ============ */
+@media(min-width: 601px) and (max-width: 900px) {
   
   .somosTitlesBB {
-    font-size: clamp(clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 4vw, 32px), 6vw, clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 50px));
-    max-width: clamp(250px, 60vw, 300px);
-    padding-top: clamp(clamp(clamp(10px, 1.8vw, 25px), 4vw, 70px), 8vh, clamp(clamp(10px, 2vw, 30px), 5vw, 100px));
-    line-height: clamp(clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 4vw, 32px), 7vw, clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 3.5vw, 60px));
+    font-size: clamp(28px, 6vw, 45px);
+    max-width: 100%;
+    padding-top: clamp(80px, 10vw, 120px);
+    line-height: clamp(32px, 7vw, 55px);
   }
 
   .somosTexto, .somosSubtitles {
-    font-size: clamp(13px, 1.8vw, clamp(clamp(10px, 1.2vw, 12px), 1.6vw, 16px));
-    line-height: clamp(clamp(clamp(11px, 1.4vw, 14px), 1.8vw, 18px), 2.3vw, clamp(clamp(11px, 1.4vw, 14px), 2.5vw, 22px));
+    font-size: clamp(14px, 1.8vw, 17px);
+    line-height: 1.7;
+  }
+
+  .somosContenedor {
+    padding-top: clamp(60px, 8vw, 100px);
+    margin-top: clamp(40px, 6vw, 70px);
   }
 
   .somosExplicaciones {
-    padding: 0 clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 5vw, clamp(clamp(10px, 2vw, 30px), 5vw, 100px));
-    gap: clamp(clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 35px), 5vw, clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 3.5vw, 60px));
-    line-height: clamp(clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 35px), 5vw, 55px);
+    padding: 0 clamp(25px, 5vw, 60px);
+    gap: clamp(40px, 6vw, 70px);
+    line-height: 1.8;
   }
 
   .somosTextitos {
-    gap: clamp(clamp(clamp(11px, 1.4vw, 14px), 1.8vw, 18px), 3vw, clamp(10px, 2vw, 30px));
-    padding-left: clamp(0px, 3vw, clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 50px));
+    gap: clamp(25px, 4vw, 45px);
+    padding-left: 0;
   }
 
   .circulo {
-    top: clamp(-clamp(clamp(10px, 2vw, 30px), 5vw, 100px), -8vh, -clamp(clamp(10px, 1.8vw, 25px), 4vw, 70px));
-    right: clamp(10px, 3vw, clamp(10px, 2vw, 30px));
+    top: auto;
+    bottom: clamp(0px, -5vw, 20px);
+    right: clamp(15px, 4vw, 40px);
+    height: clamp(200px, 25vw, 280px);
+    width: clamp(200px, 25vw, 280px);
   }
 
   .plecaSomos, .plecaBrilloSomos {
-    height: clamp(clamp(clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 4vw, 80px), 12vw, 180px), 25vh, 300px);
+    height: clamp(200px, 25vw, 300px);
+  }
+
+  .plecaBrilloSomos {
+    mask-size: clamp(300px, 50vw, 500px) 100%;
+    -webkit-mask-size: clamp(300px, 50vw, 500px) 100%;
+  }
+}
+
+/* ============ TABLET GRANDE - 901px a 1024px ============ */
+@media(min-width: 901px) and (max-width: 1024px) {
+  
+  .somosTitlesBB {
+    font-size: clamp(32px, 6vw, 50px);
+    max-width: clamp(250px, 60vw, 300px);
+    padding-top: clamp(80px, 8vw, 110px);
+    line-height: clamp(32px, 7vw, 60px);
+  }
+
+  .somosTexto, .somosSubtitles {
+    font-size: clamp(13px, 1.8vw, 18px);
+    line-height: 1.75;
+  }
+
+  .somosExplicaciones {
+    padding: 0 clamp(20px, 5vw, 80px);
+    gap: clamp(35px, 5vw, 70px);
+  }
+
+  .somosTextitos {
+    gap: clamp(20px, 3vw, 40px);
+    padding-left: clamp(0px, 3vw, 50px);
+  }
+
+  .circulo {
+    top: clamp(-80px, -8vw, -50px);
+    right: clamp(10px, 3vw, 40px);
+  }
+
+  .plecaSomos, .plecaBrilloSomos {
+    height: clamp(200px, 25vw, 320px);
   }
 }
 

@@ -270,7 +270,50 @@
       }
       
 
-/* TABLET */
-@media(min-width: 601px) and (max-width: 1024px) {}
+/* TABLET - Samsung Galaxy Tab A9 y similares */
+@media(min-width: 601px) and (max-width: 900px) {
+  .visionesContenedor {
+    gap: clamp(50px, 8vw, 100px);
+    padding: 120px clamp(25px, 5vw, 60px) 80px clamp(25px, 5vw, 60px);
+    margin-top: 80px;
+  }
+
+  .visionesTitles {
+    font-size: clamp(32px, 6vw, 50px);
+    margin-bottom: clamp(20px, 3vw, 40px);
+  }
+
+  .visionesTexto {
+    font-size: clamp(14px, 2.2vw, 18px);
+    line-height: 1.7;
+  }
+
+  .visionApartados {
+    gap: clamp(30px, 5vw, 50px);
+  }
+
+  .visionValores {
+    gap: clamp(15px, 2.5vw, 25px);
+    row-gap: clamp(20px, 3.5vw, 30px);
+  }
+
+  .maxSegundo {
+    padding-right: 0;
+  }
+
+  .visionAbajo {
+    padding-left: 0;
+  }
+
+  .visionesCircle {
+    margin-right: 0;
+    margin-bottom: clamp(30px, 5vw, 50px);
+  }
+
+  .visionTrailerDeco {
+    display: none;
+  }
+}
+
 /* MOBILE */
 @media(max-width: 600px) {}
