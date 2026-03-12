@@ -34,7 +34,7 @@
       .beneficios{
         display:flex;
         flex-direction:column;
-        background-color:white;
+        background-color:black;
         width:100%;
         position:relative;
       }
@@ -127,7 +127,7 @@
         display:flex;
         width:fit-content;
         padding:10px clamp(clamp(11px, 1.4vw, 14px), 1.8vw, 18px);
-        background-color:#FEE209;
+        background-color:black;
         border-radius:8px;
         position:relative;
       }

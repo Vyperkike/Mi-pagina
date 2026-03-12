@@ -35,7 +35,7 @@
       .humanos{
         display:flex;
         width:100%;
-        background-color:white;
+        background-color:black;
         padding:0 156px 0 156px;
         gap:44px;
         position:relative;

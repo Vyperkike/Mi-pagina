@@ -30,7 +30,7 @@
       .espacial{
         display:flex;
         width:100%;
-        background-color:white;
+        background-color:black;
         flex-direction:column;
         position:relative;
       }

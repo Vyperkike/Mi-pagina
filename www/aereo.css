@@ -30,7 +30,7 @@
       
       .aereo{
         display:flex;
-        background-color:white;
+        background-color:black;
         padding:273px 136px 0 136px;
         gap:99px;
         position:relative;
@@ -107,7 +107,7 @@
       
       .aereoBola{
         display:flex;
-        background-color:#FEE209;
+        background-color:black;
         border-radius:clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 50px);
         width:clamp(10px, 1.8vw, 25px);
         height:clamp(10px, 1.8vw, 25px);

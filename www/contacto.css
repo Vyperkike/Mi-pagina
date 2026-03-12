@@ -78,7 +78,8 @@
 
 .contactoTira p{
     width: fit-content;
-    background-color:rgb(221, 221, 221);
+    background-color:black;
+    color: white;
     padding: clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px) 65px clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px) clamp(clamp(clamp(11px, 1.4vw, 14px), 1.8vw, 18px), 3.5vw, 28px);
     border-radius: clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px) 0 0 clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px);
 }
