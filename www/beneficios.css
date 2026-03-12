@@ -1,10 +1,10 @@
-.beneficiosTitles{
+﻿.beneficiosTitles{
         font-family: "Montserrat", sans-serif;
         font-optical-sizing: auto;
         font-weight: 800;
         font-style: normal;
         font-size:44px;
-        line-height:48px;
+        line-height:clamp(clamp(clamp(clamp(10px, 1.2vw, 12px), 1.6vw, 16px), 3vw, 24px), 5.5vw, 48px);
         text-align:center;
         position:relative;
         white-space: normal; /* permite saltos de línea */
@@ -15,7 +15,7 @@
         font-optical-sizing: auto;
         font-weight: 600;
         font-style: normal;
-        font-size:21px;
+        font-size:clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.2vw, 21px);
         line-height:26px;
         position:relative;
         z-index: 3;
@@ -27,7 +27,7 @@
         font-weight: 400;
         font-style: normal;
         font-size:17px;
-        line-height:21px;
+        line-height:clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.2vw, 21px);
         z-index: 5;
       }
       
@@ -80,7 +80,7 @@
       .beneficiosTitular{
         display:flex;
         justify-content:center;
-        gap:30px;
+        gap:clamp(10px, 2vw, 30px);
         align-items:center;
         position:relative;
       }
@@ -112,7 +112,7 @@
         width:100%;
         flex-direction:column;
         flex-direction:column;
-        gap:52px;
+        gap:clamp(clamp(clamp(clamp(11px, 1.4vw, 14px), 1.8vw, 18px), 3.5vw, 28px), 6vw, 52px);
         /*background-color:beige;*/
       }
       
@@ -126,7 +126,7 @@
       .beneficiosSubtitlesWrapper{
         display:flex;
         width:fit-content;
-        padding:10px 18px;
+        padding:10px clamp(clamp(11px, 1.4vw, 14px), 1.8vw, 18px);
         background-color:#FEE209;
         border-radius:8px;
         position:relative;
@@ -144,9 +144,9 @@
 
         .beneficiosExplicacion{
            /*background-color: green;*/ 
-           padding-left:40px;
-           padding-right: 40px;
-           gap:50px;
+           padding-left:clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
+           padding-right: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
+           gap:clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 50px);
         }
 
         .beneficiosTitular{
@@ -160,23 +160,23 @@
           .beneficiosExplicacion{
             flex-direction: column;
             gap:0;
-            gap:40px;
-            padding: 60px 40px 0 40px;
+            gap:clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
+            padding: clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 3.5vw, 60px) clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px) 0 clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
           }
 
           .beneficiosTitles{
-            font-size: 40px;
+            font-size: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
             line-height: 42px;
           }
 
           .beneficiosTexto{
-            font-size: 15px;
-            line-height: 19px;
+            font-size: clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px);
+            line-height: clamp(13px, 1.9vw, 19px);
           }
 
           .beneficiosSubtitles{
             font-size: 17px;
-            line-height: 20px;
+            line-height: clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px);
           }
 
           .beneficiosSubtitlesWrapper{
@@ -184,10 +184,15 @@
           }
 
           .beneficiosApartado{
-            gap:40px;
+            gap:clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
           }
 
           .beneficiosSubtema{
-            gap:19px;
+            gap:clamp(13px, 1.9vw, 19px);
           }
       }
+
+/* TABLET */
+@media(min-width: 601px) and (max-width: 1024px) {}
+/* MOBILE */
+@media(max-width: 600px) {}

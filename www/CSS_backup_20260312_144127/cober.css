@@ -1,0 +1,210 @@
+.coberTitles{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        font-size:56px;
+        line-height:26px;
+        position:relative;
+        color: white;
+      }
+      
+      .coberSubtitles{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-size:21px;
+        color: white;
+        line-height:26px;
+      }
+      
+      .coberTexto{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size:20px;
+        line-height:24px;
+        position:relative;
+        color: white;
+      }
+  
+      
+      .cober{
+        display:flex;
+        background-color:black;
+        padding:139px 65px 13px 71px;
+        gap:48.3px;
+        position:relative;
+        justify-content: center;
+      }
+      
+      .coberPleca{
+        display:flex;
+        /*border:1px solid white;*/
+        position:absolute;
+        height:267px;
+        width:100%;
+        top:0;
+        left:0;
+        background-image:url("./imgs/cober/HEXAGONOS.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      
+     .coberPlecaBrillo{
+      display:flex;
+      height:100%;
+      width:100%;
+      /*background-color:green;*/
+      background-image:url("./imgs/cober/HEXAGONOS.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position:relative;
+      /* mask-image: linear-gradient(to right, transparent 0%, white 30%, white 70%, transparent 100%);
+      mask-repeat: no-repeat;
+      mask-size: 800px 100%; */
+
+      filter: brightness(1.2); /* 1.0 es normal, >1 más brillante */
+     
+      /* Máscara con bordes difuminados */
+      mask-image: linear-gradient(to right, transparent 0%, white 30%, white 70%, transparent 100%);
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, white 30%, white 70%, transparent 100%)
+      mask-repeat: no-repeat;
+      -webkit-mask-repeat: no-repeat;
+      mask-size: 500px 100%;
+      -webkit-mask-size: 500px 100%;
+      animation: moverClip 2s linear infinite;
+    }
+    
+    .coberBrillo{
+      animation: coberMoverClip 2s linear infinite;
+    }
+
+    @keyframes coberMoverClip {    
+      0% {
+        mask-position: -800px 0;
+      }
+      100% {
+        mask-position: calc(100% + 800px) 0;
+      }   
+    }
+      
+      .coberMapa{
+        display:flex;
+        position:relative;
+        width:696px;
+        height:487px;
+        /*background-color:black;*/
+        flex-shrink:0;
+        z-index:1;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .coberMapaPlaces{
+        display:flex;
+        position:absolute;
+        top:0;
+        left:o;
+        width:100%;
+        height:100%;
+        /*border:1px solid white;*/
+        flex-shrink:0;
+        background-image:url("./imgs/cober/coberMapaPlaces.png");
+        background-size:cover;
+        background-position:center;
+        background-repeat:no-repeat;
+      }
+      
+       .coberMapaBase{
+        display:flex;
+        position:relative;
+        width:100%;
+        height:100%;
+        /*background-color:red;*/
+        flex-shrink:0;
+        background-image:url("./imgs/cober/coberMapa.png");
+        background-size:cover;
+        background-position:center;
+        background-repeat:no-repeat;
+      }
+      
+      .coberExplicacion{
+        display:flex;
+        flex-direction:column;
+        gap:38.5px;
+        width:100%;
+        max-width:500px;
+        padding-top:60px;
+        /*background-color:blue;*/
+        justify-content:center;
+        z-index:2;
+      }
+      
+      .spacio{
+        height:1200px;
+      }
+
+    @media(max-width:1100px){
+
+      .cober{
+        flex-direction: column;  
+        padding: 0;
+        /*background-color: pink;*/
+        gap:30px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .coberMapa{
+        margin-top: 150px;
+        height:auto;
+        width: 97%;           /* el ancho escala con la ventana */
+        aspect-ratio: 696 / 487;  /* la altura se calcula sola */
+        /*background: lightblue;*/
+      }
+
+      .coberExplicacion{
+        padding: 0 40px;
+        width: 100%;
+        max-width: 800px;
+        padding-bottom: 70px;
+      }
+
+
+
+    }
+
+    @media(max-width:600px){
+
+
+       .cober{
+        flex-direction: column;  
+        padding: 0;
+        padding-bottom: 20px;
+        /*background-color: pink;*/
+        gap:20px;
+      }
+
+      .coberExplicacion{
+        padding: 0 40px;
+        gap:20px;
+        width: 100%;
+        max-width: 600px;
+      }
+
+      .coberTitles{
+        font-size: 40px;
+      }
+
+      .coberTexto{
+        font-size: 15px;
+        line-height: 20.5px;
+      }
+      
+    }
+    

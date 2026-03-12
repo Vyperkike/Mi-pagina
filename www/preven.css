@@ -1,4 +1,4 @@
- .prevenTitles{
+﻿ .prevenTitles{
         font-family: "Montserrat", sans-serif;
         font-optical-sizing: auto;
         font-weight: 800;
@@ -24,7 +24,7 @@
         font-weight: 400;
         font-style: normal;
         font-size:17px;
-        line-height:24px;
+        line-height:clamp(clamp(clamp(10px, 1.2vw, 12px), 1.6vw, 16px), 3vw, 24px);
         text-align:justify;
         max-width: 900px;
         position: relative;
@@ -58,7 +58,7 @@
       .prevenImagen{
         display:flex;
         position:absolute;
-        top:50px;
+        top:clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 50px);
         right:132px;
         width:348px;
         height:348px;
@@ -71,7 +71,7 @@
       }
       
       .prevenPadding{
-        padding-left:70px;
+        padding-left:clamp(clamp(10px, 1.8vw, 25px), 4vw, 70px);
       }
 
 
@@ -79,12 +79,12 @@
 
       .preven{
           /*border: 3px solid orange;*/
-          padding-left: 40px;
-          padding-right: 40px;
+          padding-left: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
+          padding-right: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
       }
 
       .prevenImagen{
-        right:40px;
+        right:clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
         height:310px;
         width:310px;
       }
@@ -110,7 +110,7 @@
 
         .preven{
           padding-top: 400px;
-          gap:40px;
+          gap:clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
         }
 
         .prevenTitles{
@@ -119,7 +119,12 @@
         }
 
         .prevenTexto{
-          font-size: 15px;
-          line-height: 21px;
+          font-size: clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px);
+          line-height: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.2vw, 21px);
         }
     }
+
+/* TABLET */
+@media(min-width: 601px) and (max-width: 1024px) {}
+/* MOBILE */
+@media(max-width: 600px) {}

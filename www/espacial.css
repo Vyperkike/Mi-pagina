@@ -1,4 +1,4 @@
-     .espacialTitles{
+﻿     .espacialTitles{
         font-family: "Montserrat", sans-serif;
         font-weight: 800;
         font-style: normal;
@@ -60,7 +60,7 @@
         display:flex;
         width:100%;
         flex-direction:column;
-        gap:25px;
+        gap:clamp(10px, 1.8vw, 25px);
         position:relative;
       }
       
@@ -77,8 +77,8 @@
 
           .espacialContenido{
             /*background-color: blueviolet;*/
-            padding: 0 40px;
-            gap:30px;
+            padding: 0 clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
+            gap:clamp(10px, 2vw, 30px);
             margin: 0;
             min-height: auto;
           }
@@ -92,13 +92,13 @@
 
        @media(max-width:600px){
           .espacialTitles{
-            font-size: 40px;
+            font-size: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
             line-height: 42px;
           }
 
           .espacialTexto{
-            font-size: 15px;
-            line-height: 21px;
+            font-size: clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px);
+            line-height: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.2vw, 21px);
             padding: 0;
             /*background-color: gray;*/
           }
@@ -106,7 +106,12 @@
           .espacialExplicacion{
             /*background-color: brown;*/
             padding: 0;
-            gap: 20px;
+            gap: clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px);
           }
 
        }
+
+/* TABLET */
+@media(min-width: 601px) and (max-width: 1024px) {}
+/* MOBILE */
+@media(max-width: 600px) {}

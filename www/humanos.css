@@ -1,4 +1,4 @@
-  
+﻿  
      .humanosTitles{
         font-family: "Montserrat", sans-serif;
         font-optical-sizing: auto;
@@ -15,7 +15,7 @@
         font-weight: 600;
         font-style: normal;
         font-size:17px;
-        line-height:24px;
+        line-height:clamp(clamp(clamp(10px, 1.2vw, 12px), 1.6vw, 16px), 3vw, 24px);
         text-align:justify;
         position: relative;
       }
@@ -26,7 +26,7 @@
         font-weight: 400;
         font-style: normal;
         font-size:17px;
-        line-height:24px;
+        line-height:clamp(clamp(clamp(10px, 1.2vw, 12px), 1.6vw, 16px), 3vw, 24px);
         text-align:justify;
         position: relative;
       }
@@ -67,7 +67,7 @@
         background-position:center;
         background-size:cover;
         background-repeat:no-repeat;
-        bottom:-200px;
+        bottom:-clamp(clamp(clamp(10px, 2vw, 30px), 5vw, 100px), 15vw, 200px);
         right:0px;
       }
       
@@ -85,7 +85,7 @@
 
         .humanos{
           /*border: 4px solid orange;*/
-          padding: 0 40px;
+          padding: 0 clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
         }
 
         .humanosTexto{
@@ -99,8 +99,8 @@
         .humanosSpaceImagen{
           width:300px;
           height:300px;
-          top: 120px;
-          right: 40px;
+          top: clamp(clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px), 6vw, 120px);
+          right: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
         }
 
         .humanosTitles{
@@ -114,32 +114,37 @@
           .humanosTitles{
             font-size: 38px;
             line-height: 38px;
-            padding-top: 150px;
+            padding-top: clamp(clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 3.5vw, 60px), 9vw, 150px);
             text-align: center;
             padding-bottom: 0;
           }
 
           .humanosSpaceImagen{
-            top:140px;
+            top:clamp(clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 50px), 8vw, 140px);
             left: 50%;
             transform: translate(-50%);
           }
 
           .humanos{
-            gap:30px;
+            gap:clamp(10px, 2vw, 30px);
           }
 
           .humanosTexto{
-            font-size: 15px;
-            line-height: 21px;
+            font-size: clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px);
+            line-height: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.2vw, 21px);
             /*background-color: green;*/
           }
 
           .humanosSubtitles{
-            font-size: 15px;
-            line-height: 21px;
+            font-size: clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px);
+            line-height: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.2vw, 21px);
           }
 
 
 
       }
+
+/* TABLET */
+@media(min-width: 601px) and (max-width: 1024px) {}
+/* MOBILE */
+@media(max-width: 600px) {}

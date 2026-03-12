@@ -1,0 +1,193 @@
+.cadenaTitles{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        font-size:49px;
+        line-height:53px;
+        color:white;
+        position: relative;
+      }
+
+      .cadenaSubtitles{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-size:17px;
+        line-height:26px;
+        color:white;
+        position: relative;
+      }
+      
+      .cadenaTexto{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size:17px;
+        line-height:24px;
+        color:white;
+        text-align:justify;
+        position: relative;
+      }
+      
+      .cadena{
+        display:flex;
+        width:100%;
+        padding-top:381px;
+        background-color:black;
+        flex-direction:column;
+        position:relative;
+      }
+      
+      .cadenaPleca{
+        display:flex;
+        width:100%;
+        height:558px;
+        position:absolute;
+        top:0;
+        /*border:1px solid white;*/
+        background-image:url("./imgs/cadena/cadenaPleca.svg");
+        background-position:center;
+        background-size:cover;
+        background-repeat:no-repeat;
+      }
+      
+      .cadenaTrailer{
+        display:flex;
+        position:absolute;
+        bottom:0;
+        width:552.6px;
+        height:500px;
+        /*background-color:grey;*/
+        background-image:url("./imgs/cadena/cadenaTrailerb.png");
+        background-position:center;
+        background-size:cover;
+        background-repeat:no-repeat;
+      }
+      
+      .cadenaPrimer{
+        display:flex;
+        width:100%;
+        padding:0 125.8px 0 125.8px;
+        /*background-color:purple;*/
+        text-align:right;
+        justify-content:right;
+        color:white;
+        z-index:20;
+      }
+      
+      .cadenaSegundo{
+        display:flex;
+        width:100%;
+        align-items:center;
+        gap:70px;
+        padding:0 97px 0 126px;
+        /*background-color:green;*/
+      }
+      
+      .cadenaText1{
+        padding:68px 0 68px 0;
+      }
+      
+      .cadenaDiagrama{
+        display:flex;
+        width:573px;
+        height:378px;
+        /*background-color:grey;*/
+        background-image:url("./imgs/cadena/cadenaDiagrama.png");
+        background-position:center;
+        background-size:cover;
+        background-repeat:no-repeat;
+        flex-shrink:0;
+      }
+      
+      .cadenaTercero{
+        display:flex;
+        flex-direction:column;
+        gap:42.4px;
+        /*background-color:pink;*/
+        padding:0 125.8px 62px 125.8px;
+      }
+
+      @media(max-width:1000px){
+
+        .cadena{
+          /*border: 4px solid orange;*/
+          padding-top: 430px;
+        }
+
+        .cadenaTrailer{
+          top:55px;
+        }
+
+        .cadenaPrimer{
+          justify-content: right;
+          padding: 0;
+          padding-right: 40px;
+          /*background-color: aqua;*/
+        }
+        .cadenaPrimer p{
+          /*background-color: blue;*/
+          max-width: 600px;
+        }
+
+        .cadenaSegundo{
+          flex-direction: column;
+          gap:30px;
+          /*background-color: blueviolet;*/
+          padding: 50px 40px 30px 40px;
+        }
+
+        .cadenaDiagrama{
+          order:2;
+          /*background-color: blue;*/
+          height: 300px;
+        }
+
+        .cadenaText1{
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+
+        .cadenaTercero{
+          padding: 0 40px;
+        }
+      }
+
+      @media( max-width:600px){
+
+        .cadenaPrimer p{
+          max-width: 300px;
+          /*background-color: aqua;*/
+        }
+
+        .cadenaTrailer{
+          left: auto;
+          right: 40px;
+          /*background-color: palegreen;*/
+          transform: scale(0.80);
+        }
+
+        .cadenaDiagrama{
+          height: auto;
+          width: 125%;
+          aspect-ratio: 573/378;
+        }
+
+        .cadenaTitles{
+          font-size: 38px;
+          line-height: 38px;
+        }
+
+        .cadenaTexto{
+          font-size: 15px;
+          line-height: 21px;
+        }
+
+        .cadenaTercero{
+          gap: 35px;
+        }
+
+      }

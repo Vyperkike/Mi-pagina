@@ -1,4 +1,4 @@
-.coberTitles{
+﻿.coberTitles{
         font-family: "Montserrat", sans-serif;
         font-optical-sizing: auto;
         font-weight: 800;
@@ -14,7 +14,7 @@
         font-optical-sizing: auto;
         font-weight: 600;
         font-style: normal;
-        font-size:21px;
+        font-size:clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.2vw, 21px);
         color: white;
         line-height:26px;
       }
@@ -24,8 +24,8 @@
         font-optical-sizing: auto;
         font-weight: 400;
         font-style: normal;
-        font-size:20px;
-        line-height:24px;
+        font-size:clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px);
+        line-height:clamp(clamp(clamp(10px, 1.2vw, 12px), 1.6vw, 16px), 3vw, 24px);
         position:relative;
         color: white;
       }
@@ -139,7 +139,7 @@
         gap:38.5px;
         width:100%;
         max-width:500px;
-        padding-top:60px;
+        padding-top:clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 3.5vw, 60px);
         /*background-color:blue;*/
         justify-content:center;
         z-index:2;
@@ -155,13 +155,13 @@
         flex-direction: column;  
         padding: 0;
         /*background-color: pink;*/
-        gap:30px;
+        gap:clamp(10px, 2vw, 30px);
         justify-content: center;
         align-items: center;
       }
 
       .coberMapa{
-        margin-top: 150px;
+        margin-top: clamp(clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 3.5vw, 60px), 9vw, 150px);
         height:auto;
         width: 97%;           /* el ancho escala con la ventana */
         aspect-ratio: 696 / 487;  /* la altura se calcula sola */
@@ -169,10 +169,10 @@
       }
 
       .coberExplicacion{
-        padding: 0 40px;
+        padding: 0 clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
         width: 100%;
         max-width: 800px;
-        padding-bottom: 70px;
+        padding-bottom: clamp(clamp(10px, 1.8vw, 25px), 4vw, 70px);
       }
 
 
@@ -185,26 +185,31 @@
        .cober{
         flex-direction: column;  
         padding: 0;
-        padding-bottom: 20px;
+        padding-bottom: clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px);
         /*background-color: pink;*/
-        gap:20px;
+        gap:clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px);
       }
 
       .coberExplicacion{
-        padding: 0 40px;
-        gap:20px;
+        padding: 0 clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
+        gap:clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px);
         width: 100%;
         max-width: 600px;
       }
 
       .coberTitles{
-        font-size: 40px;
+        font-size: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
       }
 
       .coberTexto{
-        font-size: 15px;
+        font-size: clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px);
         line-height: 20.5px;
       }
       
     }
     
+
+/* TABLET */
+@media(min-width: 601px) and (max-width: 1024px) {}
+/* MOBILE */
+@media(max-width: 600px) {}

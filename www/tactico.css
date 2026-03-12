@@ -1,4 +1,4 @@
-     .tacticoTitles{
+﻿     .tacticoTitles{
         font-family: "Montserrat", sans-serif;
         font-optical-sizing: auto;
         font-weight: 800;
@@ -25,7 +25,7 @@
         font-weight: 400;
         font-style: normal;
         font-size:17px;
-        line-height:24px;
+        line-height:clamp(clamp(clamp(10px, 1.2vw, 12px), 1.6vw, 16px), 3vw, 24px);
         color:white;
         text-align:justify;
       }
@@ -68,19 +68,19 @@
       
       .tacticoCaja{
         display:flex;
-        gap:21px;
+        gap:clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.2vw, 21px);
         /*background-color:green;*/
         position:relative;
       }
       
       .tacticoBola{
         display:flex;
-        width:16px;
+        width:clamp(clamp(10px, 1.2vw, 12px), 1.6vw, 16px);
         margin-top:3px;
-        height:16px;
+        height:clamp(clamp(10px, 1.2vw, 12px), 1.6vw, 16px);
         background-color:yellow;
         flex-shrink:0;
-        border-radius: 50px;
+        border-radius: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 50px);
       }
       
       .tacticoEspacio{
@@ -114,7 +114,7 @@
 
         .tacticoContenido{
           /*border:4px solid green;*/
-          padding: 50px 40px;
+          padding: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 50px) clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
         }
 
         .tacticoTexto{
@@ -148,16 +148,16 @@
       @media(max-width:600px){
 
         .tacticoContenido{
-          gap: 32px;
+          gap: clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 4vw, 32px);
         }
 
           .tacticoTextitos{
             flex-direction: column;
-            gap: 18px;
+            gap: clamp(clamp(11px, 1.4vw, 14px), 1.8vw, 18px);
           }
 
           .tacticoColumna{
-            gap:18px;
+            gap:clamp(clamp(11px, 1.4vw, 14px), 1.8vw, 18px);
           }
 
           .tacticoTitles{
@@ -166,8 +166,8 @@
           }
 
           .tacticoTexto{
-            font-size: 15px;
-            line-height: 21px;
+            font-size: clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px);
+            line-height: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.2vw, 21px);
           }
 
           .tacticoImagen{
@@ -178,3 +178,8 @@
 
 
       }
+
+/* TABLET */
+@media(min-width: 601px) and (max-width: 1024px) {}
+/* MOBILE */
+@media(max-width: 600px) {}

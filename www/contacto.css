@@ -1,12 +1,12 @@
-
+﻿
 
 .contactoTexto{
         font-family: "Montserrat", sans-serif;
         font-optical-sizing: auto;
         font-weight: 400;
         font-style: normal;
-        font-size:15px;
-        line-height:15px;
+        font-size:clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px);
+        line-height:clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px);
         text-align:justify;
 }
 
@@ -14,48 +14,48 @@
     display: flex;
     position: fixed;
     flex-direction: column;
-    gap:20px;
+    gap:clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px);
     top: 95%;
-    right: 20px;
+    right: clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px);
     transform: translateY(-95%);
 }
 
 .contactoBoton1{
     display:flex;
     position: relative;
-    width:100px;
-    height:100px;
+    width:clamp(clamp(10px, 2vw, 30px), 5vw, 100px);
+    height:clamp(clamp(10px, 2vw, 30px), 5vw, 100px);
     /*background-color: blue;*/
 }
 
 .contactoBoton2{
     display:flex;
     position: relative;
-    width:100px;
-    height:100px;
-    border-radius: 20px;
+    width:clamp(clamp(10px, 2vw, 30px), 5vw, 100px);
+    height:clamp(clamp(10px, 2vw, 30px), 5vw, 100px);
+    border-radius: clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px);
     /*background-color: blue;*/
 }
 
 .contactoImg{
     display: flex;
-    width: 100px;
-    height: 100px;
+    width: clamp(clamp(10px, 2vw, 30px), 5vw, 100px);
+    height: clamp(clamp(10px, 2vw, 30px), 5vw, 100px);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     /*border:3px solid orange;*/
-    box-shadow: -5px 5px 14px rgba(126, 126, 126, 0.7); 
-    border-radius: 20px;
+    box-shadow: -5px 5px clamp(11px, 1.4vw, 14px) rgba(126, 126, 126, 0.7); 
+    border-radius: clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px);
 }
 
 .whats{
-    border-radius: 18px;
+    border-radius: clamp(clamp(11px, 1.4vw, 14px), 1.8vw, 18px);
     background-image: url("./imgs/contacto/whats_2.svg");
 }
 
 .trabajo{
-    border-radius: 18px;
+    border-radius: clamp(clamp(11px, 1.4vw, 14px), 1.8vw, 18px);
     background-image: url("./imgs/contacto/trabajo_1.svg");
 }
 
@@ -79,18 +79,18 @@
 .contactoTira p{
     width: fit-content;
     background-color:rgb(221, 221, 221);
-    padding: 20px 65px 20px 28px;
-    border-radius: 20px 0 0 20px;
+    padding: clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px) 65px clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px) clamp(clamp(clamp(11px, 1.4vw, 14px), 1.8vw, 18px), 3.5vw, 28px);
+    border-radius: clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px) 0 0 clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px);
 }
 
 
 /*.contactoBoton1:hover .contactoTira{
-    right:35px;
+    right:clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 35px);
     opacity: 1;
 }
 
 .contactoBoton2:hover .contactoTira{
-    right:35px;
+    right:clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 35px);
     opacity: 1;
 }
 */
@@ -107,16 +107,22 @@ contacto a{
 }
 
 .contactoBoton1, .contactoBoton2{
-    height: 60px;
-    width:60px;
+    height: clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 3.5vw, 60px);
+    width:clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 3.5vw, 60px);
 }
 
 .contactoImg{
-    height: 60px;
-    width:60px;
+    height: clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 3.5vw, 60px);
+    width:clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 3.5vw, 60px);
 }
 
 }
 
 
 
+
+
+/* TABLET */
+@media(min-width: 601px) and (max-width: 1024px) {}
+/* MOBILE */
+@media(max-width: 600px) {}

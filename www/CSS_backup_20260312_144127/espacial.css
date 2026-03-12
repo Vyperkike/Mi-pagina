@@ -1,0 +1,112 @@
+     .espacialTitles{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size:49px;
+        line-height:53px;
+       position:relative;
+      }
+
+      .espacialSubtitles{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size:17px;
+        line-height:26px;
+        position:relative;
+      }
+      
+      .espacialTexto{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size:17px;
+        line-height:26px;
+        text-align:justify;
+        padding-left: 104px;
+        position:relative;
+      }
+      
+      .espacial{
+        display:flex;
+        width:100%;
+        background-color:white;
+        flex-direction:column;
+        position:relative;
+      }
+      
+      .espacialPleca{
+        display:flex;
+        width:100%;
+        height:297px;
+       /*border:1px solid purple;*/
+        background-image:url("./imgs/espacial/espacialPleca.svg");
+        background-position:center;
+        background-size:cover;
+        position:relative;
+      }
+      
+      .espacialContenido{
+        display:flex;
+        width:100%;
+        padding:0 202.6px 0 158px ;
+        flex-direction:column;
+        gap:49px;
+        /*background-color:lightblue;*/
+          position:relative;
+      }
+      
+      .espacialExplicacion{
+        display:flex;
+        width:100%;
+        flex-direction:column;
+        gap:25px;
+        position:relative;
+      }
+      
+      .space{
+        height:800px;
+      }
+
+      @media(max-width:1000px){
+          .espacial{
+            /*border: 3px solid red;*/
+            padding: 0;
+            margin: 0;
+          }
+
+          .espacialContenido{
+            /*background-color: blueviolet;*/
+            padding: 0 40px;
+            gap:30px;
+            margin: 0;
+            min-height: auto;
+          }
+
+          .espacialTexto{
+            padding: 0;
+            /*background-color: aqua;*/
+          }
+      }
+
+
+       @media(max-width:600px){
+          .espacialTitles{
+            font-size: 40px;
+            line-height: 42px;
+          }
+
+          .espacialTexto{
+            font-size: 15px;
+            line-height: 21px;
+            padding: 0;
+            /*background-color: gray;*/
+          }
+
+          .espacialExplicacion{
+            /*background-color: brown;*/
+            padding: 0;
+            gap: 20px;
+          }
+
+       }

@@ -1,9 +1,9 @@
- .enviosTitles{
+﻿ .enviosTitles{
         font-family: "Montserrat", sans-serif;
         font-optical-sizing: auto;
         font-weight: 800;
         font-style: normal;
-        font-size:45px;
+        font-size:clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 3.5vw, 45px);
         line-height:49px;
         color:white;
         z-index: 1;
@@ -26,7 +26,7 @@
         font-optical-sizing: auto;
         font-weight: 400;
         font-style: normal;
-        font-size:16px;
+        font-size:clamp(clamp(10px, 1.2vw, 12px), 1.6vw, 16px);
         line-height:23px;
         color:white;
         text-align:justify;
@@ -123,7 +123,7 @@
       
       .enviosSegundo{
         display:flex;
-        gap:70px;
+        gap:clamp(clamp(10px, 1.8vw, 25px), 4vw, 70px);
         width:100%;
         /*background-color:green;*/
       }
@@ -147,7 +147,7 @@
 
         .envios{
           /*border: 4px solid orange;*/
-          padding: 400px 40px 0 40px;
+          padding: 400px clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px) 0 clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
         }
 
         .enviosHeader{
@@ -177,19 +177,19 @@
 
         .enviosSegundo{
           flex-direction: column;
-          gap:30px;
+          gap:clamp(10px, 2vw, 30px);
         }
 
         .enviosTop{
-          padding-top: 20px;
+          padding-top: clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px);
         }
 
         .enviosContenido{
-          gap:30px;
+          gap:clamp(10px, 2vw, 30px);
         }
 
         .enviosPrimer{
-          gap:30px;
+          gap:clamp(10px, 2vw, 30px);
         }
 
         .enviosContenido .primerPadding{
@@ -197,8 +197,8 @@
         }
 
         .enviosTexto{
-          font-size: 15px;
-          line-height: 21px;
+          font-size: clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px);
+          line-height: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.2vw, 21px);
         }
 
         .enviosTitles{
@@ -207,7 +207,7 @@
         }
 
         .enviosColumna{
-          gap: 20px;
+          gap: clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px);
           /*background-color: purple;*/
         }
 
@@ -221,3 +221,8 @@
 
 
       }
+
+/* TABLET */
+@media(min-width: 601px) and (max-width: 1024px) {}
+/* MOBILE */
+@media(max-width: 600px) {}

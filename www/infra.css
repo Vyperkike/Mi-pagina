@@ -1,4 +1,4 @@
-.infraTitles{
+﻿.infraTitles{
         font-family: "Montserrat", sans-serif;
         font-optical-sizing: auto;
         font-weight: 800;
@@ -24,7 +24,7 @@
         font-weight: 400;
         font-style: normal;
         font-size:17px;
-        line-height:24px;
+        line-height:clamp(clamp(clamp(10px, 1.2vw, 12px), 1.6vw, 16px), 3vw, 24px);
         
         text-align:justify;
       }
@@ -78,7 +78,7 @@
         display:flex;
         width:100%;
         /*background-color:grey;*/
-        gap:25px;
+        gap:clamp(10px, 1.8vw, 25px);
       }
       
       .infraBola{
@@ -86,7 +86,7 @@
         width:34px;
         height:34px;
         background-color:#000000;
-        border-radius:60px;
+        border-radius:clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 3.5vw, 60px);
         flex-shrink:0;
       }
       
@@ -147,10 +147,10 @@
 
       .infraMain{
         flex-direction: column;
-        padding: 0 40px;
+        padding: 0 clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
         /*background-color: palegreen;*/
-        padding-bottom: 50px;
-        gap: 35px;
+        padding-bottom: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 50px);
+        gap: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 35px);
       }
 
       .infraPadding{
@@ -158,11 +158,11 @@
       }
 
       .infraPrimer{
-        gap: 40px;
+        gap: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
       }
 
       .infraSecond{
-        gap: 40px;
+        gap: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
       }
 
     }
@@ -180,25 +180,25 @@
       }
 
       .infraTitles{
-        font-size: 36px;
+        font-size: clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 4.5vw, 36px);
       }
 
       .infraTexto{
-        font-size: 15px;
-        line-height: 21px;
+        font-size: clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px);
+        line-height: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.2vw, 21px);
       }
 
       .infraBola{
-        width: 20px;
-        height: 20px;
+        width: clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px);
+        height: clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px);
       }
 
       .infraCaja{
-        gap: 20px ;
+        gap: clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px) ;
       }
 
       .infraSecond{
-        gap: 20px;
+        gap: clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px);
       }
 
       .infraTrailers{
@@ -208,3 +208,8 @@
       }
 
     }
+
+/* TABLET */
+@media(min-width: 601px) and (max-width: 1024px) {}
+/* MOBILE */
+@media(max-width: 600px) {}

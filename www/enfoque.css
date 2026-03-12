@@ -1,4 +1,4 @@
-  .enfoqueTitles{
+﻿  .enfoqueTitles{
         font-family: "Montserrat", sans-serif;
         font-optical-sizing: auto;
         font-weight: 800;
@@ -40,7 +40,7 @@
         flex-direction:column;
         /*background-color:lightgrey;*/
         position:relative;
-        padding-top:140px;
+        padding-top:clamp(clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 50px), 8vw, 140px);
       }
       
       .enfoquePleca{
@@ -67,14 +67,14 @@
         background-repeat:repeat;
         position:absolute;
         bottom:0;
-        /* right:130px; */
+        /* right:clamp(clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 3.5vw, 45px), 7vw, 130px); */
         left: 0; 
       }
       
       .enfoqueContenido{
         display:flex;
         width:100%;
-        padding: 0 281px 86px 150px;
+        padding: 0 281px 86px clamp(clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 3.5vw, 60px), 9vw, 150px);
         gap:54px;
         background-color:black;
         flex-direction:column;
@@ -83,7 +83,7 @@
       .enfoqueTextos{
         display:flex;
         flex-direction:column;
-        gap:18px;
+        gap:clamp(clamp(11px, 1.4vw, 14px), 1.8vw, 18px);
       }
       
       .espacio{
@@ -97,11 +97,11 @@
 
           .enfoqueContenido{
             /*border: 4px solid yellow;*/
-            padding: 0 40px;
+            padding: 0 clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
           }
 
           .enfoqueTrailer{
-            right: 50px;
+            right: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 50px);
           }
       }
 
@@ -113,23 +113,28 @@
           }
 
           .enfoqueContenido{
-            padding-top: 50px;
-            gap:30px;
+            padding-top: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 50px);
+            gap:clamp(10px, 2vw, 30px);
           }
 
           .enfoqueTitles{
-            font-size: 40px;
+            font-size: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
             line-height: 42px;
           }
 
           .enfoqueTextos{
-            font-size: 15px;
-            line-height: 21px;
+            font-size: clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px);
+            line-height: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.2vw, 21px);
           }
 
           .enfoqueSubtitles{
-            font-size: 15px;
-            line-height: 21px;
+            font-size: clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px);
+            line-height: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.2vw, 21px);
           }
 
       }
+
+/* TABLET */
+@media(min-width: 601px) and (max-width: 1024px) {}
+/* MOBILE */
+@media(max-width: 600px) {}

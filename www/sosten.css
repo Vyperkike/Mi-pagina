@@ -1,4 +1,4 @@
-  .sostenTitles{
+﻿  .sostenTitles{
         font-family: "Montserrat", sans-serif;
         font-optical-sizing: auto;
         font-weight: 800;
@@ -28,7 +28,7 @@
         font-weight: 400;
         font-style: normal;
         font-size:17px;
-        line-height:24px;
+        line-height:clamp(clamp(clamp(10px, 1.2vw, 12px), 1.6vw, 16px), 3vw, 24px);
         color:white;
         text-align:justify;
         max-width:600px;
@@ -57,9 +57,9 @@
       
       .sostenBola{
         display:flex;
-        width:52px;
-        height:52px;
-        border-radius:60px;
+        width:clamp(clamp(clamp(clamp(11px, 1.4vw, 14px), 1.8vw, 18px), 3.5vw, 28px), 6vw, 52px);
+        height:clamp(clamp(clamp(clamp(11px, 1.4vw, 14px), 1.8vw, 18px), 3.5vw, 28px), 6vw, 52px);
+        border-radius:clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 3.5vw, 60px);
         background-color:#FFCB00;
         flex-shrink:0;
       }
@@ -117,7 +117,7 @@
 
         .sosten{
           /*border: 5px solid green;*/
-          padding: 0 40px 900px 40px;
+          padding: 0 clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px) 900px clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
         }
 
           .sostenFondo{
@@ -152,26 +152,32 @@
           }
 
           .sostenBola{
-            height: 30px;
-            width: 30px;
+            height: clamp(10px, 2vw, 30px);
+            width: clamp(10px, 2vw, 30px);
           }
 
           .sostenCaja{
-            gap: 20px;
+            gap: clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px);
           }
 
           .sostenTitles{
-            font-size: 36px;
+            font-size: clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 4.5vw, 36px);
           }
 
           .sostenTexto{
-            font-size: 15px;
-            line-height: 21px;
+            font-size: clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px);
+            line-height: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.2vw, 21px);
           }
 
           .sostenSubtitles{
-            font-size: 15px;
-            line-height: 21px;
+            font-size: clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px);
+            line-height: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.2vw, 21px);
           }
 
       }
+
+
+/* TABLET */
+@media(min-width: 601px) and (max-width: 1024px) {}
+/* MOBILE */
+@media(max-width: 600px) {}

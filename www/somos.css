@@ -1,12 +1,12 @@
-/* ============ ESTILOS BASE - DESKTOP ============ */
+﻿/* ============ ESTILOS BASE - DESKTOP ============ */
 
 .somosSubtitles {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  font-size: clamp(16px, 2.2vw, 21px);
-  line-height: clamp(20px, 2.8vw, 26px);
+  font-size: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.6vw, 16px), 2.2vw, clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.2vw, 21px));
+  line-height: clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 2.8vw, 26px);
   text-align: justify;
   position: relative;
   color: white;
@@ -17,8 +17,8 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: clamp(14px, 2vw, 19px);
-  line-height: clamp(18px, 2.6vw, 24px);
+  font-size: clamp(clamp(11px, 1.4vw, 14px), 2vw, clamp(13px, 1.9vw, 19px));
+  line-height: clamp(clamp(clamp(11px, 1.4vw, 14px), 1.8vw, 18px), 2.6vw, clamp(clamp(clamp(10px, 1.2vw, 12px), 1.6vw, 16px), 3vw, 24px));
   text-align: justify;
   position: relative;
   color: white;
@@ -29,12 +29,12 @@
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
-  font-size: clamp(32px, 8vw, 75px);
+  font-size: clamp(clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 4vw, 32px), 8vw, clamp(clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 4vw, 32px), 8vw, 75px));
   max-width: clamp(280px, 70vw, 315px);
-  padding-top: clamp(80px, 10vh, 110px);
+  padding-top: clamp(clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 4vw, 80px), 10vh, clamp(clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 35px), 5.5vw, 110px));
   position: relative;
   color: white;
-  line-height: clamp(32px, 9vw, 85px);
+  line-height: clamp(clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 4vw, 32px), 9vw, 85px);
 }
 
 .somosContenedor {
@@ -42,24 +42,24 @@
   width: 100%;
   position: relative;
   flex-direction: column;
-  padding-top: clamp(60px, 8vh, 113px);
-  margin-top: clamp(40px, 6vh, 80px);
+  padding-top: clamp(clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 3.5vw, 60px), 8vh, 113px);
+  margin-top: clamp(clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px), 6vh, clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 4vw, 80px));
 }
 
 .somosExplicaciones {
   display: flex;
   position: relative;
   flex-direction: column;
-  padding: 0 clamp(30px, 6vw, 248px);
-  gap: clamp(40px, 6vw, 74px);
+  padding: 0 clamp(clamp(10px, 2vw, 30px), 6vw, clamp(clamp(10px, 2vw, 30px), 6vw, 248px));
+  gap: clamp(clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px), 6vw, clamp(clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px), 6vw, 74px));
   background-color: black;
-  line-height: clamp(40px, 7vw, 65px);
+  line-height: clamp(clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px), 7vw, 65px);
 }
 
 .somosTextitos {
   display: flex;
   flex-direction: column;
-  gap: clamp(20px, 3.5vw, 35px);
+  gap: clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 3.5vw, clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 35px));
   padding-left: clamp(0px, 5vw, 105px);
   color: white;
 }
@@ -68,7 +68,7 @@
   display: flex;
   position: absolute;
   top: 0;
-  height: clamp(200px, 30vh, 329px);
+  height: clamp(clamp(clamp(clamp(10px, 2vw, 30px), 5vw, 100px), 15vw, 200px), 30vh, 329px);
   width: 100%;
   opacity: 1;
   z-index: 9000;
@@ -80,7 +80,7 @@
 
 .plecaBrilloSomos {
   display: flex;
-  height: clamp(200px, 30vh, 329px);
+  height: clamp(clamp(clamp(clamp(10px, 2vw, 30px), 5vw, 100px), 15vw, 200px), 30vh, 329px);
   width: 100%;
   background-image: url("./imgs/HEXAGONOS.png");
   background-repeat: no-repeat;
@@ -113,10 +113,10 @@
 .circulo {
   display: flex;
   bottom: 0;
-  right: clamp(20px, 4vw, 126px);
+  right: clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 4vw, 126px);
   position: absolute;
-  height: clamp(200px, 25vh, 320px);
-  width: clamp(200px, 25vw, 323.1px);
+  height: clamp(clamp(clamp(clamp(10px, 2vw, 30px), 5vw, 100px), 15vw, 200px), 25vh, 320px);
+  width: clamp(clamp(clamp(clamp(10px, 2vw, 30px), 5vw, 100px), 15vw, 200px), 25vw, 323.1px);
   background-image: url("./imgs/trailercircular.png");
   background-position: center;
   background-size: cover;
@@ -127,8 +127,8 @@
 .trailer {
   display: flex;
   position: relative;
-  height: clamp(180px, 22vh, 298px);
-  width: clamp(150px, 20vw, 256.6px);
+  height: clamp(clamp(clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 4vw, 80px), 12vw, 180px), 22vh, 298px);
+  width: clamp(clamp(clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 3.5vw, 60px), 9vw, 150px), 20vw, 256.6px);
 }
 
 .moverTrailer {
@@ -140,7 +140,7 @@
 
 @keyframes moverTrailer {
   0% {
-    left: clamp(150px, 25vw, 305px);
+    left: clamp(clamp(clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 3.5vw, 60px), 9vw, 150px), 25vw, 305px);
     opacity: 0;
   }
 
@@ -158,35 +158,35 @@
 @media(min-width: 601px) and (max-width: 1024px) {
   
   .somosTitlesBB {
-    font-size: clamp(32px, 6vw, 50px);
+    font-size: clamp(clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 4vw, 32px), 6vw, clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 50px));
     max-width: clamp(250px, 60vw, 300px);
-    padding-top: clamp(70px, 8vh, 100px);
-    line-height: clamp(32px, 7vw, 60px);
+    padding-top: clamp(clamp(clamp(10px, 1.8vw, 25px), 4vw, 70px), 8vh, clamp(clamp(10px, 2vw, 30px), 5vw, 100px));
+    line-height: clamp(clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 4vw, 32px), 7vw, clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 3.5vw, 60px));
   }
 
   .somosTexto, .somosSubtitles {
-    font-size: clamp(13px, 1.8vw, 16px);
-    line-height: clamp(18px, 2.3vw, 22px);
+    font-size: clamp(13px, 1.8vw, clamp(clamp(10px, 1.2vw, 12px), 1.6vw, 16px));
+    line-height: clamp(clamp(clamp(11px, 1.4vw, 14px), 1.8vw, 18px), 2.3vw, clamp(clamp(11px, 1.4vw, 14px), 2.5vw, 22px));
   }
 
   .somosExplicaciones {
-    padding: 0 clamp(20px, 5vw, 100px);
-    gap: clamp(35px, 5vw, 60px);
-    line-height: clamp(35px, 5vw, 55px);
+    padding: 0 clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 5vw, clamp(clamp(10px, 2vw, 30px), 5vw, 100px));
+    gap: clamp(clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 35px), 5vw, clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 3.5vw, 60px));
+    line-height: clamp(clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 35px), 5vw, 55px);
   }
 
   .somosTextitos {
-    gap: clamp(18px, 3vw, 30px);
-    padding-left: clamp(0px, 3vw, 50px);
+    gap: clamp(clamp(clamp(11px, 1.4vw, 14px), 1.8vw, 18px), 3vw, clamp(10px, 2vw, 30px));
+    padding-left: clamp(0px, 3vw, clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 50px));
   }
 
   .circulo {
-    top: clamp(-100px, -8vh, -70px);
-    right: clamp(10px, 3vw, 30px);
+    top: clamp(-clamp(clamp(10px, 2vw, 30px), 5vw, 100px), -8vh, -clamp(clamp(10px, 1.8vw, 25px), 4vw, 70px));
+    right: clamp(10px, 3vw, clamp(10px, 2vw, 30px));
   }
 
   .plecaSomos, .plecaBrilloSomos {
-    height: clamp(180px, 25vh, 300px);
+    height: clamp(clamp(clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 4vw, 80px), 12vw, 180px), 25vh, 300px);
   }
 }
 
@@ -194,47 +194,47 @@
 @media(max-width: 600px) {
   
   .somosTitlesBB {
-    font-size: clamp(24px, 6vw, 40px);
-    line-height: clamp(28px, 7vw, 45px);
-    padding-top: clamp(150px, 12vh, 210px);
+    font-size: clamp(clamp(clamp(clamp(10px, 1.2vw, 12px), 1.6vw, 16px), 3vw, 24px), 6vw, clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px));
+    line-height: clamp(clamp(clamp(clamp(11px, 1.4vw, 14px), 1.8vw, 18px), 3.5vw, 28px), 7vw, clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 3.5vw, 45px));
+    padding-top: clamp(clamp(clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 3.5vw, 60px), 9vw, 150px), 12vh, 210px);
     max-width: 100%;
   }
 
   .somosTexto, .somosSubtitles {
-    font-size: clamp(12px, 1.5vw, 16px);
-    line-height: clamp(16px, 2vw, 22px);
+    font-size: clamp(clamp(10px, 1.2vw, 12px), 1.5vw, clamp(clamp(10px, 1.2vw, 12px), 1.6vw, 16px));
+    line-height: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.6vw, 16px), 2vw, clamp(clamp(11px, 1.4vw, 14px), 2.5vw, 22px));
   }
 
   .somosContenedor {
-    padding-top: clamp(40px, 6vh, 80px);
-    margin-top: clamp(30px, 5vh, 60px);
+    padding-top: clamp(clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px), 6vh, clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 4vw, 80px));
+    margin-top: clamp(clamp(10px, 2vw, 30px), 5vh, clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 3.5vw, 60px));
   }
 
   .somosExplicaciones {
-    padding: 0 clamp(15px, 4vw, 30px);
-    gap: clamp(30px, 5vw, 45px);
-    line-height: clamp(30px, 5vw, 50px);
+    padding: 0 clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 4vw, clamp(10px, 2vw, 30px));
+    gap: clamp(clamp(10px, 2vw, 30px), 5vw, clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 3.5vw, 45px));
+    line-height: clamp(clamp(10px, 2vw, 30px), 5vw, clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 50px));
   }
 
   .somosTextitos {
-    gap: clamp(15px, 3vw, 25px);
+    gap: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 3vw, clamp(10px, 1.8vw, 25px));
     padding-left: 0;
   }
 
   .circulo {
     top: 0;
-    right: clamp(10px, 3vw, 20px);
-    height: clamp(150px, 20vh, 250px);
-    width: clamp(150px, 20vw, 250px);
+    right: clamp(10px, 3vw, clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px));
+    height: clamp(clamp(clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 3.5vw, 60px), 9vw, 150px), 20vh, 250px);
+    width: clamp(clamp(clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 3.5vw, 60px), 9vw, 150px), 20vw, 250px);
   }
 
   .trailer {
-    height: clamp(120px, 18vh, 200px);
-    width: clamp(100px, 15vw, 180px);
+    height: clamp(clamp(clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px), 6vw, 120px), 18vh, clamp(clamp(clamp(10px, 2vw, 30px), 5vw, 100px), 15vw, 200px));
+    width: clamp(clamp(clamp(10px, 2vw, 30px), 5vw, 100px), 15vw, clamp(clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 4vw, 80px), 12vw, 180px));
   }
 
   .plecaSomos, .plecaBrilloSomos {
-    height: clamp(150px, 20vh, 250px);
+    height: clamp(clamp(clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 3.5vw, 60px), 9vw, 150px), 20vh, 250px);
   }
 
   .plecaBrilloSomos {

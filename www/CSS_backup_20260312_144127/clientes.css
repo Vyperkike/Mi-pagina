@@ -1,0 +1,211 @@
+      .clientesTitles{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        font-size:45.5px;
+        line-height:48px;
+        color:white;
+        position:relative;
+        z-index: 5;
+      }
+      
+      .clientesSubtitles{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-size:21px;
+        line-height:26px;
+      }
+      
+      .clientesTexto{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size:18px;
+        line-height:26px;
+        text-align:justify;
+        color:white;
+        position:relative;
+      }
+      
+      .clientes{
+        display:flex;
+        width:100%;
+        flex-direction:column;
+        background-color:black;
+        padding:238px 145.5px 10px 130.6px;
+        gap:85px;
+        position:relative;
+        align-items: center;
+      }
+      
+      .clientesPleca{
+        display:flex;
+        position:absolute;
+        /*border:1px solid white;*/
+        background-image:url("./imgs/clientes/HEXAGONOS.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width:100%;
+        height:440px;
+        top:0;
+        left:0;
+        z-index:1;
+      }
+      
+     .clientesPlecaBrillo{
+      display:flex;
+      height:100%;
+      width:100%;
+      /*background-color:green;*/
+      background-image:url("./imgs/clientes/HEXAGONOS.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position:relative;
+      /* mask-image: linear-gradient(to right, transparent 0%, white 30%, white 70%, transparent 100%);
+      mask-repeat: no-repeat;
+      mask-size: 800px 100%; */
+      filter: brightness(1.2); /* 1.0 es normal, >1 más brillante */
+     
+      /* Máscara con bordes difuminados */
+      mask-image: linear-gradient(to right, transparent 0%, white 30%, white 70%, transparent 100%);
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, white 30%, white 70%, transparent 100%)
+      mask-repeat: no-repeat;
+      -webkit-mask-repeat: no-repeat;
+      mask-size: 500px 100%;
+      -webkit-mask-size: 500px 100%;
+      animation: moverClip 2s linear infinite;
+    }
+    
+    .clientesBrillo{
+      animation: clientesMoverClip 2s linear infinite;
+    }
+    
+    @keyframes clientesMoverClip {    
+      0% {
+        mask-position: -800px 0;
+      }
+      100% {
+        mask-position: calc(100% + 800px) 0;
+      }   
+    }
+      
+      
+      .clientesCircle{
+        display:flex;
+        position:absolute;
+        left:230.6px;
+        top:19px;
+        width:282px;
+        height:282px;
+        /*background-color:lightgreen;*/
+        z-index:4;
+      }
+      
+      .clientesCircle img{
+        object-fit:cover;
+        object-position:center;
+        width:100%;
+      }
+      
+      .clientesTop{
+        display:flex;
+        width:100%;
+        padding-left:353.2px;
+        /*background-color:purple;*/
+        z-index:3;
+        max-width:1100px;
+        position:relative;
+      }
+      
+      .clientesBottom{
+        display:flex;
+        gap:63.4px;
+        padding-left:56.7px;
+        /*background-color:lightblue;*/
+        flex-direction:column;
+      }
+      
+      .clientesTextBottom{
+        display:flex;
+        padding-left:84px;
+      }
+      
+      .spacio{
+        height:1200px;
+      }
+      
+      @media(max-width:1350px){
+          .clientes{
+            padding: 210px 40px 0 40px;
+            /*background-color: blue;*/
+            gap:60px;
+          }
+
+          .clientesCircle{
+            left: 80px;
+          }
+
+          .clientesBottom{
+            padding: 0;
+            /*background-color: lightblue;*/
+            gap:30px;
+          }
+
+          .clientesTextBottom{
+            padding-left: 0;
+          }
+      }
+
+            @media(max-width:800px){
+              .clientesTop{
+                padding-left: 0;
+              }
+
+              .clientes{
+                padding-top: 350px;
+                gap: 60px;
+              }
+
+              .clientesBottom{
+                gap: 45px;
+              }
+            }
+
+
+              @media(max-width:600px){
+
+              .clientes{
+                padding-top: 300px;
+                gap: 40px;
+              }
+
+
+              .clientesTitles{
+                font-size: 38px;
+              }
+
+              .clientesTexto{
+                font-size: 14px;
+                line-height: 20px;
+              }
+
+              .clientesCircle{
+                height:230px;
+                width:230px;
+                left:25%;
+              }
+
+             .clientesBottom{
+                gap: 25px;
+              }
+
+              }
+              
+            
+        

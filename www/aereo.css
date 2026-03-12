@@ -1,4 +1,4 @@
- .aereoTitles{
+﻿ .aereoTitles{
         font-family: "Montserrat", sans-serif;
         font-optical-sizing: auto;
         font-weight: 800;
@@ -76,7 +76,7 @@
       .aereoTextito{
         display:flex;
         flex-direction:column;
-        gap:21px;
+        gap:clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.2vw, 21px);
         /*background-color:pink;*/
       }
       
@@ -93,7 +93,7 @@
         display:flex;
         width:fit-content;
         flex-direction:column;
-        gap:21px;
+        gap:clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.2vw, 21px);
         /*background-color:red;*/
       }
       
@@ -108,9 +108,9 @@
       .aereoBola{
         display:flex;
         background-color:#FEE209;
-        border-radius:50px;
-        width:25px;
-        height:25px;
+        border-radius:clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 50px);
+        width:clamp(10px, 1.8vw, 25px);
+        height:clamp(10px, 1.8vw, 25px);
         flex-shrink:0;
       }
       
@@ -130,8 +130,8 @@
         .aereo{
           /*border: 4px solid purple;*/
           flex-direction: column;
-          padding:260px 40px 0 40px;
-          gap: 50px;
+          padding:260px clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px) 0 clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
+          gap: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 50px);
         }
 
         .aereoText1{
@@ -139,19 +139,19 @@
           padding-top: 10px;
           padding-bottom: 0;
           /*background-color: green;*/
-          gap:25px;
+          gap:clamp(10px, 1.8vw, 25px);
         }
 
         .aereoText2{
           /*background-color: aqua;*/
           width: 100%;
           padding: 0;
-          gap: 25px;
+          gap: clamp(10px, 1.8vw, 25px);
         }
 
         .aereoAvion{
-          top:80px;
-          right:20px;
+          top:clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 4vw, 80px);
+          right:clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px);
           /*background-color: pink;*/
         }
 
@@ -170,22 +170,22 @@
           }
 
           .aereo{
-            gap:30px;
+            gap:clamp(10px, 2vw, 30px);
             /*background-color: aqua;*/
           }
 
           .aereoText1, .aereoText2{
-            gap:20px;
+            gap:clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px);
           }
 
           .aereoTitles{
             font-size: 38px;
-            line-height: 40px;
+            line-height: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
           }
 
           .aereoTexto{
-            font-size: 15px;
-            line-height: 21px;
+            font-size: clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px);
+            line-height: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.2vw, 21px);
           }
 
           .aereoPuntos{
@@ -201,3 +201,8 @@
 
 
       }
+
+/* TABLET */
+@media(min-width: 601px) and (max-width: 1024px) {}
+/* MOBILE */
+@media(max-width: 600px) {}

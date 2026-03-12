@@ -1,10 +1,10 @@
-      .clientesTitles{
+﻿      .clientesTitles{
         font-family: "Montserrat", sans-serif;
         font-optical-sizing: auto;
         font-weight: 800;
         font-style: normal;
         font-size:45.5px;
-        line-height:48px;
+        line-height:clamp(clamp(clamp(clamp(10px, 1.2vw, 12px), 1.6vw, 16px), 3vw, 24px), 5.5vw, 48px);
         color:white;
         position:relative;
         z-index: 5;
@@ -15,7 +15,7 @@
         font-optical-sizing: auto;
         font-weight: 600;
         font-style: normal;
-        font-size:21px;
+        font-size:clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.2vw, 21px);
         line-height:26px;
       }
       
@@ -24,7 +24,7 @@
         font-optical-sizing: auto;
         font-weight: 400;
         font-style: normal;
-        font-size:18px;
+        font-size:clamp(clamp(11px, 1.4vw, 14px), 1.8vw, 18px);
         line-height:26px;
         text-align:justify;
         color:white;
@@ -100,7 +100,7 @@
         display:flex;
         position:absolute;
         left:230.6px;
-        top:19px;
+        top:clamp(13px, 1.9vw, 19px);
         width:282px;
         height:282px;
         /*background-color:lightgreen;*/
@@ -142,19 +142,19 @@
       
       @media(max-width:1350px){
           .clientes{
-            padding: 210px 40px 0 40px;
+            padding: 210px clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px) 0 clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
             /*background-color: blue;*/
-            gap:60px;
+            gap:clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 3.5vw, 60px);
           }
 
           .clientesCircle{
-            left: 80px;
+            left: clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 4vw, 80px);
           }
 
           .clientesBottom{
             padding: 0;
             /*background-color: lightblue;*/
-            gap:30px;
+            gap:clamp(10px, 2vw, 30px);
           }
 
           .clientesTextBottom{
@@ -169,11 +169,11 @@
 
               .clientes{
                 padding-top: 350px;
-                gap: 60px;
+                gap: clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 3.5vw, 60px);
               }
 
               .clientesBottom{
-                gap: 45px;
+                gap: clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 3.5vw, 45px);
               }
             }
 
@@ -182,7 +182,7 @@
 
               .clientes{
                 padding-top: 300px;
-                gap: 40px;
+                gap: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
               }
 
 
@@ -191,8 +191,8 @@
               }
 
               .clientesTexto{
-                font-size: 14px;
-                line-height: 20px;
+                font-size: clamp(11px, 1.4vw, 14px);
+                line-height: clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px);
               }
 
               .clientesCircle{
@@ -202,10 +202,15 @@
               }
 
              .clientesBottom{
-                gap: 25px;
+                gap: clamp(10px, 1.8vw, 25px);
               }
 
               }
               
             
         
+
+/* TABLET */
+@media(min-width: 601px) and (max-width: 1024px) {}
+/* MOBILE */
+@media(max-width: 600px) {}

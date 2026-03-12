@@ -1,4 +1,4 @@
-
+﻿
 .sistemasTitles{
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -44,7 +44,7 @@
   background-color:black;
   width:100%;
   padding:91.5px 0 87.7px 129px;
-  gap:70px;
+  gap:clamp(clamp(10px, 1.8vw, 25px), 4vw, 70px);
   justify-content:space-between;
   position:relative;
   min-height:731px;
@@ -81,9 +81,9 @@
 .sistemasBola{
   display:flex;
   background-color:#FEE209;
-  border-radius:50px;
-  width:25px;
-  height:25px;
+  border-radius:clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 50px);
+  width:clamp(10px, 1.8vw, 25px);
+  height:clamp(10px, 1.8vw, 25px);
   flex-shrink:0;
 }
 
@@ -112,7 +112,7 @@
  display:flex;
  position:absolute;
  height:214.62px;
- width:212.28px;
+ width:212.clamp(clamp(clamp(11px, 1.4vw, 14px), 1.8vw, 18px), 3.5vw, 28px);
  bottom:49px;
  left:0;
 /*background-color:blue;*/
@@ -126,7 +126,7 @@ background-image: url("./imgs/sistemas/sistemasCircle.png");
   display:flex;
   width:100%;
   background-color:black;
-  padding:0px 100px 0 129px;
+  padding:0px clamp(clamp(10px, 2vw, 30px), 5vw, 100px) 0 129px;
   gap:60.5px;
   /*background-color:blue;*/
   max-width:1280px;
@@ -139,19 +139,19 @@ background-image: url("./imgs/sistemas/sistemasCircle.png");
 }
 
 .extraPad{
-  padding-top: 30px;
+  padding-top: clamp(10px, 2vw, 30px);
 }
 
 .dobleCol{
   display: flex;
-  gap: 60px;
+  gap: clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 3.5vw, 60px);
 }
 
 @media(max-width:1000px){
 
   .sistemas{
     /*border: 1px solid blue;*/
-    padding:50px 0 50px 40px;
+    padding:clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 50px) 0 clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 50px) clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
     gap:10px;
     align-items: center;
   }
@@ -182,7 +182,7 @@ background-image: url("./imgs/sistemas/sistemasCircle.png");
   .sistemasEstrategia{
     /*border: 1px solid yellow;*/
     flex-direction: column;
-    padding: 0 40px;
+    padding: 0 clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
   }
 
   br{
@@ -197,18 +197,18 @@ background-image: url("./imgs/sistemas/sistemasCircle.png");
   .sistemas{
      flex-direction: column;
      align-items: flex-end;
-     gap:20px;
+     gap:clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px);
 
   }
 
   .sistemasInformacion{
-    margin-right:30px;
-    gap:25px;
+    margin-right:clamp(10px, 2vw, 30px);
+    gap:clamp(10px, 1.8vw, 25px);
   }
 
   .sistemasTexto{
-    font-size: 15px;
-    line-height: 21px;
+    font-size: clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px);
+    line-height: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.2vw, 21px);
   }
   
   .sistemasTitles{
@@ -231,11 +231,16 @@ background-image: url("./imgs/sistemas/sistemasCircle.png");
 
   .dobleCol{
     flex-direction: column;
-    gap:20px;  
+    gap:clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px);  
   }
 
   .sistemasEstrategia{
-    gap:30px;
+    gap:clamp(10px, 2vw, 30px);
   }
 
 }
+
+/* TABLET */
+@media(min-width: 601px) and (max-width: 1024px) {}
+/* MOBILE */
+@media(max-width: 600px) {}

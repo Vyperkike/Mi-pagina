@@ -1,4 +1,4 @@
-     .visionesTitles{
+﻿     .visionesTitles{
         font-family: "Montserrat", sans-serif;
         font-optical-sizing: auto;
         font-weight: 800;
@@ -13,7 +13,7 @@
         font-optical-sizing: auto;
         font-weight: 600;
         font-style: normal;
-        font-size:18px;
+        font-size:clamp(clamp(11px, 1.4vw, 14px), 1.8vw, 18px);
         line-height:22spx;
         color:black;
       }
@@ -24,7 +24,7 @@
         font-weight: 400;
         font-style: normal;
         font-size:17px;
-        line-height:25px;
+        line-height:clamp(10px, 1.8vw, 25px);
         color:white;
         position:relative;
         text-align: justify;
@@ -116,7 +116,7 @@
         width:276px;
         flex-shrink: 0;
         /*background-color:yellow;*/
-        margin-right:160px;
+        margin-right:clamp(clamp(clamp(10px, 1.8vw, 25px), 4vw, 70px), 10vw, 160px);
         z-index:1;
         justify-content: center;
         align-items: center;
@@ -133,7 +133,7 @@
         position:relative;
         width:100%;
         flex-direction:column;
-        gap:36px;
+        gap:clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 4.5vw, 36px);
         /*background-color:pink;*/
         position:relative;
         z-index:30;
@@ -148,14 +148,14 @@
       .visionValores{
         display:flex;
         flex-wrap:wrap;
-        row-gap: 15px;
+        row-gap: clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px);
         column-gap: 10px;
         /*background-color:green;*/
       }
       
       .visionValor{
         background-color: #FFE50E ;
-        padding:10px 28px;
+        padding:10px clamp(clamp(clamp(11px, 1.4vw, 14px), 1.8vw, 18px), 3.5vw, 28px);
         border-radius:8px;
         position:relative;
       }
@@ -190,15 +190,15 @@
 
 
       .maxSegundo{
-        padding-right: 100px;
+        padding-right: clamp(clamp(10px, 2vw, 30px), 5vw, 100px);
       }
 
       
       @media(max-width:1000px){
         .visionesContenedor{
           padding-top:220px;
-          padding-left: 40px;
-          padding-right: 40px;
+          padding-left: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
+          padding-right: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
           align-items: center;
         }
         
@@ -215,7 +215,7 @@
          .visionTrailerDeco{
           /*background-color: green;*/
             top:0px;
-            right:-40px;
+            right:-clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
          }
 
           .maxSegundo{
@@ -230,10 +230,10 @@
           }
 
         .visionesContenedor{
-          gap:40px;
+          gap:clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
           /*background-color: blue;*/
           padding-bottom: 0;
-          padding-top: 200px;
+          padding-top: clamp(clamp(clamp(10px, 2vw, 30px), 5vw, 100px), 15vw, 200px);
         }
 
         .visionesTitles{
@@ -241,7 +241,7 @@
         }
 
         .visionesSubtitles{
-          font-size: 15px;
+          font-size: clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px);
         }
 
         .visionValor{
@@ -253,19 +253,24 @@
         }
 
         .visionesTexto{
-          font-size: 15px;
-          line-height: 21px;
+          font-size: clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px);
+          line-height: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.2vw, 21px);
         }
 
         .visionApartados{
-          gap: 20px;
+          gap: clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px);
         }
 
         .visionesCircle{
           height:230px;
           width: 230px;
-          top: 80px;
+          top: clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 4vw, 80px);
         }
        
       }
       
+
+/* TABLET */
+@media(min-width: 601px) and (max-width: 1024px) {}
+/* MOBILE */
+@media(max-width: 600px) {}

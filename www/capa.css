@@ -1,4 +1,4 @@
- 
+﻿ 
      .capaTitles{
         display:flex;
         position:relative;
@@ -31,7 +31,7 @@
         font-weight: 400;
         font-style: normal;
         font-size:17px;
-        line-height:24px;
+        line-height:clamp(clamp(clamp(10px, 1.2vw, 12px), 1.6vw, 16px), 3vw, 24px);
         color:white;
         text-align:justify;
         position: relative;
@@ -44,7 +44,7 @@
         background-color:black;
         width:100%;
         padding:196px 168px 0 143px;
-        gap:75px;
+        gap:clamp(clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 4vw, 32px), 8vw, 75px);
       }
       
       .capaPleca{
@@ -73,13 +73,13 @@
 
         .capa{
           /*border: 4px solid orange;*/
-          padding-left: 40px;
-          padding-right: 40px;
-          gap:50px;
+          padding-left: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
+          padding-right: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
+          gap:clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 50px);
         }
 
         .capaTextual{
-          gap:35px;
+          gap:clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 35px);
           text-align: left;
         }
 
@@ -100,7 +100,7 @@
 
         .capa{
           text-align: left;
-          gap:40px;
+          gap:clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
         }
 
         .capaTextual{
@@ -109,8 +109,13 @@
         }
 
         .capaTexto{
-          font-size: 15px;
-          line-height: 21px;
+          font-size: clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px);
+          line-height: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.2vw, 21px);
         }
 
       }
+
+/* TABLET */
+@media(min-width: 601px) and (max-width: 1024px) {}
+/* MOBILE */
+@media(max-width: 600px) {}

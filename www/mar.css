@@ -1,4 +1,4 @@
-.marTitles{
+﻿.marTitles{
         font-family: "Montserrat", sans-serif;
         font-weight: 800;
         font-style: normal;
@@ -65,14 +65,14 @@
       }
 
       .spacio{
-        height:100px;
+        height:clamp(clamp(10px, 2vw, 30px), 5vw, 100px);
       }
       
       .marContenido{
         display:flex;
         width:100%;
         flex-direction:column;
-        padding:29px 141px 0 160px;
+        padding:29px 141px 0 clamp(clamp(clamp(10px, 1.8vw, 25px), 4vw, 70px), 10vw, 160px);
         gap:67px;
         /*background-color:green;*/
         position:relative;
@@ -96,7 +96,7 @@
       
       .marPuntual{
         display:flex;
-        gap:32px;
+        gap:clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 4vw, 32px);
         width:fit-content;
         /*background-color:brown;*/
         margin-bottom:10px;
@@ -105,9 +105,9 @@
       
       .marBola{
         display:flex;
-        width:25px;
+        width:clamp(10px, 1.8vw, 25px);
         background-color:#FFE408;
-        border-radius:50px;
+        border-radius:clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 50px);
         width:23.4px;
         height:23.4px;
         flex-shrink:0;
@@ -142,9 +142,9 @@
           }
 
           .marContenido{
-            padding: 0 40px;
+            padding: 0 clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
             /*background-color: blueviolet;*/
-            gap:30px;
+            gap:clamp(10px, 2vw, 30px);
           }
 
           .marEspecial{
@@ -157,8 +157,8 @@
           @media(max-width:600px){
 
             .marContenido{
-              padding-top: 36px;
-              gap: 30px;
+              padding-top: clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 4.5vw, 36px);
+              gap: clamp(10px, 2vw, 30px);
               /*border: 5px solid aqua;*/
             }
 
@@ -168,23 +168,23 @@
             }
 
             .marTexto{
-              font-size: 15px;
-              line-height: 21px;
+              font-size: clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px);
+              line-height: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.2vw, 21px);
             }
 
             .marSubtitles{
-              font-size: 15px;
-              line-height: 21px;
+              font-size: clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px);
+              line-height: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.2vw, 21px);
             }
 
             .marSerColumna{
-              gap:15px;
+              gap:clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px);
               /*background-color: antiquewhite;*/
             }
 
             .marServicios{
               flex-direction: column;
-              gap: 15px;
+              gap: clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px);
               /*background-color: red;*/
             }
 
@@ -193,7 +193,7 @@
             }
 
             .extraPadAbajo{
-              padding-bottom: 12px;
+              padding-bottom: clamp(10px, 1.2vw, 12px);
               /*background-color: green;*/
             }
 
@@ -203,3 +203,8 @@
             }
 
           }
+
+/* TABLET */
+@media(min-width: 601px) and (max-width: 1024px) {}
+/* MOBILE */
+@media(max-width: 600px) {}

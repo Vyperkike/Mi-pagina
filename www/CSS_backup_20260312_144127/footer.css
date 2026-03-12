@@ -1,0 +1,206 @@
+.footerTexto{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size:25px;
+        line-height:25px;
+}
+
+.footer{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    padding: 94px 152px 106px 152px;
+    position:relative;
+    /* background-color: white; */
+    /* Aquí agregas la imagen de fondo */
+    background-image: url("./imgs/footer/fondopie.jpeg");
+    background-position: center;   /* centra la imagen */
+    background-repeat: no-repeat;  /* evita que se repita */
+    background-size: cover;        /* hace que cubra todo el área */
+}
+
+.footerRedes{
+    display:flex;
+    gap:15px;
+    width:100%;
+    background-color: aqua;
+}
+
+.footerRed{
+    display:flex;
+    width:35px;
+    height:35px;
+    /*background-color: blue;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+     flex-shrink: 0;
+}
+
+.red1{
+    background-image: url("./imgs/footer/red1.svg");
+}
+
+.red2{
+    background-image: url("./imgs/footer/red2.svg");
+}
+
+.red3{
+    background-image: url("./imgs/footer/red3.svg");
+}
+
+.red4{
+    background-image: url("./imgs/footer/red4.svg");
+}
+
+.red5{
+    background-image: url("./imgs/footer/red5.svg");
+}
+
+.footerPaddingCorreo{
+    display: flex;
+    padding: 13px 0 35px 0;
+    /*background-color: grey;*/
+}
+
+.footerInformes{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    /*background-color: green;*/
+}
+
+.footerDatos{
+    display: flex;
+    gap:20px;
+    padding-top: 13px;
+    /*background-color: blueviolet;*/
+    align-items: center;
+}
+
+.footerSeparador{
+    height:26px;
+    width:4px;
+    background-color: black;
+}
+
+.footerBandera{
+    z-index: 900000;
+    display:flex;
+    width:calc(278px / 2);
+    height: calc(88px / 2);
+    /*background-color: black;*/
+    background-image: url("./imgs/footer/banderas.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footerLogo{
+    display: flex;
+    width: 420.1px;
+    height: 420px;
+    position: absolute;
+    /*background-color: black;*/
+    background-image: url("./imgs/footer/footerLogo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 94px;
+    right: 62px;
+     flex-shrink: 0;
+}
+
+.footerPleca{
+    display: flex;
+    height: 546px;
+    width: 100%;
+    position:absolute;
+    background-image: url("./imgs/footer/footerPleca.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top:-300px;
+    left:0;
+    /*border: 5px solid orange;*/
+}
+
+.footer a{
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size:25px;
+        line-height:25px;
+        z-index: 40;
+}
+
+.footerLetraMayor{
+    font-size: 30px;
+    line-height: 30px;
+    z-index: 40;
+}
+
+
+@media(max-width:800px){
+
+    .footerLogo{
+        right:50%;
+        transform:translateX(50%);
+        width: calc(420.1px * 0.65);
+        height: calc(166.6px * 0.65);
+        bottom: 155px;
+    }
+
+    .footer{
+        padding-left: 40px;
+        padding-right: 40px;
+        align-items: center;
+        padding-top: 120px;
+        padding-bottom: 60px;
+    }
+
+    .footerInformes{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:25px;
+    }
+
+    .footerDatos{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:10px;
+    }
+
+    .footerSeparador{
+        display: none;
+    }
+
+    .footerRedes{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footerLetraMayor{
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .footer a{
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    .footerBandera{
+       width:calc(140px * 0.75);
+       height:calc(43px * 0.75);
+    }
+
+
+
+}
