@@ -42,8 +42,8 @@
   width: 100%;
   position: relative;
   flex-direction: column;
-  padding-top: clamp(clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 3.5vw, 60px), 8vh, 113px);
-  margin-top: clamp(clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px), 6vh, clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 4vw, 80px));
+  padding-top: clamp(clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 3.5vw, 60px), 10vh, 130px);
+  margin-top: clamp(clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px), 10vh, clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 4vw, 120px));
 }
 
 .somosExplicaciones {
