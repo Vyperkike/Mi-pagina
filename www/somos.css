@@ -170,8 +170,8 @@
   }
 
   .somosContenedor {
-    padding-top: clamp(60px, 8vw, 100px);
-    margin-top: clamp(40px, 6vw, 70px);
+    padding-top: clamp(80px, 10vw, 140px);
+    margin-top: clamp(60px, 10vw, 110px);
   }
 
   .somosExplicaciones {
@@ -216,6 +216,11 @@
   .somosTexto, .somosSubtitles {
     font-size: clamp(13px, 1.8vw, 18px);
     line-height: 1.75;
+  }
+
+  .somosContenedor {
+    padding-top: clamp(90px, 11vw, 170px);
+    margin-top: clamp(80px, 11vw, 140px);
   }
 
   .somosExplicaciones {
