@@ -172,8 +172,8 @@
 
   .somosContenedor {
     z-index: 2;
-    padding-top: clamp(100px, 12vw, 200px);
-    margin-top: clamp(90px, 12vw, 160px);
+    padding-top: clamp(600px, 50vw, 760px);
+    margin-top: clamp(600px, 50vw, 760px);
   }
 
   .somosExplicaciones {
@@ -222,8 +222,8 @@
 
   .somosContenedor {
     z-index: 2;
-    padding-top: clamp(110px, 13vw, 210px);
-    margin-top: clamp(100px, 13vw, 180px);
+    padding-top: clamp(520px, 48vw, 720px);
+    margin-top: clamp(520px, 48vw, 720px);
   }
 
   .somosExplicaciones {
