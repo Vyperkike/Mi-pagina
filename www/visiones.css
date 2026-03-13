@@ -317,3 +317,13 @@
 
 /* MOBILE */
 @media(max-width: 600px) {}
+
+/* TABLET and smaller laptops */
+@media(max-width: 1024px) {
+  .visionTrailerDeco {
+    display: none;
+  }
+  .maxSegundo {
+    padding-right: 0;
+  }
+}
