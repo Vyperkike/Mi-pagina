@@ -97,9 +97,9 @@
 
 .sistemasFotoGrande {
   display: flex;
-  margin-left: 42px;
+  margin-left: 20px;
   width: 100%;
-  max-width: 426px; /* límite en escritorio */
+  max-width: 340px; /* límite en escritorio */
   height: auto;
   aspect-ratio: 426 / 494; /* mantiene proporción */
   position: relative;
@@ -273,10 +273,10 @@
 
 @media(max-width: 600px) {
   .sistemasFotoGrande {
-    max-width: 300px; /* aún más pequeña en móvil */
+    max-width: 250px; /* aún más pequeña en móvil */
   }
 
   .sistemasFotoChica {
-    max-width: 180px;
+    max-width: 100px;
   }
 }
