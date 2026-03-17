@@ -6,11 +6,13 @@
         font-size:44px;
         line-height:clamp(clamp(clamp(clamp(10px, 1.2vw, 12px), 1.6vw, 16px), 3vw, 24px), 5.5vw, 48px);
         text-align:center;
+        color:white;
         position:relative;
         white-space: normal; /* permite saltos de línea */
       }
       
       .beneficiosSubtitles{
+        color:white;
         font-family: "Montserrat", sans-serif;
         font-optical-sizing: auto;
         font-weight: 600;
@@ -29,6 +31,7 @@
         font-size:17px;
         line-height:clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.2vw, 21px);
         z-index: 5;
+        color:white;
       }
       
       .beneficios{
@@ -139,7 +142,7 @@
         display:flex;
         width:fit-content;
         padding:10px clamp(clamp(11px, 1.4vw, 14px), 1.8vw, 18px);
-        background-color:white;
+        background-color:black;
         border-radius:8px;
         position:relative;
       }
