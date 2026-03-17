@@ -141,7 +141,8 @@
       }
       
       .visionAbajo{
-        padding-left:78px;
+        /* padding-left:78px; */
+        padding-left: clamp(40px, 5vw, 120px);
       }
       
       
@@ -168,7 +169,7 @@
         /*background-color:grey;*/
         top:0px;
         /* right:0px; */
-        left: -30px;
+        left: 0px;
         z-index:200;
       }
       
