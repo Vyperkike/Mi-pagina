@@ -210,25 +210,78 @@
     }
     
 
-/* TABLET */
-@media(min-width: 601px) and (max-width: 1024px) {}
-/* MOBILE */
+/* TABLET - 601px a 1024px */
+@media(min-width: 601px) and (max-width: 1024px) {
+  .cober {
+    flex-direction: column;
+    gap: clamp(40px, 6vw, 100px); /* más aire entre mapa y texto */
+    align-items: center;
+  }
+
+  .coberMapa {
+    margin-top: clamp(120px, 20vh, 300px); /* baja más el mapa */
+    width: 95%;
+    aspect-ratio: 696 / 487;
+    height: auto;
+  }
+
+  .coberExplicacion {
+    padding-top: clamp(40px, 8vw, 120px); /* separa el texto del mapa */
+    max-width: 800px;
+  }
+}
+
+/* MOBILE - hasta 600px */
+@media(max-width: 600px) {
+  .cober {
+    flex-direction: column;
+    gap: clamp(30px, 6vw, 80px); /* más separación en móvil */
+    align-items: center;
+  }
+
+  .coberMapa {
+    margin-top: clamp(100px, 18vh, 250px); /* baja más el mapa en móvil */
+    width: 97%;
+    aspect-ratio: 696 / 487;
+    height: auto;
+  }
+
+  .coberExplicacion {
+    padding-top: clamp(30px, 7vw, 100px); /* aire extra para el texto */
+    max-width: 600px;
+  }
+}
 
 /* TABLET - 601px a 900px (Samsung Galaxy Tab A9) */
 @media(min-width: 601px) and (max-width: 900px) {
-  * {
-    --spacing-multiplier: 1.3;
+  .cober {
+    flex-direction: column;
+    gap: clamp(40px, 6vw, 90px); /* más separación entre mapa y texto */
+    align-items: center;
   }
-  
-  body {
-    padding: 0;
-    margin: 0;
+
+  .coberMapa {
+    margin-top: clamp(120px, 18vh, 280px); /* baja más el mapa en tablet */
+    width: 95%;
+    aspect-ratio: 696 / 487;
+    height: auto;
   }
-  
-  /* Aumentar espaciado general */
-  section {
-    padding: clamp(30px, 6vw, 70px) clamp(20px, 5vw, 50px) !important;
+
+  .coberExplicacion {
+    padding-top: clamp(40px, 7vw, 100px); /* aire extra para el texto */
+    max-width: 700px;
+  }
+
+  .coberTitles {
+    font-size: clamp(28px, 5vw, 42px); /* título más equilibrado en tablet */
+    margin-bottom: clamp(20px, 3vw, 40px);
+  }
+
+  .coberTexto {
+    font-size: clamp(14px, 2vw, 18px);
+    line-height: 1.8; /* más espacio entre líneas para mejor lectura */
   }
 }
+
 
 @media(max-width: 600px) {}
