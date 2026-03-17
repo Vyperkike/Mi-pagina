@@ -295,7 +295,8 @@
   }
 
   .visionApartados {
-    gap: clamp(30px, 5vw, 50px);
+    /* gap: clamp(30px, 5vw, 50px); */
+    gap: clamp(40px, 6vw, 70px); /* más separación entre título, párrafo y valores */
   }
 
   .visionValores {
@@ -312,6 +313,8 @@
   }
 
   .visionesCircle {
+    height:160px;   /* más pequeño en móviles */
+    width:160px;
     margin-right: 0;
     margin-bottom: clamp(30px, 5vw, 50px);
   }
