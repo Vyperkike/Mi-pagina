@@ -138,21 +138,56 @@
 @media(min-width: 601px) and (max-width: 1024px) {}
 /* MOBILE */
 
-/* TABLET - 601px a 900px (Samsung Galaxy Tab A9) */
+/* TABLET - 601px a 900px */
 @media(min-width: 601px) and (max-width: 900px) {
-  * {
-    --spacing-multiplier: 1.3;
+  .enfoqueContenido {
+    padding: clamp(100px, 15vh, 180px) clamp(20px, 5vw, 50px) 80px clamp(20px, 5vw, 50px);
+    gap: clamp(30px, 5vw, 60px); /* más aire entre título y texto */
   }
-  
-  body {
-    padding: 0;
-    margin: 0;
+
+  .enfoqueTrailer {
+    position: relative; /* evita que se encime */
+    margin-top: clamp(40px, 8vh, 120px);
+    width: 70%; /* más pequeño en tablet */
+    height: auto;
+    align-self: center;
   }
-  
-  /* Aumentar espaciado general */
-  section {
-    padding: clamp(30px, 6vw, 70px) clamp(20px, 5vw, 50px) !important;
+
+  .enfoqueTitles {
+    font-size: clamp(28px, 5vw, 42px);
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  .enfoqueTexto {
+    font-size: clamp(14px, 2vw, 18px);
+    line-height: 1.8; /* interlineado más amplio */
   }
 }
 
-@media(max-width: 600px) {}
+/* MOBILE - hasta 600px */
+@media(max-width: 600px) {
+  .enfoqueContenido {
+    padding: clamp(120px, 18vh, 200px) clamp(15px, 4vw, 30px) 60px clamp(15px, 4vw, 30px);
+    gap: clamp(25px, 5vw, 50px);
+  }
+
+  .enfoqueTrailer {
+    position: relative;
+    margin-top: clamp(50px, 10vh, 150px);
+    width: 80%; /* más pequeño en móvil */
+    height: auto;
+    align-self: center;
+  }
+
+  .enfoqueTitles {
+    font-size: clamp(24px, 6vw, 36px);
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  .enfoqueTexto {
+    font-size: clamp(13px, 1.6vw, 15px);
+    line-height: clamp(20px, 3vw, 26px); /* aire entre líneas */
+  }
+}
