@@ -313,8 +313,8 @@
   }
 
   .visionesCircle {
-    height:160px;   /* más pequeño en móviles */
-    width:160px;
+    height:140px;   /* más pequeño en móviles */
+    width:140px;
     margin-right: 0;
     margin-bottom: clamp(30px, 5vw, 50px);
   }
