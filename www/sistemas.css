@@ -99,7 +99,7 @@
   display: flex;
   margin-left: 20px;
   width: 100%;
-  max-width: 340px; /* límite en escritorio */
+  max-width: 500px; /* límite en escritorio */
   height: auto;
   aspect-ratio: 426 / 494; /* mantiene proporción */
   position: relative;
