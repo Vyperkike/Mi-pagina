@@ -224,10 +224,11 @@
     overflow: hidden;
   }
   /* .sistemasFotoGrande{
-    height: 100%;
+    
   } */
 
   .sistemasFotoGrande {
+    width: 100%;
     max-width: 250px; /* aún más pequeña en móvil */
   }
 
