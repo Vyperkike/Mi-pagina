@@ -245,23 +245,43 @@
 
 /* TABLET */
 @media(min-width: 601px) and (max-width: 1024px) {}
-/* MOBILE */
-
-/* TABLET - 601px a 900px (Samsung Galaxy Tab A9) */
+/* TABLET - 601px a 900px */
 @media(min-width: 601px) and (max-width: 900px) {
-  * {
-    --spacing-multiplier: 1.3;
+  .terrestreTop {
+    padding: clamp(140px, 18vh, 220px) clamp(20px, 5vw, 50px) 0 clamp(20px, 5vw, 50px);
+    gap: clamp(30px, 5vw, 60px); /* más separación entre título y texto */
   }
-  
-  body {
-    padding: 0;
-    margin: 0;
+
+  .terrestreTextoTop {
+    padding: clamp(40px, 6vw, 80px) clamp(20px, 5vw, 40px);
+    gap: clamp(25px, 4vw, 50px); /* aire entre párrafos */
   }
-  
-  /* Aumentar espaciado general */
-  section {
-    padding: clamp(30px, 6vw, 70px) clamp(20px, 5vw, 50px) !important;
+
+  .terrestreMapa,
+  .terrestreBottomImagen {
+    margin-top: clamp(100px, 15vh, 250px); /* baja más las imágenes */
   }
 }
 
-@media(max-width: 600px) {}
+/* MOBILE - hasta 600px */
+@media(max-width: 600px) {
+  .terrestreTop {
+    padding: clamp(120px, 20vh, 200px) clamp(15px, 4vw, 30px) 0 clamp(15px, 4vw, 30px);
+    gap: clamp(25px, 5vw, 50px);
+  }
+
+  .terrestreTextoTop {
+    padding: clamp(30px, 5vw, 60px) clamp(15px, 4vw, 30px);
+    gap: clamp(20px, 4vw, 40px);
+  }
+
+  .terrestreTexto {
+    font-size: clamp(13px, 1.6vw, 15px);
+    line-height: clamp(20px, 3vw, 26px); /* interlineado más amplio */
+  }
+
+  .terrestreBottomImagen {
+    margin-top: clamp(80px, 12vh, 200px); /* baja la imagen de fondo */
+    aspect-ratio: 600 / 900; /* proporción más cómoda en móvil */
+  }
+}
