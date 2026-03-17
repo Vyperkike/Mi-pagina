@@ -108,19 +108,19 @@
   background-repeat: no-repeat;
 }
 
-.sistemasFotoChica{
- display:flex;
- position:absolute;
- height:214.62px;
- width:212.clamp(clamp(clamp(11px, 1.4vw, 14px), 1.8vw, 18px), 3.5vw, 28px);
- bottom:49px;
- left:0;
-/*background-color:blue;*/
-background-image: url("./imgs/sistemas/sistemasCircle.png");
+.sistemasFotoChica {
+  display: flex;
+  position: absolute;
+  height: 214.62px;
+  width: clamp(180px, 25vw, 240px); /* ancho adaptable */
+  bottom: 49px;
+  left: 0;
+  background-image: url("./imgs/sistemas/sistemasCircle.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 
 .sistemasEstrategia{
   display:flex;
