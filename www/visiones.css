@@ -192,10 +192,10 @@
 
 
       .maxSegundo{
-        /* padding-right: clamp(clamp(10px, 2vw, 30px), 5vw, 100px); */
+        padding-right: clamp(clamp(10px, 2vw, 30px), 5vw, 100px);
          /* padding-right: clamp(40px, 6vw, 140px); */
-         margin-left: clamp(-40px, -5vw, -100px);
-  padding-right: 0;
+         /* margin-left: clamp(-40px, -5vw, -100px);
+  padding-right: 0; */
       }
 
       
