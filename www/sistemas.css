@@ -223,10 +223,17 @@
     max-width: 400px;
     overflow: hidden;
   }
-  .sistemasFotoGrande{
+  /* .sistemasFotoGrande{
     height: 100%;
+  } */
+
+  .sistemasFotoGrande {
+    max-width: 250px; /* aún más pequeña en móvil */
   }
 
+  .sistemasFotoChica {
+    max-width: 100px;
+  }
   .extraPad{
     padding-top: 10px;
   }
@@ -271,12 +278,3 @@
   }
 }
 
-@media(max-width: 600px) {
-  .sistemasFotoGrande {
-    max-width: 250px; /* aún más pequeña en móvil */
-  }
-
-  .sistemasFotoChica {
-    max-width: 100px;
-  }
-}
