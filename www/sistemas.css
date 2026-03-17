@@ -95,13 +95,14 @@
   flex-shrink:0;
 }
 
-.sistemasFotoGrande{
-  display:flex;
-  margin-left:42px;
-  width:426px;
-  height:494px;
- /* background-color:red;*/
-  position:relative;
+.sistemasFotoGrande {
+  display: flex;
+  margin-left: 42px;
+  width: 100%;
+  max-width: 426px; /* límite en escritorio */
+  height: auto;
+  aspect-ratio: 426 / 494; /* mantiene proporción */
+  position: relative;
   background-image: url("./imgs/sistemas/sistemasImg.png");
   background-position: center;
   background-size: cover;
@@ -111,16 +112,17 @@
 .sistemasFotoChica {
   display: flex;
   position: absolute;
-  height: 214.62px;
-  width: clamp(180px, 25vw, 240px); /* ancho adaptable */
   bottom: 49px;
   left: 0;
+  width: 100%;
+  max-width: 240px; /* límite máximo */
+  height: auto;
+  aspect-ratio: 214 / 214; /* proporción circular */
   background-image: url("./imgs/sistemas/sistemasCircle.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 
 .sistemasEstrategia{
   display:flex;
@@ -259,6 +261,22 @@
   section {
     padding: clamp(30px, 6vw, 70px) clamp(20px, 5vw, 50px) !important;
   }
+
+  sistemasFotoGrande {
+    max-width: 360px; /* más pequeña en tablet */
+  }
+
+  .sistemasFotoChica {
+    max-width: 200px;
+  }
 }
 
-@media(max-width: 600px) {}
+@media(max-width: 600px) {
+  .sistemasFotoGrande {
+    max-width: 300px; /* aún más pequeña en móvil */
+  }
+
+  .sistemasFotoChica {
+    max-width: 180px;
+  }
+}
