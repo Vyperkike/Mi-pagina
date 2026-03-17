@@ -172,13 +172,13 @@
     gap: clamp(25px, 5vw, 50px);
   }
 
-  .enfoqueTrailer {
+  /* .enfoqueTrailer {
     position: relative;
     margin-top: clamp(50px, 10vh, 150px);
-    width: 80%; /* más pequeño en móvil */
-    height: auto;
+    width: 80%; más pequeño en móvil */
+    /* height: auto;
     align-self: center;
-  }
+  } */
 
   .enfoqueTitles {
     font-size: clamp(24px, 6vw, 36px);
