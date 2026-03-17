@@ -96,7 +96,7 @@
       .coberMapa{
         display:flex;
         position:relative;
-        margin-top: clamp(60px, 8vh, 150px);
+        margin-top: clamp(100px, 20vh, 300px);
         width:696px;
         height:487px;
         /*background-color:black;*/
