@@ -145,13 +145,13 @@
     gap: clamp(30px, 5vw, 60px); /* más aire entre título y texto */
   }
 
-  .enfoqueTrailer {
-    position: relative; /* evita que se encime */
-    margin-top: clamp(40px, 8vh, 120px);
-    width: 70%; /* más pequeño en tablet */
-    height: auto;
+ /*  .enfoqueTrailer {
+    position: relative; evita que se encime */
+    /*margin-top: clamp(40px, 8vh, 120px);
+    width: 70%;  más pequeño en tablet */
+    /* height: auto;
     align-self: center;
-  }
+  } */
 
   .enfoqueTitles {
     font-size: clamp(28px, 5vw, 42px);
