@@ -168,7 +168,8 @@
         width:316px;
         height:247.6px;
         /*background-color:grey;*/
-        top:300px;
+        /* top:300px; */
+        top: clamp(200px, 25vh, 450px
         /* right:0px; */
         left: 0px;
         z-index:200;
