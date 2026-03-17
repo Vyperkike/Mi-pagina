@@ -44,7 +44,7 @@
         height:250.5px;
         width:100%;
         /*background-color:pink;*/
-        background-image:url("./imgs/beneficios/beneficiosPleca.svg");
+        background-image:url("./imgs/beneficios/HEXAGONOS.png");
         background-position:center;
         background-size:cover;
         background-repeat:no-repeat;
@@ -54,14 +54,26 @@
       display:flex;
       height:100%;
       width:100%;
-      background-color:green;
-      background-image:url("./imgs/beneficios/beneficiosPlecaShiny.svg");
+      /* background-color:green; */
+      background-image:url("./imgs/beneficios/HEXAGONOS.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      mask-image: linear-gradient(to right, transparent 0%, white 30%, white 70%, transparent 100%);
+      /* mask-image: linear-gradient(to right, transparent 0%, white 30%, white 70%, transparent 100%);
       mask-repeat: no-repeat;
-      mask-size: 800px 100%;
+      mask-size: 800px 100%; */
+
+
+      filter: brightness(1.2); /* 1.0 es normal, >1 más brillante */
+     
+      /* Máscara con bordes difuminados */
+      mask-image: linear-gradient(to right, transparent 0%, white 30%, white 70%, transparent 100%);
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, white 30%, white 70%, transparent 100%)
+      mask-repeat: no-repeat;
+      -webkit-mask-repeat: no-repeat;
+      mask-size: 500px 100%;
+      -webkit-mask-size: 500px 100%;
+      animation: moverClip 2s linear infinite;
     }
     
     .beneficiosBrillo{
@@ -127,7 +139,7 @@
         display:flex;
         width:fit-content;
         padding:10px clamp(clamp(11px, 1.4vw, 14px), 1.8vw, 18px);
-        background-color:black;
+        background-color:white;
         border-radius:8px;
         position:relative;
       }
