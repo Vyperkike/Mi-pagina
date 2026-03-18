@@ -257,4 +257,40 @@
   }
 }
 
-@media(max-width: 600px) {}
+@media(max-width: 600px) {
+  .aduContenido {
+    flex-direction: column;   /* apila texto y foto */
+    align-items: center;      /* centra todo */
+    padding: 0 20px;          /* menos padding lateral */
+    gap: 30px;                /* espacio entre elementos */
+  }
+
+  .aduEspacioFoto {
+    width: 220px;             /* más pequeño en móvil */
+    height: auto;
+  }
+
+  .aduFoto {
+    width: 220px;
+    height: 220px;
+    top: 0;                   /* evita que se encime */
+    margin-bottom: 20px;      /* espacio debajo de la foto */
+  }
+
+  .aduParrafo {
+    max-width: 100%;          /* ocupa todo el ancho disponible */
+    padding-top: 0;
+    text-align: center;       /* centra el texto */
+    gap: 20px;
+  }
+
+  .aduTitles {
+    font-size: 28px;          /* más pequeño y legible */
+    line-height: 32px;
+  }
+
+  .aduTexto {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
