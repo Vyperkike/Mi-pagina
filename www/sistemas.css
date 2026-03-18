@@ -93,7 +93,7 @@
   max-width:600px;
   width: 100%;
   /*background-color:lightblue;*/
-  flex-shrink:0;
+  /* flex-shrink:0; */
 }
 
 .sistemasFotoGrande {
@@ -113,7 +113,7 @@
 .sistemasFotoChica {
   display: flex;
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   left: 0;
   width: clamp(120px, 25vw, 200px); /*100%;*/
   /*max-width: clamp(150px, 20vw, 240px);  adaptable entre 150 y 240px */
