@@ -99,7 +99,7 @@
   display: flex;
   margin-left: 42px;
   width: 100%;
-  max-width: clamp(300px, 40vw, 500px); /* se adapta entre 300 y 500px */
+  max-width: clamp(320px, 40vw, 480px); /* se adapta entre 300 y 500px */
   height: auto;
   aspect-ratio: 426 / 494;
   position: relative;
@@ -112,9 +112,9 @@
 .sistemasFotoChica {
   display: flex;
   position: absolute;
-  bottom: 49px;
+  bottom: 0px;
   left: 0;
-  width: 100%;
+  width: clamp(140px, 25vw, 200px); /*100%;*/
   max-width: clamp(150px, 20vw, 240px); /* adaptable entre 150 y 240px */
   height: auto;
   aspect-ratio: 214 / 214;
@@ -274,7 +274,7 @@
     max-width: clamp(280px, 50vw, 360px);
   }
   .sistemasFotoChica {
-    max-width: clamp(140px, 25vw, 180px);
+    max-width: clamp(120px, 20vw, 160px);
   }
 }
 
