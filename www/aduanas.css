@@ -133,6 +133,7 @@
         gap: clamp(15px, 3vw, 60px);
         padding-top: 57px;
         /*background-color:grey;*/
+        background-color: transparent;
         position:relative;
       }
       
