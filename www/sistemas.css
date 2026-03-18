@@ -95,6 +95,7 @@
   /*background-color:lightblue;*/
   /* flex-shrink:0; */
   margin: 0 auto; /* centra el bloque */
+  transform: translate(0, 0); /* aquí puedes mover todo el conjunto */
 }
 
 .sistemasFotoGrande {
