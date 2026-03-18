@@ -5,7 +5,7 @@
         font-style: normal;
         font-size:49px;
         line-height:53px;
-        color:black;
+        color:white;
         position: relative;
       }
 
@@ -16,7 +16,7 @@
         font-style: normal;
         font-size:17px;
         line-height:26px;
-        color:black;
+        color:white;
       }
       
       .aduTexto{
@@ -28,7 +28,7 @@
         line-height:26px;
         color:white;
         text-align:justify;
-        color:black;
+        /* color:black; */
         position:relative;
       }
       
@@ -37,7 +37,7 @@
         flex-direction:column;
         width:100%;
         padding-top:clamp(clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 3.5vw, 60px), 9vw, 150px);
-        background-color:black;
+        background-color:transparent;
         position:relative;
       }
       
@@ -48,7 +48,7 @@
         width:100%;
         height:291px;
         /*border:9px solid orange;*/
-        background-image:url("./imgs/aduanas/aduanasPleca.svg");
+        background-image:url("./imgs/aduanas/HEXAGONOS.png");
         background-position:center;
         background-size:cover;
         background-repeat:no-repeat;
@@ -59,14 +59,25 @@
       height:100%;
       width:100%;
       /*background-color:green;*/
-      background-image:url("./imgs/aduanas/aduanasBrillo.svg");
+      background-image:url("./imgs/aduanas/HEXAGONOS.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
       position:relative;
-      mask-image: linear-gradient(to right, transparent 0%, white 30%, white 70%, transparent 100%);
+      /* mask-image: linear-gradient(to right, transparent 0%, white 30%, white 70%, transparent 100%);
       mask-repeat: no-repeat;
-      mask-size: 800px 100%;
+      mask-size: 800px 100%; */
+
+      filter: brightness(1.2); /* 1.0 es normal, >1 más brillante */
+     
+      /* Máscara con bordes difuminados */
+      mask-image: linear-gradient(to right, transparent 0%, white 30%, white 70%, transparent 100%);
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, white 30%, white 70%, transparent 100%)
+      mask-repeat: no-repeat;
+      -webkit-mask-repeat: no-repeat;
+      mask-size: 500px 100%;
+      -webkit-mask-size: 500px 100%;
+      animation: moverClip 2s linear infinite;
     }
     
     .aduBrillo{
