@@ -196,10 +196,7 @@
   section {
     padding: clamp(30px, 6vw, 70px) clamp(20px, 5vw, 50px) !important;
   }
-  .pere {
-    background-size: 120% auto; /* más pequeño que el 200% que usas en laptop */
-    background-position: center; /* centra el fondo */
-  }
+  
 
   .pereContenido {
     flex-direction: column; /* evita que se amontone */
