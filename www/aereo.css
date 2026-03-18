@@ -33,7 +33,7 @@
       
       .aereo{
         display:flex;
-        background-color:black;
+        background-color:transparent;
         padding:273px 136px 0 136px;
         gap:99px;
         position:relative;
