@@ -272,11 +272,30 @@
     padding: clamp(30px, 6vw, 70px) clamp(20px, 5vw, 50px) !important;
   }
 
-  .sistemasFotoGrande {
+  /* .sistemasFotoGrande {
     max-width: clamp(280px, 50vw, 360px);
   }
   .sistemasFotoChica {
     max-width: clamp(100px, 22vw, 140px);
+  } */
+   .sistemasImagenes {
+    position: relative;
+    width: 100%;
+    max-width: 500px; /* un poco más estrecho para tablet */
+    margin: 0 auto;   /* centra el bloque */
+  }
+
+  .sistemasFotoGrande {
+    max-width: clamp(260px, 55vw, 340px); /* más pequeña en tablet */
+    margin-left: 0; /* quita margen lateral */
+    background-size: contain; /* que se vea completa */
+  }
+
+  .sistemasFotoChica {
+    bottom: 5%;  /* sube un poco para que no se corte */
+    left: 5%;    /* separa del borde */
+    max-width: clamp(100px, 25vw, 140px); /* tamaño equilibrado */
+    background-size: contain; /* que se vea completa */
   }
 }
 
