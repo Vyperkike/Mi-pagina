@@ -53,7 +53,7 @@
         height:339px;
         position:relative;
         top:0;
-        background-image:url("./imgs/perecedero/perePleca.svg");
+        background-image:url("./imgs/perecedero/HEXAGONOS.png");
         background-position:center;
         background-size:cover;
         background-repeat:no-repeat;
@@ -195,6 +195,34 @@
   /* Aumentar espaciado general */
   section {
     padding: clamp(30px, 6vw, 70px) clamp(20px, 5vw, 50px) !important;
+  }
+  .pere {
+    background-size: 120% auto; /* más pequeño que el 200% que usas en laptop */
+    background-position: center; /* centra el fondo */
+  }
+
+  .pereContenido {
+    flex-direction: column; /* evita que se amontone */
+    gap: 40px;              /* más espacio entre texto e imagen */
+    padding: 0 30px;        /* reduce padding lateral */
+  }
+
+  .pereParrafo {
+    padding-top: 40px; /* más aire arriba */
+  }
+
+  .pereAvion {
+    width: 70%;   /* más proporcional en tablet */
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .pereCircle {
+    width: 220px; /* más pequeño para tablet */
+    height: 220px;
+    right: 20px;
+    bottom: 20px;
   }
 }
 
