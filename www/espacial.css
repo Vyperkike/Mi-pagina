@@ -30,7 +30,7 @@
       .espacial{
         display:flex;
         width:100%;
-        background-color:black;
+        background-color:transparent;
         flex-direction:column;
         position:relative;
       }
@@ -40,7 +40,7 @@
         width:100%;
         height:297px;
        /*border:1px solid purple;*/
-        background-image:url("./imgs/espacial/espacialPleca.svg");
+        background-image:url("./imgs/espacial/HEXAGONOS.png");
         background-position:center;
         background-size:cover;
         position:relative;
