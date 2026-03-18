@@ -91,6 +91,7 @@
   display:flex;
   position:relative;
   max-width:600px;
+  width: 100%;
   /*background-color:lightblue;*/
   flex-shrink:0;
 }
@@ -99,7 +100,7 @@
   display: flex;
   margin-left: 42px;
   width: 100%;
-  max-width: clamp(320px, 40vw, 480px); /* se adapta entre 300 y 500px */
+  max-width: clamp(320px, 45vw, 480px); /* se adapta entre 300 y 500px */
   height: auto;
   aspect-ratio: 426 / 494;
   position: relative;
@@ -114,8 +115,8 @@
   position: absolute;
   bottom: 0px;
   left: 0;
-  width: clamp(140px, 25vw, 200px); /*100%;*/
-  max-width: clamp(150px, 20vw, 240px); /* adaptable entre 150 y 240px */
+  width: clamp(120px, 25vw, 200px); /*100%;*/
+  /*max-width: clamp(150px, 20vw, 240px);  adaptable entre 150 y 240px */
   height: auto;
   aspect-ratio: 214 / 214;
   background-image: url("./imgs/sistemas/sistemasCircle.png");
@@ -244,10 +245,10 @@
 /* LAPTOP */
 @media(min-width: 900px) and (max-width: 1366px) {
   .sistemasFotoGrande {
-    max-width: clamp(320px, 35vw, 420px);
+    max-width: clamp(300px, 40vw, 420px);
   }
   .sistemasFotoChica {
-    max-width: clamp(160px, 18vw, 200px);
+    max-width: clamp(110px, 20vw, 160px);
   }
 }
 /* TABLET */
@@ -274,7 +275,7 @@
     max-width: clamp(280px, 50vw, 360px);
   }
   .sistemasFotoChica {
-    max-width: clamp(120px, 20vw, 160px);
+    max-width: clamp(100px, 22vw, 140px);
   }
 }
 
@@ -283,6 +284,6 @@
     max-width: clamp(240px, 80vw, 300px);
   }
   .sistemasFotoChica {
-    max-width: clamp(120px, 40vw, 160px);
+    max-width: clamp(90px, 35vw, 120px);
   }
 }
