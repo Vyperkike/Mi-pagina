@@ -295,7 +295,7 @@
   .sistemasFotoChica {
     bottom: 5%;  /* sube un poco para que no se corte */
     left: 5%;    /* separa del borde */
-    max-width: clamp(100px, 25vw, 140px); /* tamaño equilibrado */
+    max-width: clamp(80px, 18vw, 120px); /* tamaño equilibrado */
     background-size: contain; /* que se vea completa */
   }
 }
