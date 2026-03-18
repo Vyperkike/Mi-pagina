@@ -5,6 +5,7 @@
         font-size:49px;
         line-height:53px;
        position:relative;
+       color=white;
       }
 
       .espacialSubtitles{
@@ -14,6 +15,7 @@
         font-size:17px;
         line-height:26px;
         position:relative;
+        color: white;
       }
       
       .espacialTexto{
@@ -25,6 +27,7 @@
         text-align:justify;
         padding-left: 104px;
         position:relative;
+        color: white;
       }
       
       .espacial{
