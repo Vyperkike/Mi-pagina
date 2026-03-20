@@ -13,7 +13,7 @@
     
     <!-- Página 1: Portada -->
     <div class="page" id="portada">
-    <img src="imagenes/4x3 portada72dpi.jpg.jpeg" class="full">
+    <img src="imagenes/PORTADA.jpg" class="full">
 
     <!-- Área sobre "Español" con marco visible -->
     <!--<a href="javascript:void(0)" 
@@ -30,7 +30,7 @@
 
     <!-- Página 2: Directorio -->
     <div class="page" id="directorio">
-      <img src="imagenes/4x3  directorio72dpi.jpg.jpeg" class="full">
+      <img src="imagenes/DIRECTORIO.jpg" class="full">
 
       <!-- Áreas invisibles sobre cada categoría -->
       <!--<a href="#" class="link " style="top:350px; left:630px; width:180px; height:60px;" onclick="$('#flipbook').turn('page',3)"></a> Crudos -->
@@ -58,9 +58,14 @@
     </div>
 
     <!-- Páginas de cada categoría -->
-    <div class="page" id="crudos">
-      <img src="imagenes/4x3 crudos 72dpi.jpg.jpeg" class="full">
+    <div class="page" id="crudos1">
+      <img src="imagenes/crudos 1.jpg" class="full">
       <a href="#" class="arrow prev " style="bottom:5%; left:10%;" onclick="$('#flipbook').turn('page',2)"></a>
+      <a href="#" class="arrow next " onclick="$('#flipbook').turn('page',3)"></a>
+    </div>
+    <div class="page" id="crudos2">
+      <img src="imagenes/crudos2.jpg" class="full">
+      <a href="#" class="arrow prev " style="bottom:5%; left:10%;" onclick="$('#flipbook').turn('page',3)"></a>
       <a href="#" class="arrow next " onclick="$('#flipbook').turn('page',4)"></a>
     </div>
 
@@ -119,7 +124,7 @@
        // height: 1438,  // alto real de tus imágenes
       width: window.innerWidth * 0.9,   // 90% del ancho de pantalla
       //height: (window.innerWidth * 0.9) * (1438/1080),  mantiene proporción S9 Galaxy Tab
-      height: (window.innerWidth * 0.9) * (2112/1320), // mantiene proporción S9 Galaxy Tab
+      height: (window.innerWidth * 0.9) * (2112/1320), // mantiene proporción S10 Tab lite
       autoCenter: true,
         display: 'single',
         gradients: true,
