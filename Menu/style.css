@@ -58,6 +58,7 @@ body {
   position: absolute;
   cursor: pointer;
   background: rgba(255,255,255,0); /* invisible */
+  z-index: 10; /* prioridad sobre las zonas de toque */
 }
 
 /* Clase extra para depuración */
@@ -72,7 +73,7 @@ body {
   top: 0;
   height: 100%;
   width: 50%;
-  z-index: 5;        /* debajo de tus links (z-index:10) pero sobre la imagen */
+  z-index: 1;        /* debajo de tus links (z-index:10) pero sobre la imagen */
   cursor: pointer;
   background: transparent;
 }
