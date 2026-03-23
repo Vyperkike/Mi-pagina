@@ -425,9 +425,52 @@
       autoCenter: true,
         display: 'single',
         gradients: true,
+        acceleration: true,
+        touch: true          // ← activa swipe con el dedo
+    });
+   // modificacion para moverme entre paginas con zonas de toque en toda la página
+    $(document).ready(function () {
+      const { w, h } = calcSize();
+
+      $("#flipbook").turn({
+        width: w,
+        height: h,
+        autoCenter: true,
+        display: 'single',
+        gradients: true,
         acceleration: true
+      });
+
+      // Zonas de toque para toda la página
+      agregarZonasToque();
     });
 
+    function agregarZonasToque() {
+      $("#flipbook .page").each(function () {
+        const $page = $(this);
+
+        // Evita duplicar zonas si ya las tiene
+        if ($page.find('.zona-toque').length) return;
+
+        const pageNum = $page.index() + 1;
+
+        // Zona izquierda → página anterior
+        $('<div class="zona-toque zona-prev"></div>')
+          .on('click', function (e) {
+            e.stopPropagation();
+            $("#flipbook").turn('previous');
+          })
+          .appendTo($page);
+
+        // Zona derecha → página siguiente
+        $('<div class="zona-toque zona-next"></div>')
+          .on('click', function (e) {
+            e.stopPropagation();
+            $("#flipbook").turn('next');
+          })
+          .appendTo($page);
+      });
+    }
   </script>
 </body>
 </html>

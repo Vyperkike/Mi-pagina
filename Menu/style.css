@@ -66,3 +66,21 @@ body {
   background: rgba(255,0,0,0.2); /* semitransparente para ubicarlo */
 
 }
+
+.zona-toque {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  z-index: 5;        /* debajo de tus links (z-index:10) pero sobre la imagen */
+  cursor: pointer;
+  background: transparent;
+}
+
+.zona-prev {
+  left: 0;
+}
+
+.zona-next {
+  right: 0;
+}
