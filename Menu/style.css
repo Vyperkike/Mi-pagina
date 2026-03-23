@@ -46,7 +46,8 @@ body {
 .arrow.prev {
   bottom: 20px;
   left: 60px;
-  width: 100px;
+  width: 150px;   /* más larga */
+  height: 40px;   /* más alta */
   z-index: 10; /* prioridad sobre las zonas de toque */
   pointer-events: auto; /* capta clics normales */
 }
