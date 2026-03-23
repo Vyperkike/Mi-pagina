@@ -435,41 +435,23 @@
       touch: true   // swipe táctil activado
     });
 
-    // Agregar zonas de toque invisibles al inicio
-    agregarZonasToque();
+    // Detectar clic en el flipbook
+    $("#flipbook").on("click", function(e) {
+      const offset = $(this).offset();
+      const x = e.pageX - offset.left;
+      const width = $(this).width();
 
-    // Reaplicar zonas cada vez que se cambie de página
-    $("#flipbook").bind("turned", function(event, page, view) {
-      // pequeño delay para que el DOM se estabilice
-      setTimeout(agregarZonasToque, 50);
+      // Si clic en la mitad izquierda → página anterior
+      if (x < width / 2) {
+        $("#flipbook").turn("previous");
+      } else {
+        // Si clic en la mitad derecha → página siguiente
+        $("#flipbook").turn("next");
+      }
     });
   });
-
-  function agregarZonasToque() {
-    $("#flipbook .page").each(function () {
-      const $page = $(this);
-
-      // Elimina zonas viejas antes de insertar nuevas
-      $page.find('.zona-toque').remove();
-
-      // Zona izquierda → página anterior
-      $('<div class="zona-toque zona-prev"></div>')
-        .on('click', function (e) {
-          e.stopPropagation();
-          $("#flipbook").turn('previous');
-        })
-        .appendTo($page);
-
-      // Zona derecha → página siguiente
-      $('<div class="zona-toque zona-next"></div>')
-        .on('click', function (e) {
-          e.stopPropagation();
-          $("#flipbook").turn('next');
-        })
-        .appendTo($page);
-    });
-  }
 </script>
+
 
 
 </body>
