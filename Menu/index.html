@@ -417,10 +417,21 @@
 
   <script>
   function calcSize() {
-    const w = window.innerWidth * 0.9;
-    const h = w * (1417/1887); // proporción de tu imagen
-    return { w, h };
+  const maxW = window.innerWidth * 0.9;
+  const maxH = window.innerHeight * 0.9;
+  const imgRatio = 1417 / 1887; // proporción de tus imágenes
+
+  let w = maxW;
+  let h = w / imgRatio;
+
+  if (h > maxH) {
+    h = maxH;
+    w = h * imgRatio;
   }
+
+  return { w, h };
+}
+
 
   $(document).ready(function () {
     const { w, h } = calcSize();
