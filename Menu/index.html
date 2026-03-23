@@ -416,62 +416,55 @@
   </div>
 
   <script>
+  function calcSize() {
+    const w = window.innerWidth * 0.9;
+    const h = w * (1438/1080); // proporción de tu imagen
+    return { w, h };
+  }
+
+  $(document).ready(function () {
+    const { w, h } = calcSize();
+
     $("#flipbook").turn({
-       // width: 1080,   // ancho real de tus imágenes
-       // height: 1438,  // alto real de tus imágenes
-      width: window.innerWidth * 0.9,   // 90% del ancho de pantalla
-      height: (window.innerWidth * 0.9) * (1438/1080), // mantiene proporción S9 Galaxy Tab
-      //height: (window.innerWidth * 0.9) * (2112/1320),  mantiene proporción S10 Tab lite
+      width: w,
+      height: h,
       autoCenter: true,
-        display: 'single',
-        gradients: true,
-        acceleration: true,
-        touch: true          // ← activa swipe con el dedo
-    });
-   // modificacion para moverme entre paginas con zonas de toque en toda la página
-    $(document).ready(function () {
-      const { w, h } = calcSize();
-
-      $("#flipbook").turn({
-        width: w,
-        height: h,
-        autoCenter: true,
-        display: 'single',
-        gradients: true,
-        acceleration: true
-      });
-
-      // Zonas de toque para toda la página
-      agregarZonasToque();
+      display: 'single',
+      gradients: true,
+      acceleration: true,
+      touch: true   // activa swipe con el dedo
     });
 
-    function agregarZonasToque() {
-      $("#flipbook .page").each(function () {
-        const $page = $(this);
+    // Agregar zonas de toque invisibles
+    agregarZonasToque();
+  });
 
-        // Evita duplicar zonas si ya las tiene
-        if ($page.find('.zona-toque').length) return;
+  function agregarZonasToque() {
+    $("#flipbook .page").each(function () {
+      const $page = $(this);
 
-        const pageNum = $page.index() + 1;
+      // Evita duplicar zonas si ya existen
+      if ($page.find('.zona-toque').length) return;
 
-        // Zona izquierda → página anterior
-        $('<div class="zona-toque zona-prev"></div>')
-          .on('click', function (e) {
-            e.stopPropagation();
-            $("#flipbook").turn('previous');
-          })
-          .appendTo($page);
+      // Zona izquierda → página anterior
+      $('<div class="zona-toque zona-prev"></div>')
+        .on('click', function (e) {
+          e.stopPropagation();
+          $("#flipbook").turn('previous');
+        })
+        .appendTo($page);
 
-        // Zona derecha → página siguiente
-        $('<div class="zona-toque zona-next"></div>')
-          .on('click', function (e) {
-            e.stopPropagation();
-            $("#flipbook").turn('next');
-          })
-          .appendTo($page);
-      });
-    }
-  </script>
+      // Zona derecha → página siguiente
+      $('<div class="zona-toque zona-next"></div>')
+        .on('click', function (e) {
+          e.stopPropagation();
+          $("#flipbook").turn('next');
+        })
+        .appendTo($page);
+    });
+  }
+</script>
+
 </body>
 </html>
 
