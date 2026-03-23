@@ -48,6 +48,7 @@ body {
   left: 60px;
   width: 100px;
   z-index: 10; /* prioridad sobre las zonas de toque */
+  pointer-events: auto; /* capta clics normales */
 }
 /* Clase extra para depuración */
 .arrow.debug {
@@ -60,6 +61,7 @@ body {
   cursor: pointer;
   background: rgba(255,255,255,0); /* invisible */
   z-index: 10; /* prioridad sobre las zonas de toque */
+  pointer-events: auto; /* capta clics normales */
 }
 
 /* Clase extra para depuración */
@@ -77,6 +79,7 @@ body {
   z-index: 1;        /* debajo de tus links (z-index:1) pero sobre la imagen */
   cursor: pointer;
   background: transparent;
+  pointer-events: auto; /* capta clics normales */
 }
 
 .zona-prev {
