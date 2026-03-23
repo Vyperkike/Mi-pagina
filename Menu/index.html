@@ -437,6 +437,11 @@
 
     // Agregar zonas de toque invisibles
     agregarZonasToque();
+
+    $("#flipbook").bind("turned", function(event, page, view) {
+       agregarZonasToque(); // vuelve a insertar zonas en la nueva página
+});
+
   });
 
   function agregarZonasToque() {
