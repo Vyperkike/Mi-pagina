@@ -432,24 +432,25 @@
       display: 'single',
       gradients: true,
       acceleration: true,
-      touch: true   // activa swipe con el dedo
+      touch: true   // swipe táctil activado
     });
 
-    // Agregar zonas de toque invisibles
+    // Agregar zonas de toque invisibles al inicio
     agregarZonasToque();
 
+    // Reaplicar zonas cada vez que se cambie de página
     $("#flipbook").bind("turned", function(event, page, view) {
-       agregarZonasToque(); // vuelve a insertar zonas en la nueva página
+      // pequeño delay para que el DOM se estabilice
+      setTimeout(agregarZonasToque, 50);
     });
-
   });
 
   function agregarZonasToque() {
     $("#flipbook .page").each(function () {
       const $page = $(this);
 
-      // Evita duplicar zonas si ya existen
-      if ($page.find('.zona-toque').length) return;
+      // Elimina zonas viejas antes de insertar nuevas
+      $page.find('.zona-toque').remove();
 
       // Zona izquierda → página anterior
       $('<div class="zona-toque zona-prev"></div>')
@@ -469,6 +470,7 @@
     });
   }
 </script>
+
 
 </body>
 </html>
