@@ -6,6 +6,7 @@
         font-size:49px;
         line-height:53px;
         position: relative;
+        color: white;
       }
 
       .prevenSubtitles{
@@ -16,6 +17,7 @@
         font-size:17px;
         line-height:26px;
         position: relative;
+        color: white;
       }
       
       .prevenTexto{
@@ -29,12 +31,13 @@
         max-width: 900px;
         position: relative;
         z-index: 20;
+        color: white;
       }
       
       .preven{
         display:flex;
         flex-direction:column;
-        background-color:black;
+        background-color:transparent;
         width:100%;
         padding:270px 158px 0 270px;
         gap:54px;
@@ -46,7 +49,7 @@
         height:239px;
         width:100%;
         /*border:4px solid red;*/
-        background-image:url("./imgs/preventivo/preventivoPleca.svg");
+        background-image:url("./imgs/preventivo/HEXAGONOS.png");
         background-position:center;
         background-size:cover;
         background-repeat:no-repeat;
