@@ -75,6 +75,7 @@
         flex-direction:column;
         /*background-color:brown;*/
         /*border: 1px solid white;*/
+        background-color: transparent;
         align-items:flex-end;
       }
 
