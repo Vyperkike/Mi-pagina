@@ -81,7 +81,7 @@
         width:100%;
         height:253px;
         /*background-color:pink;*/
-        background-image:url("./imgs/envios/enviosPleca.svg");
+        background-image:url("./imgs/envios/HEXAGONOS.png");
         background-position:center;
         background-size:cover;
         background-repeat:no-repeat;
@@ -106,6 +106,7 @@
         display:flex;
         flex-direction:column;
         /*background-color:purple;*/
+        background-color: transparent;
         gap:63px;
         width:100%;
       }
