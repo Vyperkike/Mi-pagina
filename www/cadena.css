@@ -210,6 +210,10 @@
     padding: 0;
     margin: 0;
   }
+  .cadenaTrailer{
+    width: calc(552.6px * 0.8);
+    height: calc(500px * 0.8);
+  }
   
   /* Aumentar espaciado general */
   section {
