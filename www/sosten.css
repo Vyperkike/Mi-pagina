@@ -42,7 +42,7 @@
         flex-direction:column;
         padding:47px 96px 239px 148px;
         width:100%;
-        background-color:black;
+        background-color:transparent;
         gap:42.8px;
       }
       
@@ -53,6 +53,7 @@
         max-width:600px;
         z-index:4;
         position: relative;
+        background-color: transparent;
       }
       
       .sostenBola{
@@ -86,7 +87,7 @@
         position:absolute;
         bottom:0;
         left:0;
-        background-color: black;
+        background-color:transparent;
         z-index:1;
       }
       
@@ -98,7 +99,7 @@
         top:-266px;
         left:0;
         /*background-color:blue;*/
-        background-image:url("./imgs/sosten/sostenPleca.svg");
+        background-image:url("./imgs/sosten/HEXAGONOS.png");
         background-position:center;
         background-size:cover;
         background-repeat:no-repeat;
