@@ -36,7 +36,7 @@
         display:flex;
         width:100%;
         padding-top:381px;
-        background-color:black;
+        background-color:transparent;
         flex-direction:column;
         position:relative;
       }
@@ -48,7 +48,7 @@
         position:absolute;
         top:0;
         /*border:1px solid white;*/
-        background-image:url("./imgs/cadena/cadenaPleca.svg");
+        background-image:url("./imgs/cadena/HEXAGONOS.png");
         background-position:center;
         background-size:cover;
         background-repeat:no-repeat;
@@ -75,6 +75,7 @@
         text-align:right;
         justify-content:right;
         color:white;
+        background-color: transparent;
         z-index:20;
       }
       
@@ -84,6 +85,7 @@
         align-items:center;
         gap:clamp(clamp(10px, 1.8vw, 25px), 4vw, 70px);
         padding:0 97px 0 126px;
+        background-color: transparent;
         /*background-color:green;*/
       }
       
@@ -101,6 +103,7 @@
         background-size:cover;
         background-repeat:no-repeat;
         flex-shrink:0;
+        background-color: transparent;
       }
       
       .cadenaTercero{
@@ -109,6 +112,7 @@
         gap:42.4px;
         /*background-color:pink;*/
         padding:0 125.8px 62px 125.8px;
+        background-color: transparent;
       }
 
       @media(max-width:1000px){
