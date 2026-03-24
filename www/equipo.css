@@ -43,7 +43,7 @@
       .equipo{
         display:flex;
         flex-direction:column;
-        background-color:black;
+        background-color:transparent;
         width:100%;
         position:relative;
       }
@@ -54,7 +54,7 @@
         height:240px;
         /*background-color:brown;*/
         position:relative;
-        background-image:url("./imgs/equipo/equipoPleca.svg");
+        background-image:url("./imgs/equipo/HEXAGONOS.png");
         background-position:center;
         background-size:cover;
         background-repeat:no-repeat;
