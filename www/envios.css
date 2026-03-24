@@ -39,6 +39,7 @@
         flex-direction:column;
         position:relative;
         padding:551px 173px 0 144px;
+        background-color: transparent;
         /*background-color:black;*/
       }
       
