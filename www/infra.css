@@ -6,6 +6,7 @@
         font-size:49px;
         line-height:53px;
         position: relative;
+        color: white;
       }
 
       .infraSubtitles{
@@ -15,7 +16,7 @@
         font-style: normal;
         font-size:17px;
         line-height:26px;
-        
+        color: white;
       }
       
       .infraTexto{
@@ -25,7 +26,7 @@
         font-style: normal;
         font-size:17px;
         line-height:clamp(clamp(clamp(10px, 1.2vw, 12px), 1.6vw, 16px), 3vw, 24px);
-        
+        color: white;
         text-align:justify;
       }
       
@@ -34,7 +35,7 @@
         flex-direction:column;
         position:relative;
         width:100%;
-        background-color:#FFCB00;
+        background-color:transparent;
       }
       
       .infraPleca{
@@ -44,7 +45,7 @@
         width:100%;
         height:245px;
         /*background-color:blue;*/
-        background-image:url("./imgs/infra/infraPleca.png");
+        background-image:url("./imgs/infra/HEXAGONOS.png");
         background-position:center;
         background-size:cover;
         background-repeat:no-repeat;

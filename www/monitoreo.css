@@ -41,7 +41,7 @@
       .moni{
         display:flex;
         width:100%;
-        background-color:black;
+        background-color:transparent;
         flex-direction:column;
         position: relative;
       }
@@ -63,7 +63,7 @@
         height:320px;
         position:relative;
         /*background-color:pink;*/
-        background-image:url("./imgs/moni/mantePleca.png");
+        background-image:url("./imgs/moni/HEXAGONOS.png");
         background-position:center;
         background-size:cover;
         background-repeat:no-repeat;
