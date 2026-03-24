@@ -231,12 +231,12 @@
   }
 
   .aduEspacioFoto {
-    width: 300px;
+    width: 50px;
   }
 
   .aduFoto {
-    width: 150px;
-    height: 150px;
+    width: 50px;
+    height: 50px;
     top: 20px; /* más abajo para que no choque con la pleca */
   }
 
@@ -266,13 +266,13 @@
   }
 
   .aduEspacioFoto {
-    width: 220px;             /* más pequeño en móvil */
+    width: 150px;             /* más pequeño en móvil */
     height: auto;
   }
 
   .aduFoto {
-    width: 220px;
-    height: 220px;
+    width: 150px;
+    height: 150px;
     top: 0;                   /* evita que se encime */
     margin-bottom: 20px;      /* espacio debajo de la foto */
   }
