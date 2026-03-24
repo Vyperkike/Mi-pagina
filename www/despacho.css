@@ -72,15 +72,15 @@
       
       .desIcon{
         display:flex;
-        width:119px;
-        height:clamp(10px, 6vw, 120px);
+        width:clamp(60px, 10vw, 120px);
+        height:clamp(60px, 10vw, 120px);
         /*background-color:pink;*/
         flex-shrink:0;
         background-color: transparent;
         background-image:url("./imgs/despacho/despachoIcon.png");
         background-position:center;
         background-repeat:no-repeat;
-        background-size:cover;
+        background-size:contain;
         position: relative;
       }
       
