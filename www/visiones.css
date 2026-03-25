@@ -218,11 +218,9 @@
            margin-right: 5%;
          }
 
-         .visionTrailerDeco{
-          /*background-color: green;*/
-            top:0px;
-            right:-clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
-         }
+         .visionTrailerDeco {
+            display: none;
+          }
 
           .maxSegundo{
             padding-right: 320px;
