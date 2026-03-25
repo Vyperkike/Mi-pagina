@@ -2,11 +2,9 @@
 
 .somosSubtitles {
   font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 600;
-  font-style: normal;
-  font-size: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.6vw, 16px), 2.2vw, clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.2vw, 21px));
-  line-height: clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 2.8vw, 26px);
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  line-height: 1.5;
   text-align: justify;
   position: relative;
   color: white;
@@ -14,11 +12,9 @@
 
 .somosTexto {
   font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
-  font-style: normal;
-  font-size: clamp(clamp(11px, 1.4vw, 14px), 2vw, clamp(13px, 1.9vw, 19px));
-  line-height: clamp(clamp(clamp(11px, 1.4vw, 14px), 1.8vw, 18px), 2.6vw, clamp(clamp(clamp(10px, 1.2vw, 12px), 1.6vw, 16px), 3vw, 24px));
+  font-size: clamp(0.95rem, 1.8vw, 1.15rem);
+  line-height: 1.6;
   text-align: justify;
   position: relative;
   color: white;
@@ -26,42 +22,39 @@
 
 .somosTitlesBB {
   font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 800;
-  font-style: normal;
-  font-size: clamp(clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 4vw, 32px), 8vw, clamp(clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 4vw, 32px), 8vw, 75px));
-  max-width: clamp(280px, 70vw, 315px);
-  padding-top: clamp(clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 4vw, 80px), 10vh, clamp(clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 35px), 5.5vw, 110px));
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  max-width: 800px;
+  padding-top: 2rem;
   position: relative;
   color: white;
-  line-height: clamp(clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 4vw, 32px), 9vw, 85px);
+  line-height: 1.1;
 }
 
 .somosContenedor {
   display: flex;
   width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
   position: relative;
   z-index: 2;
   flex-direction: column;
-  padding-top: clamp(clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 3.5vw, 60px), 10vh, 130px);
-  margin-top: clamp(clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px), 10vh, clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 4vw, 120px));
+  padding: 4rem 2rem;
 }
 
 .somosExplicaciones {
   display: flex;
   position: relative;
   flex-direction: column;
-  padding: 0 clamp(clamp(10px, 2vw, 30px), 6vw, clamp(clamp(10px, 2vw, 30px), 6vw, 248px));
-  gap: clamp(clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px), 6vw, clamp(clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px), 6vw, 74px));
-  background-color: black;
-  line-height: clamp(clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px), 7vw, 65px);
+  gap: 2rem;
+  background-color: transparent;
 }
 
 .somosTextitos {
   display: flex;
   flex-direction: column;
-  gap: clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 3.5vw, clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 35px));
-  padding-left: clamp(0px, 5vw, 105px);
+  gap: 1.5rem;
+  padding-left: 0;
   color: white;
 }
 
@@ -112,17 +105,7 @@
 }
 
 .circulo {
-  display: flex;
-  bottom: 0;
-  right: clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 4vw, 126px);
-  position: absolute;
-  height: clamp(clamp(clamp(clamp(10px, 2vw, 30px), 5vw, 100px), 15vw, 200px), 25vh, 320px);
-  width: clamp(clamp(clamp(clamp(10px, 2vw, 30px), 5vw, 100px), 15vw, 200px), 25vw, 323.1px);
-  background-image: url("./imgs/trailercircular.png");
-  background-position: center;
-  background-size: cover;
-  border-radius: 0 clamp(300px, 50vw, 700px) clamp(300px, 50vw, 700px) 0;
-  overflow: hidden;
+  display: none;
 }
 
 .trailer {
