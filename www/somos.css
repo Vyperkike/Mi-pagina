@@ -40,7 +40,7 @@
   z-index: 2; /* Revertido a su valor original */
   flex-direction: column;
   padding: 4rem 2rem;
-  margin-top: 120px; /* Añadido para empujar hacia abajo en desktop */
+  margin-top: 180px; /* Añadido para empujar hacia abajo en desktop */
 }
 
 .somosExplicaciones {
