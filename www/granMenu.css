@@ -39,19 +39,21 @@
         text-align:justify;
       }
       
-      .inicioNavbar{
-        display:flex;
-        position:fixed;
-        width:100%;
-        /*z-index:2;*/
-        background-color:black;
-        padding:clamp(11px, 1.4vw, 14px) clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px) clamp(clamp(10px, 1.2vw, 12px), 1.6vw, 16px) clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
-        box-shadow: 0px 2px clamp(10px, 2vw, 30px) rgba(128, 128, 128, 0.5);
-        justify-content:space-between;
-        opacity: 0;
-        transition: opacity 1s ease; 
-        z-index: 800000000;
-      }
+.inicioNavbar {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  padding: 1rem 5%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 999999;
+}
 
 
     .muestra{
@@ -172,19 +174,22 @@
       }
       
       
-      .menuSeccionesGrande{
-        display:flex;
-        top:0;
-        left:0;
-        position:fixed;
-        width:100%;
-        height:fit-content;
-        background-color:black;
-        z-index:0;
-        padding:clamp(clamp(clamp(10px, 1.8vw, 25px), 4vw, 70px), 10vw, 160px) clamp(clamp(10px, 1.8vw, 25px), 4.5vw, 90px) clamp(clamp(10px, 1.8vw, 25px), 4.5vw, 90px) clamp(clamp(10px, 1.8vw, 25px), 4.5vw, 90px);
-        gap:30%;
-        justify-content:center;
-      }
+.menuSeccionesGrande {
+  display: flex;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.98);
+  z-index: 999998;
+  padding: 8rem 2rem 2rem 2rem;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
       
       .menuSeccionesChico{
         display:none;
@@ -220,12 +225,19 @@
         justify-content:space-between;
       }
       
-      .menuColumna a{
-        text-decoration:none;
-        cursor:pointer;
-        outline:none;
-        color:white;
-      }
+.menuColumna a {
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+.menuColumna a:hover {
+  color: #FCC400;
+}
       
       
       
