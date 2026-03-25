@@ -31,6 +31,7 @@
   background-color: rgba(0, 0, 0, 0.4);
   position: relative;
   flex-direction: column;
+  margin-top: 100px; /* Separación de la sección anterior */
 }
 
 .visionesContenedor {
@@ -38,11 +39,12 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 8rem 2rem 4rem 2rem;
+  padding: 8rem 2rem 4rem 2rem; /* Se mantiene padding-top para contenido */
   position: relative;
   flex-direction: column;
   gap: 4rem;
   align-items: center;
+  z-index: 2; /* Asegura que el contenido esté sobre la pleca */
 }
 
 .visionesPleca {
@@ -52,13 +54,12 @@
   height: 300px;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 1; /* Pleca detrás del contenido */
   background-image: url("./imgs/vision/HEXAGONOS.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-
       
      .visionesPlecaBrillo{
       display:flex;
