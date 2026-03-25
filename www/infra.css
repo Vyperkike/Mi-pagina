@@ -25,7 +25,7 @@
         font-weight: 400;
         font-style: normal;
         font-size:17px;
-        line-height:clamp(clamp(clamp(10px, 1.2vw, 12px), 1.6vw, 16px), 3vw, 24px);
+        line-height:clamp(10px, 3vw, 24px);
         color: white;
         text-align:justify;
       }
@@ -87,7 +87,7 @@
         width:34px;
         height:34px;
         background-color:#000000;
-        border-radius:clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 3.5vw, 60px);
+        border-radius:clamp(11px, 3.5vw, 60px);
         flex-shrink:0;
       }
       
@@ -111,7 +111,7 @@
         /*background-color:pink;*/
         background-image:url("./imgs/infra/infraNumeralias.png");
         background-position:top;
-        background-size:cover;
+        background-size:contain;
         background-repeat:no-repeat;
         position: relative;
       }
@@ -148,10 +148,10 @@
 
       .infraMain{
         flex-direction: column;
-        padding: 0 clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
+        padding: 0 clamp(10px,2.5vw, 40px);
         /*background-color: palegreen;*/
-        padding-bottom: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 50px);
-        gap: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 35px);
+        padding-bottom: clamp(10px, 2.5vw, 50px);
+        gap: clamp(10px, 2.5vw, 35px);
       }
 
       .infraPadding{
@@ -159,11 +159,11 @@
       }
 
       .infraPrimer{
-        gap: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
+        gap: clamp(10px, 2.5vw, 40px);
       }
 
       .infraSecond{
-        gap: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.5vw, 40px);
+        gap: clamp(10px, 2.5vw, 40px);
       }
 
     }
@@ -181,25 +181,25 @@
       }
 
       .infraTitles{
-        font-size: clamp(clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px), 4.5vw, 36px);
+        font-size: clamp(11px, 4.5vw, 36px);
       }
 
       .infraTexto{
-        font-size: clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px);
-        line-height: clamp(clamp(clamp(10px, 1.2vw, 12px), 1.5vw, 15px), 2.2vw, 21px);
+        font-size: clamp(10px, 1.5vw, 15px);
+        line-height: clamp(10px, 2.2vw, 21px);
       }
 
       .infraBola{
-        width: clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px);
-        height: clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px);
+        width: clamp(11px, 2vw, 20px);
+        height: clamp(11px, 2vw, 20px);
       }
 
       .infraCaja{
-        gap: clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px) ;
+        gap: clamp(11px, 2vw, 20px) ;
       }
 
       .infraSecond{
-        gap: clamp(clamp(11px, 1.4vw, 14px), 2vw, 20px);
+        gap: clamp(11px, 2vw, 20px);
       }
 
       .infraTrailers{
