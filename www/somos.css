@@ -63,7 +63,7 @@
   display: flex;
   position: absolute;
   top: 0;
-  height: clamp(clamp(clamp(clamp(10px, 2vw, 30px), 5vw, 100px), 15vw, 200px), 30vh, 329px);
+  height: clamp(10px, 30vh, 329px);
   width: 100%;
   opacity: 1;
   z-index: 9000;
