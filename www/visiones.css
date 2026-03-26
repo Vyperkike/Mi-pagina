@@ -52,7 +52,7 @@
   position: absolute;
   width: 100%;
   height: clamp(10px, 30vh, 329px);;
-  top: 0;
+  top: -;
   left: 0;
   z-index: 1; /* Pleca detrás del contenido */
   background-image: url("./imgs/vision/HEXAGONOS.png");
