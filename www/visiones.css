@@ -31,7 +31,7 @@
   background-color: rgba(0, 0, 0, 0.4);
   position: relative;
   flex-direction: column;
-  margin-top: 100px; /* Separación de la sección anterior */
+  margin-top: 10px; /* Separación de la sección anterior */
 }
 
 .visionesContenedor {
