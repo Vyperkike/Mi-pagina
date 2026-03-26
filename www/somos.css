@@ -157,7 +157,7 @@
   .somosContenedor {
     z-index: 2;
     padding-top: clamp(50px, 5vw, 100px);
-    margin-top: 180px; /* Ajustado para la altura de introPleca en tablets */
+    margin-top: 80px; /* Ajustado para la altura de introPleca en tablets */
   }
 
   .somosExplicaciones {
@@ -281,3 +281,4 @@
     mask-size: clamp(250px, 40vw, 400px) 100%;
     -webkit-mask-size: clamp(250px, 40vw, 400px) 100%;
   }
+}
