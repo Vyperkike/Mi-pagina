@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Menú Namik</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Turn.js desde CDN -->
+  <script src="turn.min.js"></script>
+</head>
+<body>
+  <div id="flipbook">
+    
+    <!-- Página 1: Portada -->
+    <div class="page" id="portada">
+    <img src="imagenes/MenuDegustacion/Degustacion.jpeg" class="full">
+    </div>
+
+  </div>
+
+  <script>
+  function calcSize() {
+    const maxW = window.innerWidth * 0.9;
+    const maxH = window.innerHeight * 0.9;
+    const imgRatio = 1417 / 1887; // proporción de tus imágenes
+
+    let w = maxW;
+    let h = w / imgRatio;
+
+    if (h > maxH) {
+      h = maxH;
+      w = h * imgRatio;
+    }
+
+    return { w, h };
+  }
+
+  $(document).ready(function () {
+    const { w, h } = calcSize();
+
+    $("#flipbook").turn({
+      width: w,
+      height: h,
+      autoCenter: true,
+      display: 'single',
+      gradients: true,
+      acceleration: true,
+      touch: true   // swipe táctil activado
+    });
+
+    // 👉 Detectar clic en el flipbook
+    $("#flipbook").on("click", function(e) {
+      const offset = $(this).offset();
+      const x = e.pageX - offset.left;
+      const width = $(this).width();
+
+      if (x < width / 2) {
+        $("#flipbook").turn("previous");
+      } else {
+        $("#flipbook").turn("next");
+      }
+    });
+
+    // 👉 Detectar swipe desde el centro
+    let startX = 0;
+
+    $("#flipbook").on("touchstart", function(e) {
+      startX = e.originalEvent.touches[0].clientX;
+    });
+
+    $("#flipbook").on("touchend", function(e) {
+      const endX = e.originalEvent.changedTouches[0].clientX;
+      const deltaX = endX - startX;
+
+      if (Math.abs(deltaX) > 50) { // umbral mínimo
+        if (deltaX < 0) {
+          $("#flipbook").turn("next");     // swipe izquierda → siguiente
+        } else {
+          $("#flipbook").turn("previous"); // swipe derecha → anterior
+        }
+      }
+    });
+
+    // 👉 Ajuste al redimensionar pantalla
+    $(window).on("resize", function() {
+      const { w, h } = calcSize();
+      $("#flipbook").turn("size", w, h);
+    });
+  });
+</script>
+
+</body>
+</html>
+
